@@ -1,0 +1,2 @@
+/usr/bin/ar qc libqitestutils.a CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o
+/usr/bin/ranlib libqitestutils.a

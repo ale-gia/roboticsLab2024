@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/FaceROI.msg
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module msg {
+    struct FaceROI {
+      float angle;
+
+      float cx;
+
+      float cy;
+
+      float height;
+
+      float width;
+
+      float confidence;
+    };
+  };
+};

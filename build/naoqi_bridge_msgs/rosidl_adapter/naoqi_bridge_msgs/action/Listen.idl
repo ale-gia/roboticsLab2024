@@ -1,0 +1,38 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/Listen.action
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Action to perform one shot of speech recognition." "\n"
+      "Listens to the speech and tries to recognize expected utterances." "\n"
+      "If speech-to-text is supported, unexpected results may be returned.")
+    struct Listen_Goal {
+      @verbatim (language="comment", text=
+        "Set of strings that are expected to be heard." "\n"
+        "Used to pre-configure the speech recognition." "\n"
+        "Can be left empty.")
+      sequence<string> expected;
+
+      @verbatim (language="comment", text=
+        "The language in which to listen." "\n"
+        "If empty, the current language is used.")
+      @default (value="")
+      string language;
+    };
+    @verbatim (language="comment", text=
+      "What was heard." "\n"
+      "May match expected utterances." "\n"
+      "Results are ordered by decreasing confidence.")
+    struct Listen_Result {
+      sequence<string> result;
+    };
+    @verbatim (language="comment", text=
+      "If supported, partial results may be sent during the recognition.")
+    struct Listen_Feedback {
+      sequence<string> partial_result;
+    };
+  };
+};

@@ -1,0 +1,59 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/RobotInfo.msg
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module msg {
+    module RobotInfo_Constants {
+      @verbatim (language="comment", text=
+        "enums describing the robot type")
+      const uint8 NAO = 0;
+      const uint8 ROMEO = 1;
+      const uint8 PEPPER = 2;
+    };
+    @verbatim (language="comment", text=
+      "info here is inspired by http://doc.aldebaran.com/2-1/naoqi/motion/tools-general-api.html?highlight=getrobotconfig#ALMotionProxy::getRobotConfig")
+    struct RobotInfo {
+      @verbatim (language="comment", text=
+        "one of NAO, ROMEO, PEPPER")
+      uint8 type;
+
+      @verbatim (language="comment", text=
+        "\"Model Type\"   : \"naoH25\", \"naoH21\", \"naoT14\" or \"naoT2\".")
+      string model;
+
+      @verbatim (language="comment", text=
+        "\"Head Version\" : \"VERSION_32\" or \"VERSION_33\" or \"VERSION_40\".")
+      string head_version;
+
+      @verbatim (language="comment", text=
+        "\"Body Version\" : \"VERSION_32\" or \"VERSION_33\" or \"VERSION_40\".")
+      string body_version;
+
+      @verbatim (language="comment", text=
+        "\"Arm Version\"  : \"VERSION_32\" or \"VERSION_33\" or \"VERSION_40\".")
+      string arm_version;
+
+      @verbatim (language="comment", text=
+        "\"Laser\"        : True or False.")
+      boolean has_laser;
+
+      @verbatim (language="comment", text=
+        "\"Extended Arms\": True or False.")
+      boolean has_extended_arms;
+
+      @verbatim (language="comment", text=
+        "Number of Legs : 0 or 2")
+      int32 number_of_legs;
+
+      @verbatim (language="comment", text=
+        "Number of Arms : 0 or 2")
+      int32 number_of_arms;
+
+      @verbatim (language="comment", text=
+        "Number of Hands: 0 or 2")
+      int32 number_of_hands;
+    };
+  };
+};

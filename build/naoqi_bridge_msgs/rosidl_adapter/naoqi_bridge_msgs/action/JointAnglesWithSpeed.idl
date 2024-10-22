@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/JointAnglesWithSpeed.action
+// generated code does not contain a copyright notice
+
+#include "naoqi_bridge_msgs/msg/JointAnglesWithSpeed.idl"
+#include "sensor_msgs/msg/JointState.idl"
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal: a registered body pose name")
+    struct JointAnglesWithSpeed_Goal {
+      naoqi_bridge_msgs::msg::JointAnglesWithSpeed joint_angles;
+    };
+    @verbatim (language="comment", text=
+      "result is the actually reached position")
+    struct JointAnglesWithSpeed_Result {
+      sensor_msgs::msg::JointState goal_position;
+    };
+    @verbatim (language="comment", text=
+      "no feedback currently ")
+    struct JointAnglesWithSpeed_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

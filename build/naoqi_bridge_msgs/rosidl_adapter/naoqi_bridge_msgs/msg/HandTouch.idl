@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/HandTouch.msg
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module msg {
+    module HandTouch_Constants {
+      const uint8 RIGHT_BACK = 0;
+      const uint8 RIGHT_LEFT = 1;
+      const uint8 RIGHT_RIGHT = 2;
+      const uint8 LEFT_BACK = 3;
+      const uint8 LEFT_LEFT = 4;
+      const uint8 LEFT_RIGHT = 5;
+      const uint8 STATE_RELEASED = 0;
+      const uint8 STATE_PRESSED = 1;
+    };
+    @verbatim (language="comment", text=
+      "A message for Nao and Pepper's hand touch interface (touched tactile sensors on the hands)")
+    struct HandTouch {
+      @verbatim (language="comment", text=
+        "which hand (left or right)")
+      uint8 hand;
+
+      @verbatim (language="comment", text=
+        "state of the hands (pressed or released)")
+      uint8 state;
+    };
+  };
+};

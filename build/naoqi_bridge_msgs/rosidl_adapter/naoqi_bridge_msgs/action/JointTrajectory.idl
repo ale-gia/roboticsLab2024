@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/JointTrajectory.action
+// generated code does not contain a copyright notice
+
+#include "sensor_msgs/msg/JointState.idl"
+#include "trajectory_msgs/msg/JointTrajectory.idl"
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal: a joint angle trajectory")
+    struct JointTrajectory_Goal {
+      trajectory_msgs::msg::JointTrajectory trajectory;
+
+      @verbatim (language="comment", text=
+        "flag whether motion is absolute (=0, default) or relative (=1)")
+      uint8 relative;
+    };
+    @verbatim (language="comment", text=
+      "result is the actually reached position")
+    struct JointTrajectory_Result {
+      sensor_msgs::msg::JointState goal_position;
+    };
+    @verbatim (language="comment", text=
+      "no feedback currently ")
+    struct JointTrajectory_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

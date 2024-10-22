@@ -1,0 +1,32 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/Blink.action
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "std_msgs/msg/ColorRGBA.idl"
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: colours to use for blinking, plus blinking rate mean and sd" "\n"
+      "Result: true if robot is still blinking (call was pre-empted by another user)" "\n"
+      "Feedback: last blinked colour")
+    struct Blink_Goal {
+      sequence<std_msgs::msg::ColorRGBA> colors;
+
+      std_msgs::msg::ColorRGBA bg_color;
+
+      builtin_interfaces::msg::Duration blink_duration;
+
+      float blink_rate_mean;
+
+      float blink_rate_sd;
+    };
+    struct Blink_Result {
+      boolean still_blinking;
+    };
+    struct Blink_Feedback {
+      std_msgs::msg::ColorRGBA last_color;
+    };
+  };
+};

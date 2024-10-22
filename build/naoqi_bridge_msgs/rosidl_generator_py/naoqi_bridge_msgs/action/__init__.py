@@ -1,0 +1,10 @@
+from naoqi_bridge_msgs.action._blink import Blink  # noqa: F401
+from naoqi_bridge_msgs.action._body_pose import BodyPose  # noqa: F401
+from naoqi_bridge_msgs.action._body_pose_with_speed import BodyPoseWithSpeed  # noqa: F401
+from naoqi_bridge_msgs.action._follow_path import FollowPath  # noqa: F401
+from naoqi_bridge_msgs.action._joint_angles_with_speed import JointAnglesWithSpeed  # noqa: F401
+from naoqi_bridge_msgs.action._joint_trajectory import JointTrajectory  # noqa: F401
+from naoqi_bridge_msgs.action._listen import Listen  # noqa: F401
+from naoqi_bridge_msgs.action._run_behavior import RunBehavior  # noqa: F401
+from naoqi_bridge_msgs.action._set_speech_vocabulary import SetSpeechVocabulary  # noqa: F401
+from naoqi_bridge_msgs.action._speech_with_feedback import SpeechWithFeedback  # noqa: F401

@@ -1,0 +1,128 @@
+[0.349s] Invoking command in '/home/rosario/ros2_ws/src/build/nao_meshes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rosario/ros2_ws/src/nao_meshes -DCMAKE_INSTALL_PREFIX=/home/rosario/ros2_ws/src/install/nao_meshes
+[0.561s] -- The C compiler identification is GNU 11.4.0
+[1.210s] -- The CXX compiler identification is GNU 11.4.0
+[1.932s] -- Detecting C compiler ABI info
+[2.193s] -- Detecting C compiler ABI info - done
+[2.202s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.203s] -- Detecting C compile features
+[2.203s] -- Detecting C compile features - done
+[2.207s] -- Detecting CXX compiler ABI info
+[2.422s] -- Detecting CXX compiler ABI info - done
+[2.430s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.430s] -- Detecting CXX compile features
+[2.430s] -- Detecting CXX compile features - done
+[2.433s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.596s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.692s] -- Downloading 64-bit installer
+[4.189s] -- [download 0% complete]
+[4.291s] -- [download 1% complete]
+[4.406s] -- [download 2% complete]
+[4.493s] -- [download 3% complete]
+[4.616s] -- [download 4% complete]
+[4.714s] -- [download 5% complete]
+[4.817s] -- [download 6% complete]
+[4.901s] -- [download 7% complete]
+[4.969s] -- [download 8% complete]
+[5.057s] -- [download 9% complete]
+[5.116s] -- [download 10% complete]
+[5.173s] -- [download 11% complete]
+[5.221s] -- [download 12% complete]
+[5.275s] -- [download 13% complete]
+[5.329s] -- [download 14% complete]
+[5.376s] -- [download 15% complete]
+[5.424s] -- [download 16% complete]
+[5.472s] -- [download 17% complete]
+[5.521s] -- [download 18% complete]
+[5.566s] -- [download 19% complete]
+[5.611s] -- [download 20% complete]
+[5.663s] -- [download 21% complete]
+[5.714s] -- [download 22% complete]
+[5.761s] -- [download 23% complete]
+[5.808s] -- [download 24% complete]
+[5.860s] -- [download 25% complete]
+[5.898s] -- [download 26% complete]
+[5.944s] -- [download 27% complete]
+[5.983s] -- [download 28% complete]
+[6.021s] -- [download 29% complete]
+[6.068s] -- [download 30% complete]
+[6.108s] -- [download 31% complete]
+[6.140s] -- [download 32% complete]
+[6.174s] -- [download 33% complete]
+[6.211s] -- [download 34% complete]
+[6.245s] -- [download 35% complete]
+[6.280s] -- [download 36% complete]
+[6.315s] -- [download 37% complete]
+[6.351s] -- [download 38% complete]
+[6.384s] -- [download 39% complete]
+[6.420s] -- [download 40% complete]
+[6.463s] -- [download 41% complete]
+[6.498s] -- [download 42% complete]
+[6.532s] -- [download 43% complete]
+[6.567s] -- [download 44% complete]
+[6.607s] -- [download 45% complete]
+[6.640s] -- [download 46% complete]
+[6.676s] -- [download 47% complete]
+[6.713s] -- [download 48% complete]
+[6.760s] -- [download 49% complete]
+[6.796s] -- [download 50% complete]
+[6.830s] -- [download 51% complete]
+[6.863s] -- [download 52% complete]
+[6.899s] -- [download 53% complete]
+[6.935s] -- [download 54% complete]
+[6.984s] -- [download 55% complete]
+[7.040s] -- [download 56% complete]
+[7.091s] -- [download 57% complete]
+[7.148s] -- [download 58% complete]
+[7.291s] -- [download 59% complete]
+[7.426s] -- [download 60% complete]
+[7.474s] -- [download 61% complete]
+[7.541s] -- [download 62% complete]
+[7.595s] -- [download 63% complete]
+[7.647s] -- [download 64% complete]
+[7.694s] -- [download 65% complete]
+[7.742s] -- [download 66% complete]
+[7.793s] -- [download 67% complete]
+[7.907s] -- [download 68% complete]
+[8.004s] -- [download 69% complete]
+[8.087s] -- [download 70% complete]
+[8.178s] -- [download 71% complete]
+[8.239s] -- [download 72% complete]
+[8.290s] -- [download 73% complete]
+[8.349s] -- [download 74% complete]
+[8.408s] -- [download 75% complete]
+[8.493s] -- [download 76% complete]
+[8.599s] -- [download 77% complete]
+[8.658s] -- [download 78% complete]
+[8.724s] -- [download 79% complete]
+[8.781s] -- [download 80% complete]
+[8.853s] -- [download 81% complete]
+[8.908s] -- [download 82% complete]
+[8.962s] -- [download 83% complete]
+[9.017s] -- [download 84% complete]
+[9.066s] -- [download 85% complete]
+[9.124s] -- [download 86% complete]
+[9.166s] -- [download 87% complete]
+[9.221s] -- [download 88% complete]
+[9.270s] -- [download 89% complete]
+[9.324s] -- [download 90% complete]
+[9.373s] -- [download 91% complete]
+[9.424s] -- [download 92% complete]
+[9.475s] -- [download 93% complete]
+[9.527s] -- [download 94% complete]
+[9.579s] -- [download 95% complete]
+[9.638s] -- [download 96% complete]
+[9.687s] -- [download 97% complete]
+[9.728s] -- [download 98% complete]
+[9.765s] -- [download 99% complete]
+[9.812s] -- [download 100% complete]
+[9.883s] -- Unpacking meshes from the installer: 
+[9.884s] /home/rosario/ros2_ws/src/build/nao_meshes/installer.run --prefix /home/rosario/ros2_ws/src/build/nao_meshes
+[10.115s] -- Configuring done
+[10.125s] -- Generating done
+[10.133s] -- Build files have been written to: /home/rosario/ros2_ws/src/build/nao_meshes
+[10.169s] Invoked command in '/home/rosario/ros2_ws/src/build/nao_meshes' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rosario/ros2_ws/src/nao_meshes -DCMAKE_INSTALL_PREFIX=/home/rosario/ros2_ws/src/install/nao_meshes
+[10.169s] Invoking command in '/home/rosario/ros2_ws/src/build/nao_meshes': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rosario/ros2_ws/src/build/nao_meshes -- -j12 -l12
+[33.548s] gmake[2]: *** [CMakeFiles/install_meshes.dir/build.make:71: CMakeFiles/install_meshes] Error 1
+[33.548s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/install_meshes.dir/all] Error 2
+[33.551s] gmake: *** [Makefile:146: all] Error 2
+[33.553s] Invoked command in '/home/rosario/ros2_ws/src/build/nao_meshes' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rosario/ros2_ws/src/build/nao_meshes -- -j12 -l12

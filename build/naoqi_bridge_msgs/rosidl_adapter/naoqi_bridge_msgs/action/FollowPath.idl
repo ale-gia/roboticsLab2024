@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/FollowPath.action
+// generated code does not contain a copyright notice
+
+#include "nav_msgs/msg/Path.idl"
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal: a path to follow")
+    struct FollowPath_Goal {
+      nav_msgs::msg::Path path;
+    };
+    @verbatim (language="comment", text=
+      "no result currently")
+    struct FollowPath_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "feedback: index of current subgoal in path")
+    struct FollowPath_Feedback {
+      uint32 index;
+    };
+  };
+};

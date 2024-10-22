@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/SetArmsEnabled.srv
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Enable or disable the arms while walking")
+    struct SetArmsEnabled_Request {
+      boolean left_arm;
+
+      boolean right_arm;
+    };
+    struct SetArmsEnabled_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

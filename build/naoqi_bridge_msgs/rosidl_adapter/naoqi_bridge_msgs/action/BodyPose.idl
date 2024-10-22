@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/BodyPose.action
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "goal: a registered body pose name")
+    struct BodyPose_Goal {
+      string pose_name;
+    };
+    @verbatim (language="comment", text=
+      "no result currently")
+    struct BodyPose_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "no feedback currently ")
+    struct BodyPose_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

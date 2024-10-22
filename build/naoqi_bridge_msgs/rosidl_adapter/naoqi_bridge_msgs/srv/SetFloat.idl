@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/SetFloat.srv
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module srv {
+    struct SetFloat_Request {
+      float data;
+    };
+    struct SetFloat_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

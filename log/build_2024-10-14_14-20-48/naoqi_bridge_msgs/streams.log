@@ -1,0 +1,493 @@
+[0.033s] Invoking command in '/home/rosario/ros2_ws/src/build/naoqi_bridge_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rosario/ros2_ws/src/naoqi_bridge_msgs -DCMAKE_INSTALL_PREFIX=/home/rosario/ros2_ws/src/install/naoqi_bridge_msgs
+[0.425s] -- The C compiler identification is GNU 11.4.0
+[1.287s] -- The CXX compiler identification is GNU 11.4.0
+[1.999s] -- Detecting C compiler ABI info
+[2.249s] -- Detecting C compiler ABI info - done
+[2.256s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.257s] -- Detecting C compile features
+[2.257s] -- Detecting C compile features - done
+[2.260s] -- Detecting CXX compiler ABI info
+[2.517s] -- Detecting CXX compiler ABI info - done
+[2.524s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.525s] -- Detecting CXX compile features
+[2.525s] -- Detecting CXX compile features - done
+[2.528s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.690s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.802s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[2.810s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.820s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.176s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.240s] -- Found action_msgs: 1.2.1 (/opt/ros/humble/share/action_msgs/cmake)
+[3.316s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.392s] -- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.417s] -- Found trajectory_msgs: 4.2.4 (/opt/ros/humble/share/trajectory_msgs/cmake)
+[5.033s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[6.276s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.468s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[8.480s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[10.756s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[10.761s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.761s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[10.761s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[10.834s] -- Found PythonExtra: .so  
+[11.628s] -- Configuring done
+[12.250s] -- Generating done
+[12.256s] -- Build files have been written to: /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+[12.310s] Invoked command in '/home/rosario/ros2_ws/src/build/naoqi_bridge_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake /home/rosario/ros2_ws/src/naoqi_bridge_msgs -DCMAKE_INSTALL_PREFIX=/home/rosario/ros2_ws/src/install/naoqi_bridge_msgs
+[12.311s] Invoking command in '/home/rosario/ros2_ws/src/build/naoqi_bridge_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble /usr/bin/cmake --build /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs -- -j12 -l12
+[12.724s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[12.747s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[12.787s] [  0%] Built target ament_cmake_python_copy_naoqi_bridge_msgs
+[13.556s] running egg_info
+[13.557s] creating naoqi_bridge_msgs.egg-info
+[13.559s] writing naoqi_bridge_msgs.egg-info/PKG-INFO
+[13.560s] writing dependency_links to naoqi_bridge_msgs.egg-info/dependency_links.txt
+[13.560s] writing top-level names to naoqi_bridge_msgs.egg-info/top_level.txt
+[13.561s] writing manifest file 'naoqi_bridge_msgs.egg-info/SOURCES.txt'
+[13.566s] reading manifest file 'naoqi_bridge_msgs.egg-info/SOURCES.txt'
+[13.568s] writing manifest file 'naoqi_bridge_msgs.egg-info/SOURCES.txt'
+[13.690s] [  0%] Built target ament_cmake_python_build_naoqi_bridge_msgs_egg
+[38.380s] [  0%] Built target naoqi_bridge_msgs__cpp
+[38.388s] [  1%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/body_roi__functions.c.o[0m
+[38.391s] [  1%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/audio_buffer__functions.c.o[0m
+[38.423s] [  1%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/bool_stamped__functions.c.o[0m
+[38.428s] [  1%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/event_stamped__functions.c.o[0m
+[38.429s] [  1%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/bumper__functions.c.o[0m
+[38.468s] [  2%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/face_roi__functions.c.o[0m
+[38.473s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[38.537s] [  2%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[38.542s] [  2%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[38.576s] [  2%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/float_array_stamped__functions.c.o[0m
+[38.598s] [  2%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/fade_rgb__functions.c.o[0m
+[38.627s] [  2%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/float_stamped__functions.c.o[0m
+[38.735s] [  3%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/hand_touch__functions.c.o[0m
+[38.768s] [  3%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/head_touch__functions.c.o[0m
+[38.799s] [  3%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/int_array_stamped__functions.c.o[0m
+[38.861s] [  3%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/int_stamped__functions.c.o[0m
+[38.888s] [  4%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/joint_angles_with_speed__functions.c.o[0m
+[38.892s] [  4%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/memory_list__functions.c.o[0m
+[38.895s] [  4%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/joint_angle_trajectory__functions.c.o[0m
+[39.015s] [  4%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/memory_pair_float__functions.c.o[0m
+[39.029s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/memory_pair_string__functions.c.o[0m
+[39.039s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/memory_pair_int__functions.c.o[0m
+[39.047s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/pose_with_confidence_stamped__functions.c.o[0m
+[39.189s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/robot_info__functions.c.o[0m
+[39.189s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/sound_located__functions.c.o[0m
+[39.204s] [  5%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/string_array_stamped__functions.c.o[0m
+[39.217s] [  6%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/string_stamped__functions.c.o[0m
+[39.217s] [  6%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/status_change_stamped__functions.c.o[0m
+[39.361s] [  6%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/msg/detail/word_recognized__functions.c.o[0m
+[39.375s] [  6%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/cmd_pose_service__functions.c.o[0m
+[39.399s] [  7%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/cmd_vel_service__functions.c.o[0m
+[39.426s] [  7%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_body_roi__functions.c.o[0m
+[39.475s] [  7%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_faces_roi__functions.c.o[0m
+[39.507s] [  8%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_installed_behaviors__functions.c.o[0m
+[39.523s] [  8%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_float__functions.c.o[0m
+[39.530s] [  8%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_robot_info__functions.c.o[0m
+[39.634s] [  8%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_string__functions.c.o[0m
+[39.641s] [  8%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/get_truepose__functions.c.o[0m
+[39.742s] [  9%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/orthogonal_security_distance__functions.c.o[0m
+[39.781s] [  9%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/set_arms_enabled__functions.c.o[0m
+[39.811s] [  9%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/set_string__functions.c.o[0m
+[39.861s] [  9%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/set_transform__functions.c.o[0m
+[39.865s] [ 10%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/tangential_security_distance__functions.c.o[0m
+[39.866s] [ 10%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/srv/detail/set_float__functions.c.o[0m
+[39.888s] [ 10%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/blink__functions.c.o[0m
+[39.936s] [ 10%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/body_pose__functions.c.o[0m
+[40.006s] [ 10%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/body_pose_with_speed__functions.c.o[0m
+[40.022s] [ 11%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/follow_path__functions.c.o[0m
+[40.091s] [ 11%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/joint_angles_with_speed__functions.c.o[0m
+[40.105s] [ 11%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/joint_trajectory__functions.c.o[0m
+[40.190s] [ 11%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/listen__functions.c.o[0m
+[40.206s] [ 12%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/run_behavior__functions.c.o[0m
+[40.230s] [ 12%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/set_speech_vocabulary__functions.c.o[0m
+[40.622s] [ 12%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_c.dir/rosidl_generator_c/naoqi_bridge_msgs/action/detail/speech_with_feedback__functions.c.o[0m
+[41.206s] [ 12%] [32m[1mLinking C shared library libnaoqi_bridge_msgs__rosidl_generator_c.so[0m
+[42.077s] [ 12%] Built target naoqi_bridge_msgs__rosidl_generator_c
+[42.158s] [ 13%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[42.197s] [ 14%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[42.206s] [ 15%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[52.899s] [ 15%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/body_roi__type_support.cpp.o[0m
+[52.905s] [ 16%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/audio_buffer__type_support.cpp.o[0m
+[52.928s] [ 16%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/bumper__type_support.cpp.o[0m
+[52.952s] [ 16%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/bool_stamped__type_support.cpp.o[0m
+[53.004s] [ 16%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/event_stamped__type_support.cpp.o[0m
+[53.039s] [ 17%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/face_roi__type_support.cpp.o[0m
+[53.073s] [ 17%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/fade_rgb__type_support.cpp.o[0m
+[54.319s] [ 17%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/float_array_stamped__type_support.cpp.o[0m
+[54.481s] [ 17%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/float_stamped__type_support.cpp.o[0m
+[54.778s] [ 18%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/hand_touch__type_support.cpp.o[0m
+[54.903s] [ 18%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/head_touch__type_support.cpp.o[0m
+[54.971s] [ 18%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/int_array_stamped__type_support.cpp.o[0m
+[55.050s] [ 18%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/int_stamped__type_support.cpp.o[0m
+[55.158s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/joint_angle_trajectory__type_support.cpp.o[0m
+[55.301s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/audio_buffer__type_support.cpp.o[0m
+[55.499s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/body_roi__type_support.cpp.o[0m
+[55.718s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/bool_stamped__type_support.cpp.o[0m
+[55.856s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/joint_angles_with_speed__type_support.cpp.o[0m
+[55.952s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/memory_list__type_support.cpp.o[0m
+[55.981s] [ 19%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/bumper__type_support.cpp.o[0m
+[56.180s] [ 20%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/event_stamped__type_support.cpp.o[0m
+[56.409s] [ 20%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/face_roi__type_support.cpp.o[0m
+[56.413s] [ 20%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/memory_pair_float__type_support.cpp.o[0m
+[56.582s] [ 20%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/fade_rgb__type_support.cpp.o[0m
+[56.816s] [ 20%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/float_array_stamped__type_support.cpp.o[0m
+[57.123s] [ 21%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/float_stamped__type_support.cpp.o[0m
+[57.123s] [ 21%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/memory_pair_int__type_support.cpp.o[0m
+[57.182s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/memory_pair_string__type_support.cpp.o[0m
+[57.334s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/hand_touch__type_support.cpp.o[0m
+[57.365s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/pose_with_confidence_stamped__type_support.cpp.o[0m
+[57.365s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/head_touch__type_support.cpp.o[0m
+[57.423s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/robot_info__type_support.cpp.o[0m
+[57.523s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/sound_located__type_support.cpp.o[0m
+[57.564s] [ 22%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/int_array_stamped__type_support.cpp.o[0m
+[57.565s] [ 23%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/int_stamped__type_support.cpp.o[0m
+[57.726s] [ 23%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/joint_angle_trajectory__type_support.cpp.o[0m
+[57.815s] [ 23%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/joint_angles_with_speed__type_support.cpp.o[0m
+[58.008s] [ 23%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/memory_list__type_support.cpp.o[0m
+[58.150s] [ 24%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/memory_pair_float__type_support.cpp.o[0m
+[58.203s] [ 25%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/status_change_stamped__type_support.cpp.o[0m
+[58.280s] [ 25%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/memory_pair_string__type_support.cpp.o[0m
+[58.318s] [ 25%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/memory_pair_int__type_support.cpp.o[0m
+[58.498s] [ 25%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/pose_with_confidence_stamped__type_support.cpp.o[0m
+[58.580s] [ 25%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/robot_info__type_support.cpp.o[0m
+[58.684s] [ 26%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/sound_located__type_support.cpp.o[0m
+[58.811s] [ 26%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/status_change_stamped__type_support.cpp.o[0m
+[58.864s] [ 26%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/string_array_stamped__type_support.cpp.o[0m
+[59.051s] [ 26%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/string_stamped__type_support.cpp.o[0m
+[59.068s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/msg/word_recognized__type_support.cpp.o[0m
+[59.242s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/string_array_stamped__type_support.cpp.o[0m
+[59.336s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/cmd_pose_service__type_support.cpp.o[0m
+[59.338s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/string_stamped__type_support.cpp.o[0m
+[59.361s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/cmd_vel_service__type_support.cpp.o[0m
+[59.451s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/msg/word_recognized__type_support.cpp.o[0m
+[59.694s] [ 27%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_body_roi__type_support.cpp.o[0m
+[59.830s] [ 28%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_faces_roi__type_support.cpp.o[0m
+[60.073s] [ 28%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_float__type_support.cpp.o[0m
+[60.130s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/cmd_pose_service__type_support.cpp.o[0m
+[60.175s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/cmd_vel_service__type_support.cpp.o[0m
+[60.297s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_body_roi__type_support.cpp.o[0m
+[60.450s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_installed_behaviors__type_support.cpp.o[0m
+[60.702s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_faces_roi__type_support.cpp.o[0m
+[60.735s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_robot_info__type_support.cpp.o[0m
+[61.317s] [ 29%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_string__type_support.cpp.o[0m
+[61.665s] [ 30%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/get_truepose__type_support.cpp.o[0m
+[61.985s] [ 30%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/orthogonal_security_distance__type_support.cpp.o[0m
+[62.265s] [ 30%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/set_arms_enabled__type_support.cpp.o[0m
+[62.546s] [ 30%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/set_float__type_support.cpp.o[0m
+[62.809s] [ 31%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/set_string__type_support.cpp.o[0m
+[63.071s] [ 31%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/set_transform__type_support.cpp.o[0m
+[63.302s] [ 31%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/srv/tangential_security_distance__type_support.cpp.o[0m
+[63.534s] [ 31%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/blink__type_support.cpp.o[0m
+[63.970s] [ 32%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/orthogonal_security_distance__type_support.cpp.o[0m
+[63.984s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/body_pose__type_support.cpp.o[0m
+[64.504s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/body_pose_with_speed__type_support.cpp.o[0m
+[65.014s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/follow_path__type_support.cpp.o[0m
+[65.369s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/joint_angles_with_speed__type_support.cpp.o[0m
+[65.830s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/joint_trajectory__type_support.cpp.o[0m
+[66.219s] [ 33%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/set_arms_enabled__type_support.cpp.o[0m
+[66.352s] [ 34%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/listen__type_support.cpp.o[0m
+[66.638s] [ 34%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/run_behavior__type_support.cpp.o[0m
+[66.789s] [ 34%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/set_speech_vocabulary__type_support.cpp.o[0m
+[67.213s] [ 34%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/naoqi_bridge_msgs/action/speech_with_feedback__type_support.cpp.o[0m
+[67.570s] [ 35%] [32m[1mLinking CXX shared library libnaoqi_bridge_msgs__rosidl_typesupport_c.so[0m
+[67.625s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/audio_buffer__type_support.cpp.o[0m
+[67.650s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/set_float__type_support.cpp.o[0m
+[68.547s] [ 36%] Built target naoqi_bridge_msgs__rosidl_typesupport_c
+[68.779s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/set_string__type_support.cpp.o[0m
+[69.802s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/audio_buffer__type_support_c.cpp.o[0m
+[70.056s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_truepose__type_support.cpp.o[0m
+[70.110s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/bool_stamped__type_support.cpp.o[0m
+[71.056s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/body_roi__type_support_c.cpp.o[0m
+[71.161s] [ 36%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_string__type_support.cpp.o[0m
+[71.350s] [ 36%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/audio_buffer__type_support.c.o[0m
+[71.523s] [ 37%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/event_stamped__type_support.cpp.o[0m
+[71.552s] [ 37%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/body_roi__type_support.c.o[0m
+[71.672s] [ 37%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/bool_stamped__type_support.c.o[0m
+[71.886s] [ 38%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/bumper__type_support.c.o[0m
+[72.077s] [ 38%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/event_stamped__type_support.c.o[0m
+[72.117s] [ 38%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_robot_info__type_support.cpp.o[0m
+[72.256s] [ 38%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/face_roi__type_support.c.o[0m
+[72.330s] [ 38%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/bool_stamped__type_support_c.cpp.o[0m
+[72.371s] [ 38%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/fade_rgb__type_support.c.o[0m
+[72.483s] [ 39%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/audio_buffer__type_support.cpp.o[0m
+[72.535s] [ 40%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/float_array_stamped__type_support.c.o[0m
+[72.641s] [ 40%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/face_roi__type_support.cpp.o[0m
+[72.643s] [ 40%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/float_stamped__type_support.c.o[0m
+[72.787s] [ 40%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/hand_touch__type_support.c.o[0m
+[72.960s] [ 41%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/set_transform__type_support.cpp.o[0m
+[72.973s] [ 41%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/head_touch__type_support.c.o[0m
+[73.043s] [ 41%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/int_array_stamped__type_support.c.o[0m
+[73.160s] [ 42%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[73.171s] [ 43%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/int_stamped__type_support.c.o[0m
+[73.407s] [ 43%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/joint_angle_trajectory__type_support.c.o[0m
+[73.606s] [ 43%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/fade_rgb__type_support.cpp.o[0m
+[73.652s] [ 43%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/joint_angles_with_speed__type_support.c.o[0m
+[73.797s] [ 43%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/tangential_security_distance__type_support.cpp.o[0m
+[73.798s] [ 43%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/memory_list__type_support.c.o[0m
+[73.957s] [ 43%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/event_stamped__type_support_c.cpp.o[0m
+[73.965s] [ 44%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/memory_pair_float__type_support.c.o[0m
+[74.056s] [ 44%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/memory_pair_int__type_support.c.o[0m
+[74.124s] [ 44%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/bool_stamped__type_support.cpp.o[0m
+[74.207s] [ 44%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/memory_pair_string__type_support.c.o[0m
+[74.309s] [ 44%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/pose_with_confidence_stamped__type_support.c.o[0m
+[74.427s] [ 45%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/robot_info__type_support.c.o[0m
+[74.523s] [ 45%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/sound_located__type_support.c.o[0m
+[74.604s] [ 45%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/status_change_stamped__type_support.c.o[0m
+[74.644s] [ 45%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_installed_behaviors__type_support.cpp.o[0m
+[74.686s] [ 45%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/string_array_stamped__type_support.c.o[0m
+[74.775s] [ 45%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/float_array_stamped__type_support.cpp.o[0m
+[74.805s] [ 45%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/string_stamped__type_support.c.o[0m
+[74.922s] [ 46%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/msg/detail/word_recognized__type_support.c.o[0m
+[74.991s] [ 46%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/face_roi__type_support_c.cpp.o[0m
+[75.052s] [ 46%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/cmd_pose_service__type_support.c.o[0m
+[75.205s] [ 46%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/cmd_vel_service__type_support.c.o[0m
+[75.380s] [ 46%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_body_roi__type_support.c.o[0m
+[75.558s] [ 47%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_faces_roi__type_support.c.o[0m
+[75.603s] [ 47%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[75.670s] [ 47%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_float__type_support.c.o[0m
+[75.723s] [ 47%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/blink__type_support.cpp.o[0m
+[75.776s] [ 47%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_installed_behaviors__type_support.c.o[0m
+[75.959s] [ 47%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_robot_info__type_support.c.o[0m
+[76.089s] [ 48%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_string__type_support.c.o[0m
+[76.176s] [ 48%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/get_truepose__type_support.c.o[0m
+[76.276s] [ 48%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/orthogonal_security_distance__type_support.c.o[0m
+[76.322s] [ 48%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/fade_rgb__type_support_c.cpp.o[0m
+[76.369s] [ 49%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/float_stamped__type_support.cpp.o[0m
+[76.398s] [ 49%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/set_arms_enabled__type_support.c.o[0m
+[76.488s] [ 49%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/set_float__type_support.c.o[0m
+[76.566s] [ 50%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/set_string__type_support.c.o[0m
+[76.651s] [ 50%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/set_transform__type_support.c.o[0m
+[76.733s] [ 50%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/srv/detail/tangential_security_distance__type_support.c.o[0m
+[76.827s] [ 50%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/blink__type_support.c.o[0m
+[76.868s] [ 51%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/event_stamped__type_support.cpp.o[0m
+[76.953s] [ 52%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/body_pose__type_support.c.o[0m
+[77.079s] [ 52%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/body_pose_with_speed__type_support.c.o[0m
+[77.188s] [ 52%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/body_pose__type_support.cpp.o[0m
+[77.223s] [ 52%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/float_array_stamped__type_support_c.cpp.o[0m
+[77.249s] [ 52%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/follow_path__type_support.c.o[0m
+[77.370s] [ 52%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/hand_touch__type_support.cpp.o[0m
+[77.382s] [ 52%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/joint_angles_with_speed__type_support.c.o[0m
+[77.593s] [ 53%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/joint_trajectory__type_support.c.o[0m
+[77.800s] [ 53%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/listen__type_support.c.o[0m
+[77.953s] [ 53%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/run_behavior__type_support.c.o[0m
+[78.149s] [ 53%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/set_speech_vocabulary__type_support.c.o[0m
+[78.237s] [ 53%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/face_roi__type_support.cpp.o[0m
+[78.310s] [ 54%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/naoqi_bridge_msgs/action/detail/speech_with_feedback__type_support.c.o[0m
+[78.468s] [ 54%] [32m[1mLinking C shared library libnaoqi_bridge_msgs__rosidl_typesupport_introspection_c.so[0m
+[78.533s] [ 55%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/float_stamped__type_support_c.cpp.o[0m
+[78.725s] [ 55%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/head_touch__type_support.cpp.o[0m
+[78.909s] [ 56%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/body_pose_with_speed__type_support.cpp.o[0m
+[79.071s] [ 56%] Built target naoqi_bridge_msgs__rosidl_typesupport_introspection_c
+[79.308s] [ 56%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/fade_rgb__type_support.cpp.o[0m
+[79.336s] [ 56%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/int_array_stamped__type_support_c.cpp.o[0m
+[79.564s] [ 56%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[79.869s] [ 56%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/joint_angles_with_speed__type_support.cpp.o[0m
+[80.005s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/int_stamped__type_support_c.cpp.o[0m
+[80.086s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/body_roi__type_support.cpp.o[0m
+[80.319s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/int_array_stamped__type_support.cpp.o[0m
+[80.684s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/joint_angle_trajectory__type_support_c.cpp.o[0m
+[80.896s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/joint_trajectory__type_support.cpp.o[0m
+[81.026s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/float_array_stamped__type_support.cpp.o[0m
+[81.473s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/int_stamped__type_support.cpp.o[0m
+[81.782s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/joint_angles_with_speed__type_support_c.cpp.o[0m
+[82.202s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/float_stamped__type_support.cpp.o[0m
+[82.246s] [ 57%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/listen__type_support.cpp.o[0m
+[82.388s] [ 58%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/joint_angle_trajectory__type_support.cpp.o[0m
+[82.507s] [ 58%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/memory_list__type_support_c.cpp.o[0m
+[83.118s] [ 58%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/head_touch__type_support.cpp.o[0m
+[83.409s] [ 58%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/head_touch__type_support_c.cpp.o[0m
+[83.411s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/run_behavior__type_support.cpp.o[0m
+[83.540s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/joint_angles_with_speed__type_support.cpp.o[0m
+[84.016s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/int_stamped__type_support.cpp.o[0m
+[84.080s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/hand_touch__type_support_c.cpp.o[0m
+[84.286s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/speech_with_feedback__type_support.cpp.o[0m
+[84.341s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/body_roi__type_support.cpp.o[0m
+[84.577s] [ 59%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/memory_pair_int__type_support_c.cpp.o[0m
+[84.596s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/joint_angle_trajectory__type_support.cpp.o[0m
+[84.866s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/memory_list__type_support.cpp.o[0m
+[84.970s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/set_speech_vocabulary__type_support.cpp.o[0m
+[85.123s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/memory_pair_string__type_support_c.cpp.o[0m
+[85.385s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/memory_pair_float__type_support.cpp.o[0m
+[85.710s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/pose_with_confidence_stamped__type_support_c.cpp.o[0m
+[85.768s] [ 60%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/memory_pair_float__type_support.cpp.o[0m
+[85.790s] [ 61%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/srv/get_float__type_support.cpp.o[0m
+[85.791s] [ 62%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/memory_pair_int__type_support.cpp.o[0m
+[85.791s] [ 62%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/naoqi_bridge_msgs/action/follow_path__type_support.cpp.o[0m
+[86.091s] [ 63%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/memory_pair_int__type_support.cpp.o[0m
+[86.317s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/sound_located__type_support_c.cpp.o[0m
+[86.370s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/memory_pair_string__type_support.cpp.o[0m
+[86.370s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/robot_info__type_support_c.cpp.o[0m
+[86.538s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/memory_pair_string__type_support.cpp.o[0m
+[86.556s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/pose_with_confidence_stamped__type_support.cpp.o[0m
+[86.727s] [ 64%] [32m[1mLinking CXX shared library libnaoqi_bridge_msgs__rosidl_typesupport_cpp.so[0m
+[86.933s] [ 64%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/memory_list__type_support.cpp.o[0m
+[87.113s] [ 65%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/memory_pair_float__type_support_c.cpp.o[0m
+[87.216s] [ 65%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/status_change_stamped__type_support_c.cpp.o[0m
+[87.248s] [ 65%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/pose_with_confidence_stamped__type_support.cpp.o[0m
+[87.281s] [ 65%] Built target naoqi_bridge_msgs__rosidl_typesupport_cpp
+[87.491s] [ 65%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/robot_info__type_support.cpp.o[0m
+[87.518s] [ 66%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/sound_located__type_support.cpp.o[0m
+[87.971s] [ 66%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/string_array_stamped__type_support_c.cpp.o[0m
+[88.036s] [ 66%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/string_stamped__type_support_c.cpp.o[0m
+[88.151s] [ 66%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/sound_located__type_support.cpp.o[0m
+[88.181s] [ 67%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/msg/detail/word_recognized__type_support_c.cpp.o[0m
+[88.287s] [ 67%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/robot_info__type_support.cpp.o[0m
+[88.469s] [ 67%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/status_change_stamped__type_support.cpp.o[0m
+[88.600s] [ 67%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/string_array_stamped__type_support.cpp.o[0m
+[89.091s] [ 67%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/cmd_pose_service__type_support_c.cpp.o[0m
+[89.145s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/status_change_stamped__type_support.cpp.o[0m
+[89.196s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/joint_angles_with_speed__type_support.cpp.o[0m
+[89.361s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/cmd_vel_service__type_support_c.cpp.o[0m
+[89.423s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_body_roi__type_support_c.cpp.o[0m
+[89.476s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/string_stamped__type_support.cpp.o[0m
+[89.675s] [ 68%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/string_stamped__type_support.cpp.o[0m
+[90.149s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_faces_roi__type_support_c.cpp.o[0m
+[90.295s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_float__type_support_c.cpp.o[0m
+[90.323s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/msg/detail/word_recognized__type_support.cpp.o[0m
+[90.356s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_installed_behaviors__type_support_c.cpp.o[0m
+[90.360s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/string_array_stamped__type_support.cpp.o[0m
+[90.381s] [ 69%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/int_array_stamped__type_support.cpp.o[0m
+[90.484s] [ 70%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/cmd_pose_service__type_support.cpp.o[0m
+[90.778s] [ 71%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_string__type_support_c.cpp.o[0m
+[91.817s] [ 72%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/cmd_pose_service__type_support.cpp.o[0m
+[91.939s] [ 72%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_body_roi__type_support.cpp.o[0m
+[92.083s] [ 72%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/set_float__type_support_c.cpp.o[0m
+[92.841s] [ 72%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/cmd_vel_service__type_support.cpp.o[0m
+[93.142s] [ 73%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/set_string__type_support_c.cpp.o[0m
+[93.158s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_float__type_support.cpp.o[0m
+[93.833s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/word_recognized__type_support.cpp.o[0m
+[94.208s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/set_transform__type_support_c.cpp.o[0m
+[94.284s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_installed_behaviors__type_support.cpp.o[0m
+[95.453s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_body_roi__type_support.cpp.o[0m
+[95.495s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/tangential_security_distance__type_support_c.cpp.o[0m
+[95.857s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_robot_info__type_support.cpp.o[0m
+[96.411s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/blink__type_support_c.cpp.o[0m
+[96.544s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_faces_roi__type_support.cpp.o[0m
+[96.818s] [ 74%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_string__type_support.cpp.o[0m
+[97.314s] [ 75%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/body_pose__type_support_c.cpp.o[0m
+[97.553s] [ 76%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_float__type_support.cpp.o[0m
+[97.642s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_truepose__type_support.cpp.o[0m
+[98.048s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/body_pose_with_speed__type_support_c.cpp.o[0m
+[98.281s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_installed_behaviors__type_support.cpp.o[0m
+[98.439s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/orthogonal_security_distance__type_support.cpp.o[0m
+[98.902s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/follow_path__type_support_c.cpp.o[0m
+[99.234s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/set_arms_enabled__type_support.cpp.o[0m
+[99.281s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_robot_info__type_support.cpp.o[0m
+[99.651s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/joint_angles_with_speed__type_support_c.cpp.o[0m
+[99.895s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/set_float__type_support.cpp.o[0m
+[99.964s] [ 77%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_string__type_support.cpp.o[0m
+[100.335s] [ 78%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/joint_trajectory__type_support_c.cpp.o[0m
+[100.625s] [ 79%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/set_transform__type_support.cpp.o[0m
+[100.785s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/msg/detail/dds_fastrtps/hand_touch__type_support.cpp.o[0m
+[101.145s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/set_arms_enabled__type_support_c.cpp.o[0m
+[101.145s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/get_truepose__type_support.cpp.o[0m
+[101.146s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/listen__type_support_c.cpp.o[0m
+[101.557s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/set_string__type_support.cpp.o[0m
+[101.580s] [ 80%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/tangential_security_distance__type_support.cpp.o[0m
+[102.051s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/orthogonal_security_distance__type_support.cpp.o[0m
+[102.138s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/run_behavior__type_support_c.cpp.o[0m
+[102.199s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/orthogonal_security_distance__type_support_c.cpp.o[0m
+[102.547s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_truepose__type_support_c.cpp.o[0m
+[102.547s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/set_float__type_support.cpp.o[0m
+[102.678s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/get_faces_roi__type_support.cpp.o[0m
+[102.729s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/set_arms_enabled__type_support.cpp.o[0m
+[102.838s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/srv/detail/cmd_vel_service__type_support.cpp.o[0m
+[103.038s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/blink__type_support.cpp.o[0m
+[103.292s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/set_speech_vocabulary__type_support_c.cpp.o[0m
+[103.292s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/body_pose__type_support.cpp.o[0m
+[103.778s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/srv/detail/get_robot_info__type_support_c.cpp.o[0m
+[103.864s] [ 81%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/set_string__type_support.cpp.o[0m
+[103.996s] [ 82%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/set_transform__type_support.cpp.o[0m
+[104.199s] [ 82%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/naoqi_bridge_msgs/action/detail/speech_with_feedback__type_support_c.cpp.o[0m
+[104.469s] [ 82%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/srv/detail/dds_fastrtps/tangential_security_distance__type_support.cpp.o[0m
+[104.650s] [ 83%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/body_pose_with_speed__type_support.cpp.o[0m
+[104.679s] [ 83%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/blink__type_support.cpp.o[0m
+[104.880s] [ 83%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/follow_path__type_support.cpp.o[0m
+[105.389s] [ 83%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/joint_trajectory__type_support.cpp.o[0m
+[105.799s] [ 83%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/joint_angles_with_speed__type_support.cpp.o[0m
+[105.823s] [ 84%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/body_pose_with_speed__type_support.cpp.o[0m
+[105.856s] [ 85%] [32m[1mLinking CXX shared library libnaoqi_bridge_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[107.294s] [ 85%] Built target naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c
+[108.345s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/run_behavior__type_support.cpp.o[0m
+[108.477s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/speech_with_feedback__type_support.cpp.o[0m
+[110.161s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/speech_with_feedback__type_support.cpp.o[0m
+[110.717s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/set_speech_vocabulary__type_support.cpp.o[0m
+[111.878s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/set_speech_vocabulary__type_support.cpp.o[0m
+[112.434s] [ 85%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/run_behavior__type_support.cpp.o[0m
+[113.259s] [ 86%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/listen__type_support.cpp.o[0m
+[113.846s] [ 87%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/naoqi_bridge_msgs/action/detail/listen__type_support.cpp.o[0m
+[114.540s] [ 87%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/joint_trajectory__type_support.cpp.o[0m
+[115.118s] [ 88%] [32m[1mLinking CXX shared library libnaoqi_bridge_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[115.680s] [ 88%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/joint_angles_with_speed__type_support.cpp.o[0m
+[115.744s] [ 88%] Built target naoqi_bridge_msgs__rosidl_typesupport_introspection_cpp
+[116.549s] [ 88%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/follow_path__type_support.cpp.o[0m
+[117.487s] [ 88%] [32mBuilding CXX object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/naoqi_bridge_msgs/action/detail/dds_fastrtps/body_pose__type_support.cpp.o[0m
+[118.407s] [ 88%] [32m[1mLinking CXX shared library libnaoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[118.857s] [ 88%] Built target naoqi_bridge_msgs__rosidl_typesupport_fastrtps_cpp
+[118.880s] [ 88%] Built target naoqi_bridge_msgs
+[118.909s] [ 88%] [34m[1mGenerating Python code for ROS interfaces[0m
+[157.882s] [ 88%] Built target naoqi_bridge_msgs__py
+[157.933s] [ 88%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_audio_buffer_s.c.o[0m
+[158.396s] [ 88%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_int_array_stamped_s.c.o[0m
+[158.686s] [ 88%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_int_stamped_s.c.o[0m
+[158.954s] [ 89%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_joint_angle_trajectory_s.c.o[0m
+[159.331s] [ 89%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_joint_angles_with_speed_s.c.o[0m
+[159.705s] [ 89%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_memory_list_s.c.o[0m
+[160.010s] [ 89%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_memory_pair_float_s.c.o[0m
+[160.325s] [ 89%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_memory_pair_int_s.c.o[0m
+[160.630s] [ 90%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_memory_pair_string_s.c.o[0m
+[160.925s] [ 90%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_pose_with_confidence_stamped_s.c.o[0m
+[161.213s] [ 90%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_robot_info_s.c.o[0m
+[161.520s] [ 90%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_sound_located_s.c.o[0m
+[161.808s] [ 91%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_status_change_stamped_s.c.o[0m
+[162.061s] [ 91%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_string_array_stamped_s.c.o[0m
+[162.445s] [ 91%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_string_stamped_s.c.o[0m
+[162.949s] [ 91%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_word_recognized_s.c.o[0m
+[163.277s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_cmd_pose_service_s.c.o[0m
+[163.552s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_cmd_vel_service_s.c.o[0m
+[163.933s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_body_roi_s.c.o[0m
+[164.331s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_faces_roi_s.c.o[0m
+[166.666s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_head_touch_s.c.o[0m
+[166.672s] [ 92%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_float_s.c.o[0m
+[167.537s] [ 93%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_installed_behaviors_s.c.o[0m
+[167.571s] [ 93%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_robot_info_s.c.o[0m
+[168.097s] [ 93%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_string_s.c.o[0m
+[168.141s] [ 93%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_get_truepose_s.c.o[0m
+[168.678s] [ 94%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_orthogonal_security_distance_s.c.o[0m
+[169.134s] [ 94%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_set_arms_enabled_s.c.o[0m
+[169.589s] [ 94%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_set_float_s.c.o[0m
+[169.799s] [ 94%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_set_string_s.c.o[0m
+[170.532s] [ 94%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_tangential_security_distance_s.c.o[0m
+[170.534s] [ 95%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/srv/_set_transform_s.c.o[0m
+[171.649s] [ 95%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_body_pose_s.c.o[0m
+[172.822s] [ 95%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_body_pose_with_speed_s.c.o[0m
+[173.459s] [ 96%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_follow_path_s.c.o[0m
+[174.258s] [ 96%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_joint_angles_with_speed_s.c.o[0m
+[175.489s] [ 96%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_joint_trajectory_s.c.o[0m
+[177.357s] [ 96%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_listen_s.c.o[0m
+[178.481s] [ 97%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_run_behavior_s.c.o[0m
+[179.660s] [ 97%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_set_speech_vocabulary_s.c.o[0m
+[181.959s] [ 97%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_speech_with_feedback_s.c.o[0m
+[181.972s] [ 97%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/action/_blink_s.c.o[0m
+[183.159s] [ 98%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_hand_touch_s.c.o[0m
+[184.379s] [ 98%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_float_stamped_s.c.o[0m
+[184.683s] [ 98%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_float_array_stamped_s.c.o[0m
+[185.556s] [ 99%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_face_roi_s.c.o[0m
+[185.565s] [ 99%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_fade_rgb_s.c.o[0m
+[186.646s] [ 99%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_event_stamped_s.c.o[0m
+[187.540s] [ 99%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_bumper_s.c.o[0m
+[188.351s] [ 99%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_bool_stamped_s.c.o[0m
+[189.052s] [100%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_generator_py.dir/rosidl_generator_py/naoqi_bridge_msgs/msg/_body_roi_s.c.o[0m
+[189.756s] [100%] [32m[1mLinking C shared library rosidl_generator_py/naoqi_bridge_msgs/libnaoqi_bridge_msgs__rosidl_generator_py.so[0m
+[192.471s] [100%] Built target naoqi_bridge_msgs__rosidl_generator_py
+[192.744s] [100%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[196.193s] [100%] [32m[1mLinking C shared library rosidl_generator_py/naoqi_bridge_msgs/naoqi_bridge_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[197.245s] [100%] Built target naoqi_bridge_msgs__rosidl_typesupport_fastrtps_c__pyext
+[197.376s] [100%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[199.498s] [100%] [32m[1mLinking C shared library rosidl_generator_py/naoqi_bridge_msgs/naoqi_bridge_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[200.471s] [100%] Built target naoqi_bridge_msgs__rosidl_typesupport_c__pyext
+[200.556s] [100%] [32mBuilding C object CMakeFiles/naoqi_bridge_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[202.733s] [100%] [32m[1mLinking C shared library rosidl_generator_py/naoqi_bridge_msgs/naoqi_bridge_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[203.324s] [100%] Built target naoqi_bridge_msgs__rosidl_typesupport_introspection_c__pyext
