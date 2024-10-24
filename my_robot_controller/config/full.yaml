@@ -30,7 +30,7 @@
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "ignition.msgs.Double"
 
-- topic_name: "/LShoulderPitch"
+- topic_name: "LShoulderPitch"
   ros_type_name: "std_msgs/msg/Float64"
   gz_type_name: "ignition.msgs.Double"
 
