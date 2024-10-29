@@ -1,0 +1,21 @@
+[2.076s] Invoking command in '/home/ros/ros2_ws/src/naoqi_interface': PYTHONPATH=/home/ros/ros2_ws/src/build/naoqi_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/naoqi_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/naoqi_interface build --build-base /home/ros/ros2_ws/src/build/naoqi_interface/build install --record /home/ros/ros2_ws/src/build/naoqi_interface/install.log --single-version-externally-managed install_data
+[2.383s] running egg_info
+[2.385s] writing ../build/naoqi_interface/naoqi_interface.egg-info/PKG-INFO
+[2.385s] writing dependency_links to ../build/naoqi_interface/naoqi_interface.egg-info/dependency_links.txt
+[2.386s] writing entry points to ../build/naoqi_interface/naoqi_interface.egg-info/entry_points.txt
+[2.386s] writing requirements to ../build/naoqi_interface/naoqi_interface.egg-info/requires.txt
+[2.386s] writing top-level names to ../build/naoqi_interface/naoqi_interface.egg-info/top_level.txt
+[2.389s] reading manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'
+[2.390s] writing manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'
+[2.390s] running build
+[2.390s] running build_py
+[2.391s] running install
+[2.391s] running install_lib
+[2.392s] running install_data
+[2.393s] running install_egg_info
+[2.395s] removing '/home/ros/ros2_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface-0.0.0-py3.10.egg-info' (and everything under it)
+[2.395s] Copying ../build/naoqi_interface/naoqi_interface.egg-info to /home/ros/ros2_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface-0.0.0-py3.10.egg-info
+[2.396s] running install_scripts
+[2.426s] Installing interface_controller script to /home/ros/ros2_ws/src/install/naoqi_interface/lib/naoqi_interface
+[2.427s] writing list of installed files to '/home/ros/ros2_ws/src/build/naoqi_interface/install.log'
+[2.499s] Invoked command in '/home/ros/ros2_ws/src/naoqi_interface' returned '0': PYTHONPATH=/home/ros/ros2_ws/src/build/naoqi_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/naoqi_interface/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/naoqi_interface build --build-base /home/ros/ros2_ws/src/build/naoqi_interface/build install --record /home/ros/ros2_ws/src/build/naoqi_interface/install.log --single-version-externally-managed install_data

@@ -1,0 +1,35 @@
+[0.015s] Invoking command in '/home/ros/ros2_ws/src/build/naoqi_libqicore': AMENT_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_driver:/home/ros/ros2_ws/install/naoqi_libqicore:/home/ros/ros2_ws/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_bridge_msgs:/home/ros/ros2_ws/install/speech:/home/ros/ros2_ws/install/naoqi_interface:/home/ros/ros2_ws/install/my_robot_controller:/home/ros/ros2_ws/install/movement:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ros/ros2_ws/src/build/naoqi_libqicore -- -j12 -l12
+[0.129s] [100%] Built target qicore
+[0.141s] Invoked command in '/home/ros/ros2_ws/src/build/naoqi_libqicore' returned '0': AMENT_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_driver:/home/ros/ros2_ws/install/naoqi_libqicore:/home/ros/ros2_ws/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_bridge_msgs:/home/ros/ros2_ws/install/speech:/home/ros/ros2_ws/install/naoqi_interface:/home/ros/ros2_ws/install/my_robot_controller:/home/ros/ros2_ws/install/movement:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/ros/ros2_ws/src/build/naoqi_libqicore -- -j12 -l12
+[0.171s] Invoking command in '/home/ros/ros2_ws/src/build/naoqi_libqicore': AMENT_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_driver:/home/ros/ros2_ws/install/naoqi_libqicore:/home/ros/ros2_ws/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_bridge_msgs:/home/ros/ros2_ws/install/speech:/home/ros/ros2_ws/install/naoqi_interface:/home/ros/ros2_ws/install/my_robot_controller:/home/ros/ros2_ws/install/movement:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ros/ros2_ws/src/build/naoqi_libqicore
+[0.180s] -- Install configuration: ""
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.xml
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/library_path.sh
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/library_path.dsv
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/package_run_dependencies/naoqi_libqicore
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/parent_prefix_path/naoqi_libqicore
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/ament_prefix_path.sh
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/ament_prefix_path.dsv
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/path.sh
+[0.181s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/path.dsv
+[0.182s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.bash
+[0.182s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.sh
+[0.182s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.zsh
+[0.182s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.dsv
+[0.182s] -- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.dsv
+[0.182s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/packages/naoqi_libqicore
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_libraries-extras.cmake
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/naoqi_libqicoreConfig.cmake
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/naoqi_libqicoreConfig-version.cmake
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.xml
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/api.hpp
+[0.183s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/loglistener.hpp
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logmanager.hpp
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logmessage.hpp
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logprovider.hpp
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/file.hpp
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/fileoperation.hxx
+[0.184s] -- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/lib/libqicore.a
+[0.186s] Invoked command in '/home/ros/ros2_ws/src/build/naoqi_libqicore' returned '0': AMENT_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_driver:/home/ros/ros2_ws/install/naoqi_libqicore:/home/ros/ros2_ws/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_bridge_msgs:/home/ros/ros2_ws/install/speech:/home/ros/ros2_ws/install/naoqi_interface:/home/ros/ros2_ws/install/my_robot_controller:/home/ros/ros2_ws/install/movement:/opt/ros/humble LD_LIBRARY_PATH=/home/ros/ros2_ws/src/install/naoqi_libqi/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/ros/ros2_ws/src/build/naoqi_libqicore

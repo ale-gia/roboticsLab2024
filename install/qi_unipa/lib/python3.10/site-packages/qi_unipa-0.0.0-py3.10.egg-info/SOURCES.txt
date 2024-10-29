@@ -1,0 +1,16 @@
+package.xml
+setup.cfg
+setup.py
+../build/qi_unipa/qi_unipa.egg-info/PKG-INFO
+../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt
+../build/qi_unipa/qi_unipa.egg-info/dependency_links.txt
+../build/qi_unipa/qi_unipa.egg-info/entry_points.txt
+../build/qi_unipa/qi_unipa.egg-info/requires.txt
+../build/qi_unipa/qi_unipa.egg-info/top_level.txt
+../build/qi_unipa/qi_unipa.egg-info/zip-safe
+qi_unipa/__init__.py
+qi_unipa/qi_unipa_controller.py
+resource/qi_unipa
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

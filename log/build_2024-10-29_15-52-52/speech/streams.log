@@ -1,0 +1,21 @@
+[2.093s] Invoking command in '/home/ros/ros2_ws/src/speech': PYTHONPATH=/home/ros/ros2_ws/src/build/speech/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/speech build --build-base /home/ros/ros2_ws/src/build/speech/build install --record /home/ros/ros2_ws/src/build/speech/install.log --single-version-externally-managed install_data
+[2.409s] running egg_info
+[2.410s] writing ../build/speech/speech.egg-info/PKG-INFO
+[2.410s] writing dependency_links to ../build/speech/speech.egg-info/dependency_links.txt
+[2.410s] writing entry points to ../build/speech/speech.egg-info/entry_points.txt
+[2.410s] writing requirements to ../build/speech/speech.egg-info/requires.txt
+[2.411s] writing top-level names to ../build/speech/speech.egg-info/top_level.txt
+[2.414s] reading manifest file '../build/speech/speech.egg-info/SOURCES.txt'
+[2.416s] writing manifest file '../build/speech/speech.egg-info/SOURCES.txt'
+[2.416s] running build
+[2.416s] running build_py
+[2.416s] running install
+[2.417s] running install_lib
+[2.420s] running install_data
+[2.420s] running install_egg_info
+[2.422s] removing '/home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech-0.0.0-py3.10.egg-info' (and everything under it)
+[2.422s] Copying ../build/speech/speech.egg-info to /home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech-0.0.0-py3.10.egg-info
+[2.423s] running install_scripts
+[2.454s] Installing speech_controller script to /home/ros/ros2_ws/src/install/speech/lib/speech
+[2.455s] writing list of installed files to '/home/ros/ros2_ws/src/build/speech/install.log'
+[2.522s] Invoked command in '/home/ros/ros2_ws/src/speech' returned '0': PYTHONPATH=/home/ros/ros2_ws/src/build/speech/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/speech build --build-base /home/ros/ros2_ws/src/build/speech/build install --record /home/ros/ros2_ws/src/build/speech/install.log --single-version-externally-managed install_data

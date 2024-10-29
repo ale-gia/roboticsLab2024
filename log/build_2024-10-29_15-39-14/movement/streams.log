@@ -1,0 +1,24 @@
+[1.775s] Invoking command in '/home/ros/ros2_ws/src/movement': PYTHONPATH=/home/ros/ros2_ws/src/build/movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/movement build --build-base /home/ros/ros2_ws/src/build/movement/build install --record /home/ros/ros2_ws/src/build/movement/install.log --single-version-externally-managed install_data
+[2.124s] running egg_info
+[2.124s] writing ../build/movement/movement.egg-info/PKG-INFO
+[2.124s] writing dependency_links to ../build/movement/movement.egg-info/dependency_links.txt
+[2.125s] writing entry points to ../build/movement/movement.egg-info/entry_points.txt
+[2.125s] writing requirements to ../build/movement/movement.egg-info/requires.txt
+[2.125s] writing top-level names to ../build/movement/movement.egg-info/top_level.txt
+[2.129s] reading manifest file '../build/movement/movement.egg-info/SOURCES.txt'
+[2.131s] writing manifest file '../build/movement/movement.egg-info/SOURCES.txt'
+[2.131s] running build
+[2.131s] running build_py
+[2.132s] copying movement/movement_controller.py -> /home/ros/ros2_ws/src/build/movement/build/lib/movement
+[2.132s] running install
+[2.133s] running install_lib
+[2.134s] copying /home/ros/ros2_ws/src/build/movement/build/lib/movement/movement_controller.py -> /home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages/movement
+[2.136s] byte-compiling /home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages/movement/movement_controller.py to movement_controller.cpython-310.pyc
+[2.137s] running install_data
+[2.138s] running install_egg_info
+[2.141s] removing '/home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages/movement-0.0.0-py3.10.egg-info' (and everything under it)
+[2.141s] Copying ../build/movement/movement.egg-info to /home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages/movement-0.0.0-py3.10.egg-info
+[2.142s] running install_scripts
+[2.169s] Installing movement_controller script to /home/ros/ros2_ws/src/install/movement/lib/movement
+[2.170s] writing list of installed files to '/home/ros/ros2_ws/src/build/movement/install.log'
+[2.220s] Invoked command in '/home/ros/ros2_ws/src/movement' returned '0': PYTHONPATH=/home/ros/ros2_ws/src/build/movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/movement/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/movement build --build-base /home/ros/ros2_ws/src/build/movement/build install --record /home/ros/ros2_ws/src/build/movement/install.log --single-version-externally-managed install_data

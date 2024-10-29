@@ -1,0 +1,22 @@
+running egg_info
+writing ../build/speech/speech.egg-info/PKG-INFO
+writing dependency_links to ../build/speech/speech.egg-info/dependency_links.txt
+writing entry points to ../build/speech/speech.egg-info/entry_points.txt
+writing requirements to ../build/speech/speech.egg-info/requires.txt
+writing top-level names to ../build/speech/speech.egg-info/top_level.txt
+reading manifest file '../build/speech/speech.egg-info/SOURCES.txt'
+writing manifest file '../build/speech/speech.egg-info/SOURCES.txt'
+running build
+running build_py
+copying speech/speech_controller.py -> /home/ros/ros2_ws/src/build/speech/build/lib/speech
+running install
+running install_lib
+copying /home/ros/ros2_ws/src/build/speech/build/lib/speech/speech_controller.py -> /home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech
+byte-compiling /home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech/speech_controller.py to speech_controller.cpython-310.pyc
+running install_data
+running install_egg_info
+removing '/home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/speech/speech.egg-info to /home/ros/ros2_ws/src/install/speech/lib/python3.10/site-packages/speech-0.0.0-py3.10.egg-info
+running install_scripts
+Installing speech_controller script to /home/ros/ros2_ws/src/install/speech/lib/speech
+writing list of installed files to '/home/ros/ros2_ws/src/build/speech/install.log'

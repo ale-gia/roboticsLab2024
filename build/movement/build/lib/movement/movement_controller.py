@@ -8,10 +8,17 @@ from nav_msgs.msg import Odometry
 import sys
 import time
 
+import qi
+import argparse
+import sys
+import math
+
 class Movement_controller(Node):
     def __init__(self):
         super().__init__("movement_controller")
         self.joint_pub = self.create_publisher(JointAnglesWithSpeed, "/joint_angles", 10)
+
+
         #self.walk_pub = self.create_publisher(Twist, "/cmd_vel", 10)
         #self.publisher = self.create_publisher(PoseStamped, '/move_base_simple/goal', 10)
         #self.subscription = self.create_subscription(Float64, "/move", self.move_callback, 10)
@@ -19,7 +26,7 @@ class Movement_controller(Node):
         #self.position_x=0
         #self.is_walking=False
         #self.subscription
-        #self.subscription_odo
+        #self.subscription_od
         self.get_logger().info("Movement Node Run ..")
     '''
     def move_callback(self,msg):
@@ -43,18 +50,15 @@ class Movement_controller(Node):
             self.stop()
             self.get_logger().info("_______________stop________________________________________________________")
 
-
-
-
-
-
         self.get_logger().info(f"Posizione -> x: {position.x}, y: {position.y}, z: {position.z}")
         self.get_logger().info(f"Velocità lineare -> x: {twist.linear.x}, y: {twist.linear.y}")
         self.get_logger().info(f"Velocità angolare -> z: {twist.angular.z}")
     '''
 
     def arm_down(self):
+
         self.publish_joint_angles(['LShoulderPitch', 'RShoulderPitch'], [1.5, 1.5], 0.1)
+
         
 
     def arm_up(self):

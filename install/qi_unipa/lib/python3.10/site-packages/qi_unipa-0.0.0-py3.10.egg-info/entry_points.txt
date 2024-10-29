@@ -1,0 +1,3 @@
+[console_scripts]
+qi_unipa_controller = qi_unipa.qi_unipa_controller:main
+

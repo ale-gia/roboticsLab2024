@@ -1,0 +1,19 @@
+running egg_info
+writing ../build/qi_unipa/qi_unipa.egg-info/PKG-INFO
+writing dependency_links to ../build/qi_unipa/qi_unipa.egg-info/dependency_links.txt
+writing entry points to ../build/qi_unipa/qi_unipa.egg-info/entry_points.txt
+writing requirements to ../build/qi_unipa/qi_unipa.egg-info/requires.txt
+writing top-level names to ../build/qi_unipa/qi_unipa.egg-info/top_level.txt
+reading manifest file '../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt'
+writing manifest file '../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/ros/ros2_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../build/qi_unipa/qi_unipa.egg-info to /home/ros/ros2_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa-0.0.0-py3.10.egg-info
+running install_scripts
+Installing qi_unipa_controller script to /home/ros/ros2_ws/src/install/qi_unipa/lib/qi_unipa
+writing list of installed files to '/home/ros/ros2_ws/src/build/qi_unipa/install.log'
