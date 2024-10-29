@@ -4,6 +4,7 @@ import argparse
 from rclpy.node import Node
 import sys
 from std_msgs.msg import Int32, Float32MultiArray,String
+import time 
 
 class Qi_Unipa_controller(Node):
     def __init__(self, args):
@@ -11,7 +12,7 @@ class Qi_Unipa_controller(Node):
         self.session = self.set_connection(args)
         self.state_sub = self.create_subscription(Int32, "/state", self.set_state, 10)
         self.walkTo_sub = self.create_subscription(Float32MultiArray, "/walkTo", self.walkTo, 10)
-        self.walkTo_sub = self.create_subscription(String, "/listen", self.listen, 10)
+        #self.walkTo_sub = self.create_subscription(String, "/listen", self.listen, 10)
 
 
     def set_connection(self, args):
@@ -38,10 +39,29 @@ class Qi_Unipa_controller(Node):
         walk_service = self.session.service("ALMotion")
         walk_service.moveTo(x,y,theta)
 
+    def speech_rec(self):
+        speech_service = self.session.service("ALSpeechRecognition")
+        memory_service = self.session.service("ALMemory")
+        speech_service.setLanguage("Italian")
+        keywords = ["ciao", "Pepper", "come stai", "aiuto"]
+        speech_service.setVocabulary(keywords, False)
+        memory_service.subscribeToEvent("WordRecognized", "Test_ASR", "self.onWordRecognized")
+        speech_service.subscribe("Test_ASR")
+                # Mantieni attivo il riconoscimento per un certo periodo di tempo
+        try:
+            time.sleep(20)  # Riconosce per 20 secondi, modifica se necessario
+        finally:
+            # Interrompi il riconoscimento
+            speech_service.unsubscribe("Test_ASR")
+            memory_service.unsubscribeToEvent("WordRecognized","Test_ASR", "self.onWordRecognized")
 
 
-    
-
+    # Funzione per gestire l'output del riconoscimento vocale
+    def onWordRecognized(self,value):
+        if isinstance(value, list) and len(value) > 1:
+            word = value[0]
+            confidence = value[1]
+            print(f"Parola riconosciuta: {word} con confidenza: {confidence}")
 
 def main(args=None):
     rclpy.init(args=args)
@@ -55,10 +75,11 @@ def main(args=None):
 
     
     node = Qi_Unipa_controller(args)
-    
+    node.speech_rec()
     rclpy.spin(node)
     rclpy.shutdown()
     
+       
 
 if __name__ == '__main__':
     main()
