@@ -26,7 +26,7 @@ class Movement_controller(Node):
         #self.position_x=0
         #self.is_walking=False
         #self.subscription
-        #self.subscription_odooo
+        #self.subscription_od
         self.get_logger().info("Movement Node Run ..")
     '''
     def move_callback(self,msg):
