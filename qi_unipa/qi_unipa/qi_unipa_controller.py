@@ -32,10 +32,6 @@ class Qi_Unipa_controller(Node):
         else:
             state_service.rest()
     
-    def walkTo(self,msg):
-        x,y,theta=msg.data
-        walk_service = self.session.service("ALMotion")
-        walk_service.moveTo(x,y,theta)
 
     def walkTo(self,msg):
         x,y,theta=msg.data
