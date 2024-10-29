@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/Bumper.msg
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module msg {
+    module Bumper_Constants {
+      const uint8 RIGHT = 0;
+      const uint8 LEFT = 1;
+      const uint8 BACK = 2;
+      const uint8 STATE_RELEASED = 0;
+      const uint8 STATE_PRESSED = 1;
+    };
+    @verbatim (language="comment", text=
+      "A message for Nao's bumpers on the feet")
+    struct Bumper {
+      @verbatim (language="comment", text=
+        "which bumper (left or right)")
+      uint8 bumper;
+
+      @verbatim (language="comment", text=
+        "state of the bumper (pressed or released)")
+      uint8 state;
+    };
+  };
+};

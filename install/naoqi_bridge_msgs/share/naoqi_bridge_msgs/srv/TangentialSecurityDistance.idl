@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float32.idl"
+
+module naoqi_bridge_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service for setting the tangential security distance of Pepper")
+    struct TangentialSecurityDistance_Request {
+      std_msgs::msg::Float32 tangential_distance;
+    };
+    @verbatim (language="comment", text=
+      "Empty response")
+    struct TangentialSecurityDistance_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_bridge_msgs
 
 # Utility rule file for naoqi_bridge_msgs__cpp.
 
@@ -445,8 +445,8 @@ rosidl_generator_cpp/naoqi_bridge_msgs/msg/audio_buffer.hpp: /opt/ros/humble/sha
 rosidl_generator_cpp/naoqi_bridge_msgs/msg/audio_buffer.hpp: /opt/ros/humble/share/trajectory_msgs/msg/JointTrajectoryPoint.idl
 rosidl_generator_cpp/naoqi_bridge_msgs/msg/audio_buffer.hpp: /opt/ros/humble/share/trajectory_msgs/msg/MultiDOFJointTrajectory.idl
 rosidl_generator_cpp/naoqi_bridge_msgs/msg/audio_buffer.hpp: /opt/ros/humble/share/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/naoqi_bridge_msgs/msg/detail/audio_buffer__builder.hpp: rosidl_generator_cpp/naoqi_bridge_msgs/msg/audio_buffer.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/naoqi_bridge_msgs/msg/detail/audio_buffer__builder.hpp
@@ -1274,6 +1274,6 @@ CMakeFiles/naoqi_bridge_msgs__cpp.dir/clean:
 .PHONY : CMakeFiles/naoqi_bridge_msgs__cpp.dir/clean
 
 CMakeFiles/naoqi_bridge_msgs__cpp.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/naoqi_bridge_msgs__cpp.dir/depend
 

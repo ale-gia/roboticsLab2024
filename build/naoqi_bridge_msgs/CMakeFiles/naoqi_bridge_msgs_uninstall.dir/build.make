@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_bridge_msgs
 
 # Utility rule file for naoqi_bridge_msgs_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/naoqi_bridge_msgs_uninstall.dir/compiler_depend.make
 include CMakeFiles/naoqi_bridge_msgs_uninstall.dir/progress.make
 
 CMakeFiles/naoqi_bridge_msgs_uninstall:
-	/usr/bin/cmake -P /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 naoqi_bridge_msgs_uninstall: CMakeFiles/naoqi_bridge_msgs_uninstall
 naoqi_bridge_msgs_uninstall: CMakeFiles/naoqi_bridge_msgs_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/naoqi_bridge_msgs_uninstall.dir/clean:
 .PHONY : CMakeFiles/naoqi_bridge_msgs_uninstall.dir/clean
 
 CMakeFiles/naoqi_bridge_msgs_uninstall.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/naoqi_bridge_msgs_uninstall.dir/depend
 

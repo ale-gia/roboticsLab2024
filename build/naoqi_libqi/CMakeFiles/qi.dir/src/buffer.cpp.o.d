@@ -1,7 +1,7 @@
 CMakeFiles/qi.dir/src/buffer.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/src/buffer.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/src/buffer.cpp \
  /usr/include/stdc-predef.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
  /usr/include/boost/predef/compiler.h \
  /usr/include/boost/predef/compiler/borland.h \
  /usr/include/boost/predef/version_number.h \
@@ -46,11 +46,10 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/cpu_defines.h \
- /usr/include/assert.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/buffer.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/api.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
+ /usr/include/assert.h /home/ros/ros2_ws/src/naoqi_libqi/qi/buffer.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/api.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception.h \
  /usr/include/c++/11/bits/exception_ptr.h \
@@ -209,7 +208,7 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/preprocessor/seq/fold_left.hpp \
  /usr/include/boost/preprocessor/seq/enum.hpp \
  /usr/include/boost/preprocessor/stringize.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
@@ -387,9 +386,9 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/types.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/types.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
  /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
@@ -450,9 +449,9 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/c++/11/vector /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/log.hpp \
- /usr/include/c++/11/sstream /usr/include/c++/11/istream \
- /usr/include/c++/11/ios /usr/include/c++/11/bits/ios_base.h \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/log.hpp /usr/include/c++/11/sstream \
+ /usr/include/c++/11/istream /usr/include/c++/11/ios \
+ /usr/include/c++/11/bits/ios_base.h \
  /usr/include/c++/11/bits/locale_classes.h \
  /usr/include/c++/11/bits/locale_classes.tcc \
  /usr/include/c++/11/system_error \
@@ -586,7 +585,7 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/format/free_funcs.hpp \
  /usr/include/boost/format/detail/unset_macros.hpp \
  /usr/include/boost/function/function_fwd.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/os.hpp /usr/include/c++/11/map \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/os.hpp /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_map.h \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/csignal \
@@ -612,8 +611,8 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/path.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/clock.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/path.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/clock.hpp \
  /usr/include/boost/chrono/chrono.hpp \
  /usr/include/boost/chrono/duration.hpp \
  /usr/include/boost/chrono/config.hpp /usr/include/boost/predef.h \
@@ -807,9 +806,9 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/boost/chrono/clock_string.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/detail/clock.hxx \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/detail/clock.hxx \
  /usr/include/boost/chrono/ceil.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
  /usr/include/boost/uuid/uuid.hpp \
  /usr/include/boost/uuid/detail/config.hpp \
  /usr/include/boost/uuid/detail/uuid_x86.ipp \
@@ -1084,7 +1083,7 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/core/noncopyable.hpp \
  /usr/include/boost/random/detail/auto_link.hpp \
  /usr/include/boost/system/config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/boost/functional/hash.hpp \
  /usr/include/boost/container_hash/hash.hpp \
@@ -1273,13 +1272,13 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/exception/detail/object_hex_dump.hpp \
  /usr/include/c++/11/iomanip \
  /usr/include/boost/exception/current_exception_cast.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/errorhandling.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/errorhandling.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/detail/log.hxx \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/detail/log.hxx \
  /usr/include/boost/make_shared.hpp \
  /usr/include/boost/smart_ptr/make_shared.hpp \
  /usr/include/boost/smart_ptr/make_shared_object.hpp \
@@ -1293,6 +1292,6 @@ CMakeFiles/qi.dir/src/buffer.cpp.o: \
  /usr/include/boost/type_traits/extent.hpp \
  /usr/include/boost/type_traits/is_bounded_array.hpp \
  /usr/include/boost/type_traits/is_unbounded_array.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/src/buffer_p.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/atomic.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/src/buffer_p.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/atomic.hpp \
  /usr/include/c++/11/atomic

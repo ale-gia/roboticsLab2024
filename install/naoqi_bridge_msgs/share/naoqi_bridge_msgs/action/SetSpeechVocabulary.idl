@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/SetSpeechVocabulary.action
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: The new vocabulary to be set in the speech recognition module" "\n"
+      "Result: True if the vocabulary was set" "\n"
+      "Feedback: None")
+    struct SetSpeechVocabulary_Goal {
+      sequence<string> words;
+    };
+    struct SetSpeechVocabulary_Result {
+      boolean success;
+    };
+    struct SetSpeechVocabulary_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

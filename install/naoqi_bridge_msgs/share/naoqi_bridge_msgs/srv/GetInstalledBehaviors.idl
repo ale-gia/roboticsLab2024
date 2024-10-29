@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "List installed behaviors on the robot")
+    struct GetInstalledBehaviors_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetInstalledBehaviors_Response {
+      sequence<string> behaviors;
+    };
+  };
+};

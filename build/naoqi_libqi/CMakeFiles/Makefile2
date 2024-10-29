@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_libqi
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_libqi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_libqi
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_libqi
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -135,14 +135,14 @@ tests/ka/clean: gtest/clean
 CMakeFiles/uninstall.dir/all: CMakeFiles/naoqi_libqi_uninstall.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uninstall.dir/build.make CMakeFiles/uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num= "Built target uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num= "Built target uninstall"
 .PHONY : CMakeFiles/uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -161,14 +161,14 @@ CMakeFiles/uninstall.dir/clean:
 CMakeFiles/naoqi_libqi_uninstall.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naoqi_libqi_uninstall.dir/build.make CMakeFiles/naoqi_libqi_uninstall.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/naoqi_libqi_uninstall.dir/build.make CMakeFiles/naoqi_libqi_uninstall.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num= "Built target naoqi_libqi_uninstall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num= "Built target naoqi_libqi_uninstall"
 .PHONY : CMakeFiles/naoqi_libqi_uninstall.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/naoqi_libqi_uninstall.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/naoqi_libqi_uninstall.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : CMakeFiles/naoqi_libqi_uninstall.dir/rule
 
 # Convenience name for target.
@@ -187,14 +187,14 @@ CMakeFiles/naoqi_libqi_uninstall.dir/clean:
 CMakeFiles/qi.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qi.dir/build.make CMakeFiles/qi.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/qi.dir/build.make CMakeFiles/qi.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71 "Built target qi"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71 "Built target qi"
 .PHONY : CMakeFiles/qi.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/qi.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 68
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 68
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/qi.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : CMakeFiles/qi.dir/rule
 
 # Convenience name for target.
@@ -213,14 +213,14 @@ CMakeFiles/qi.dir/clean:
 tests/CMakeFiles/qitestutils.dir/all: CMakeFiles/qi.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=72,73 "Built target qitestutils"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=72,73 "Built target qitestutils"
 .PHONY : tests/CMakeFiles/qitestutils.dir/all
 
 # Build rule for subdir invocation for target.
 tests/CMakeFiles/qitestutils.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 70
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/qitestutils.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : tests/CMakeFiles/qitestutils.dir/rule
 
 # Convenience name for target.
@@ -240,14 +240,14 @@ tests/ka/CMakeFiles/test_ka.dir/all: gtest/CMakeFiles/gtest.dir/all
 tests/ka/CMakeFiles/test_ka.dir/all: gtest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f tests/ka/CMakeFiles/test_ka.dir/build.make tests/ka/CMakeFiles/test_ka.dir/depend
 	$(MAKE) $(MAKESILENT) -f tests/ka/CMakeFiles/test_ka.dir/build.make tests/ka/CMakeFiles/test_ka.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target test_ka"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100 "Built target test_ka"
 .PHONY : tests/ka/CMakeFiles/test_ka.dir/all
 
 # Build rule for subdir invocation for target.
 tests/ka/CMakeFiles/test_ka.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 30
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 30
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/ka/CMakeFiles/test_ka.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : tests/ka/CMakeFiles/test_ka.dir/rule
 
 # Convenience name for target.
@@ -266,14 +266,14 @@ tests/ka/CMakeFiles/test_ka.dir/clean:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=1 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=1 "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -292,14 +292,14 @@ gtest/CMakeFiles/gtest.dir/clean:
 gtest/CMakeFiles/gtest_main.dir/all:
 	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=2,3 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=2,3 "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
 gtest/CMakeFiles/gtest_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gtest/CMakeFiles/gtest_main.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : gtest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.

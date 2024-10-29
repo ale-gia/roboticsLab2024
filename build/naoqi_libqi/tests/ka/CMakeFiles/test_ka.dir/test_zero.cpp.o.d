@@ -1,5 +1,5 @@
 tests/ka/CMakeFiles/test_ka.dir/test_zero.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/tests/ka/test_zero.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/tests/ka/test_zero.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
@@ -254,4 +254,4 @@ tests/ka/CMakeFiles/test_ka.dir/test_zero.cpp.o: \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-typed-test.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest_pred_impl.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/zero.hpp
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/zero.hpp

@@ -1,1 +1,1 @@
-/home/rosario/ros2_ws/install/naoqi_libqicore:/home/rosario/ros2_ws/install/naoqi_libqi:/home/rosario/ros2_ws/install/naoqi_bridge_msgs:/home/rosario/ros2_ws/install/my_robot_controller:/opt/ros/humble
+/home/ros/ros2_ws/install/naoqi_driver:/home/ros/ros2_ws/install/naoqi_libqicore:/home/ros/ros2_ws/install/naoqi_libqi:/home/ros/ros2_ws/install/naoqi_interface:/home/ros/ros2_ws/install/naoqi_bridge_msgs:/home/ros/ros2_ws/install/my_robot_controller:/home/ros/ros2_ws/install/movement:/opt/ros/humble

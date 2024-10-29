@@ -1,0 +1,8 @@
+source;share/naoqi_libqicore/hook/cmake_prefix_path.ps1
+source;share/naoqi_libqicore/hook/cmake_prefix_path.dsv
+source;share/naoqi_libqicore/hook/cmake_prefix_path.sh
+source;share/naoqi_libqicore/local_setup.bash
+source;share/naoqi_libqicore/local_setup.dsv
+source;share/naoqi_libqicore/local_setup.ps1
+source;share/naoqi_libqicore/local_setup.sh
+source;share/naoqi_libqicore/local_setup.zsh

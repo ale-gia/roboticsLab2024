@@ -1,5 +1,5 @@
 tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/tests/ka/test_functor.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/tests/ka/test_functor.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/tuple \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -290,7 +290,7 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/include/boost/optional/detail/optional_relops.hpp \
  /usr/include/boost/optional/detail/optional_swap.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
  /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
@@ -337,7 +337,7 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
  /usr/include/boost/weak_ptr.hpp \
  /usr/include/boost/smart_ptr/weak_ptr.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/c++/11/iterator /usr/include/c++/11/bits/stream_iterator.h \
  /usr/include/boost/container/container_fwd.hpp \
  /usr/include/boost/container/detail/std_fwd.hpp \
@@ -350,8 +350,8 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/predef/compiler.h \
  /usr/include/boost/predef/compiler/borland.h \
  /usr/include/boost/predef/version_number.h \
@@ -551,9 +551,9 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/functorcontainer.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/functorcontainer.hpp \
  /usr/include/boost/iterator/transform_iterator.hpp \
  /usr/include/boost/iterator/detail/enable_if.hpp \
  /usr/include/boost/mpl/identity.hpp \
@@ -667,15 +667,15 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/full_lambda.hpp \
  /usr/include/boost/mpl/aux_/preprocessed/gcc/apply.hpp \
  /usr/include/boost/type_traits/function_traits.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
  /usr/include/boost/optional.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/src.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/opt.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/scoped.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/productiter.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/functor.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/testutils.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/src.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/opt.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/scoped.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/productiter.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/functor.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/testutils.hpp \
  /usr/include/c++/11/iostream /usr/include/c++/11/set \
  /usr/include/c++/11/bits/stl_tree.h /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h \
@@ -688,7 +688,7 @@ tests/ka/CMakeFiles/test_ka.dir/test_functor.cpp.o: \
  /usr/include/c++/11/bits/stl_multimap.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/bits/unordered_map.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/empty.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/empty.hpp \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h \
  /usr/include/c++/11/limits \
  /opt/ros/humble/src/gtest_vendor/include/gtest/internal/gtest-internal.h \

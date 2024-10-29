@@ -1,0 +1,3 @@
+# Enable or disable the arms while walking
+bool left_arm
+bool right_arm

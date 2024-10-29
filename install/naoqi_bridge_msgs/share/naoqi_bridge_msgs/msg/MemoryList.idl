@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/MemoryList.msg
+// generated code does not contain a copyright notice
+
+#include "naoqi_bridge_msgs/msg/MemoryPairFloat.idl"
+#include "naoqi_bridge_msgs/msg/MemoryPairInt.idl"
+#include "naoqi_bridge_msgs/msg/MemoryPairString.idl"
+#include "std_msgs/msg/Header.idl"
+
+module naoqi_bridge_msgs {
+  module msg {
+    struct MemoryList {
+      std_msgs::msg::Header header;
+
+      sequence<naoqi_bridge_msgs::msg::MemoryPairString> strings;
+
+      sequence<naoqi_bridge_msgs::msg::MemoryPairInt> ints;
+
+      sequence<naoqi_bridge_msgs::msg::MemoryPairFloat> floats;
+    };
+  };
+};

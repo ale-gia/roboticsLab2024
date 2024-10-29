@@ -1,0 +1,60 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found naoqi_libqi: 3.0.2 (/home/ros/ros2_ws/src/install/naoqi_libqi/share/naoqi_libqi/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/ros/ros2_ws/src/build/naoqi_libqicore
+[  9%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/registration.cpp.o[0m
+[ 18%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/file_proxy.cpp.o[0m
+[ 36%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/loglistener_proxy.cpp.o[0m
+[ 36%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/logmanager_proxy.cpp.o[0m
+[ 45%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/logprovider_proxy.cpp.o[0m
+[ 54%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/logproviderimpl.cpp.o[0m
+[ 72%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/progressnotifier.cpp.o[0m
+[ 90%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/fileimpl.cpp.o[0m
+[ 90%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/progressnotifier_proxy.cpp.o[0m
+[ 90%] [32mBuilding CXX object libqicore/CMakeFiles/qicore.dir/src/fileoperation.cpp.o[0m
+[100%] [32m[1mLinking CXX static library libqicore.a[0m
+[100%] Built target qicore
+-- Install configuration: ""
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.xml
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/library_path.sh
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/library_path.dsv
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/package_run_dependencies/naoqi_libqicore
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/parent_prefix_path/naoqi_libqicore
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/ament_prefix_path.sh
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/ament_prefix_path.dsv
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/path.sh
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/environment/path.dsv
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.bash
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.sh
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.zsh
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/local_setup.dsv
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.dsv
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/ament_index/resource_index/packages/naoqi_libqicore
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/naoqi_libqicoreConfig.cmake
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/cmake/naoqi_libqicoreConfig-version.cmake
+-- Up-to-date: /home/ros/ros2_ws/src/install/naoqi_libqicore/share/naoqi_libqicore/package.xml
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/api.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/loglistener.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logmanager.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logmessage.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/logprovider.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/file.hpp
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/include/qicore/fileoperation.hxx
+-- Installing: /home/ros/ros2_ws/src/install/naoqi_libqicore/lib/libqicore.a

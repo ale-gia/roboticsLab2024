@@ -1,8 +1,8 @@
-# Install script for directory: /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py
+# Install script for directory: /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rosario/ros2_ws/src/install/naoqi_bridge_msgs")
+  set(CMAKE_INSTALL_PREFIX "/home/ros/ros2_ws/src/install/naoqi_bridge_msgs")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

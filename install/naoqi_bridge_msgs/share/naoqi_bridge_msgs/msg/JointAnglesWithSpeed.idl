@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module naoqi_bridge_msgs {
+  module msg {
+    struct JointAnglesWithSpeed {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "A list of joint names, corresponding to their names in the Nao docs." "\n"
+        "This must either have the same length as joint_angles or" "\n"
+        "length 1 if it's a keyword such as 'Body' (for all angles)")
+      sequence<string> joint_names;
+
+      sequence<float> joint_angles;
+
+      @verbatim (language="comment", text=
+        "fraction of max joint velocity")
+      @unit (value="0:1")
+      float speed;
+
+      @verbatim (language="comment", text=
+        "Absolute angle (=0, default) or relative change")
+      uint8 relative;
+    };
+  };
+};

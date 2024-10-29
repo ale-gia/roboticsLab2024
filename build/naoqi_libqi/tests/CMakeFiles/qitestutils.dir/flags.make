@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBOOST_ALL_NO_LIB -DBOOST_ASIO_DISABLE_STD_CHRONO -DBOOST_ATOMIC_DYN_LINK -DBOOST_CHRONO_DYN_LINK -DBOOST_FILESYSTEM_DYN_LINK -DBOOST_FILESYSTEM_VERSION=3 -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_RANDOM_DYN_LINK -DBOOST_REGEX_DYN_LINK -DBOOST_SYSTEM_DYN_LINK -DBOOST_THREAD_DYN_LINK -DQI_IS_TEST
 
-CXX_INCLUDES = -I/home/rosario/ros2_ws/src/build/naoqi_libqi -I/home/rosario/ros2_ws/src/naoqi_libqi -I/home/rosario/ros2_ws/src/naoqi_libqi/tests/. -I/home/rosario/ros2_ws/src/naoqi_libqi/tests/GTEST_INCLUDE_DIRS
+CXX_INCLUDES = -I/home/ros/ros2_ws/src/build/naoqi_libqi -I/home/ros/ros2_ws/src/naoqi_libqi -I/home/ros/ros2_ws/src/naoqi_libqi/tests/. -I/home/ros/ros2_ws/src/naoqi_libqi/tests/GTEST_INCLUDE_DIRS
 
 CXX_FLAGS =  -Wall -Wextra -std=gnu++11 -pthread    -fno-strict-aliasing 
 

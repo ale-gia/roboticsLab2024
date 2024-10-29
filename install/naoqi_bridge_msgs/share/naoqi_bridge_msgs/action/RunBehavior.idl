@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/RunBehavior.action
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal: name of the behavior to be executed" "\n"
+      "Result: none, will be set to aborted or preempted" "\n"
+      "Feedback: none as NaoQI API cannot be queried in this respect")
+    struct RunBehavior_Goal {
+      string behavior;
+    };
+    struct RunBehavior_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct RunBehavior_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

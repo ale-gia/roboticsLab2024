@@ -1,8 +1,8 @@
-# Install script for directory: /home/rosario/ros2_ws/src/naoqi_libqi/tests/ka
+# Install script for directory: /home/ros/ros2_ws/src/naoqi_libqi/tests/ka
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/rosario/ros2_ws/src/install/naoqi_libqi")
+  set(CMAKE_INSTALL_PREFIX "/home/ros/ros2_ws/src/install/naoqi_libqi")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/rosario/ros2_ws/src/build/naoqi_libqi/gtest/cmake_install.cmake")
+  include("/home/ros/ros2_ws/src/build/naoqi_libqi/gtest/cmake_install.cmake")
 
 endif()
 

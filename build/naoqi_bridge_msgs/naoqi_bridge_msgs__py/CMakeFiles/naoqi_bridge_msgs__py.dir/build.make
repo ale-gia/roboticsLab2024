@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_bridge_msgs
 
 # Utility rule file for naoqi_bridge_msgs__py.
 
@@ -347,8 +347,8 @@ rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport
 rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/trajectory_msgs/msg/JointTrajectoryPoint.idl
 rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/trajectory_msgs/msg/MultiDOFJointTrajectory.idl
 rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/naoqi_bridge_msgs/_naoqi_bridge_msgs_s.ep.rosidl_typesupport_introspection_c.c
@@ -788,10 +788,10 @@ naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/build: naoqi_bridge_m
 .PHONY : naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/build
 
 naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/clean:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/naoqi_bridge_msgs__py.dir/cmake_clean.cmake
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py && $(CMAKE_COMMAND) -P CMakeFiles/naoqi_bridge_msgs__py.dir/cmake_clean.cmake
 .PHONY : naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/clean
 
 naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : naoqi_bridge_msgs__py/CMakeFiles/naoqi_bridge_msgs__py.dir/depend
 

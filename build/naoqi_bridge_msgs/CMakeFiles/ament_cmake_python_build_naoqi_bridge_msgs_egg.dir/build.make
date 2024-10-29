@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_bridge_msgs
 
 # Utility rule file for ament_cmake_python_build_naoqi_bridge_msgs_egg.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/compiler_d
 include CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/ament_cmake_python/naoqi_bridge_msgs && /usr/bin/python3 setup.py egg_info
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/ament_cmake_python/naoqi_bridge_msgs && /usr/bin/python3 setup.py egg_info
 
 ament_cmake_python_build_naoqi_bridge_msgs_egg: CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg
 ament_cmake_python_build_naoqi_bridge_msgs_egg: CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/clean
 
 CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_build_naoqi_bridge_msgs_egg.dir/depend
 

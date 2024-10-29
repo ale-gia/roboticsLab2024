@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_bridge_msgs
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_bridge_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_bridge_msgs
 
 # Utility rule file for naoqi_bridge_msgs.
 
@@ -66,87 +66,87 @@ include CMakeFiles/naoqi_bridge_msgs.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/naoqi_bridge_msgs.dir/progress.make
 
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/Bumper.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/AudioBuffer.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/BodyROI.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/BoolStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/Bumper.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/EventStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/FaceROI.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/FadeRGB.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/FloatArrayStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/FloatStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/HandTouch.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/HeadTouch.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/IntArrayStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/IntStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/JointAngleTrajectory.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/JointAnglesWithSpeed.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryList.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairFloat.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairInt.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/MemoryPairString.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/PoseWithConfidenceStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/RobotInfo.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/SoundLocated.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/StatusChangeStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/StringArrayStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/StringStamped.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/msg/WordRecognized.msg
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/CmdPoseService.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/CmdPoseService_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/CmdPoseService_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/CmdVelService.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/CmdVelService_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/CmdVelService_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetBodyROI.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetBodyROI_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetBodyROI_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetFacesROI.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetFacesROI_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetFacesROI_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetFloat.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetFloat_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetFloat_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetInstalledBehaviors.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetInstalledBehaviors_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetInstalledBehaviors_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetRobotInfo.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetRobotInfo_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetRobotInfo_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetString.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetString.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetString_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetString_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/GetTruepose.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetTruepose_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/GetTruepose_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/OrthogonalSecurityDistance_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/OrthogonalSecurityDistance_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/SetArmsEnabled.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetArmsEnabled_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetArmsEnabled_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/SetFloat.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetFloat_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetFloat_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/SetString.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/SetString.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetString_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetString_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/SetTransform.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetTransform_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/SetTransform_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/srv/TangentialSecurityDistance.srv
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/TangentialSecurityDistance_Request.msg
 CMakeFiles/naoqi_bridge_msgs: rosidl_cmake/srv/TangentialSecurityDistance_Response.msg
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/Blink.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/BodyPose.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/BodyPoseWithSpeed.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/FollowPath.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/JointAnglesWithSpeed.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/JointTrajectory.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/Listen.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/RunBehavior.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/SetSpeechVocabulary.action
-CMakeFiles/naoqi_bridge_msgs: /home/rosario/ros2_ws/src/naoqi_bridge_msgs/action/SpeechWithFeedback.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/Blink.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/BodyPose.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/BodyPoseWithSpeed.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/FollowPath.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/JointAnglesWithSpeed.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/JointTrajectory.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/Listen.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/RunBehavior.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/SetSpeechVocabulary.action
+CMakeFiles/naoqi_bridge_msgs: /home/ros/ros2_ws/src/naoqi_bridge_msgs/action/SpeechWithFeedback.action
 CMakeFiles/naoqi_bridge_msgs: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/naoqi_bridge_msgs: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/naoqi_bridge_msgs: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -266,6 +266,6 @@ CMakeFiles/naoqi_bridge_msgs.dir/clean:
 .PHONY : CMakeFiles/naoqi_bridge_msgs.dir/clean
 
 CMakeFiles/naoqi_bridge_msgs.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs /home/rosario/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_bridge_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs /home/ros/ros2_ws/src/build/naoqi_bridge_msgs/CMakeFiles/naoqi_bridge_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/naoqi_bridge_msgs.dir/depend
 

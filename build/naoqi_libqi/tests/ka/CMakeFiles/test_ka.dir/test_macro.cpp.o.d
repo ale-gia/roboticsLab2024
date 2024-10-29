@@ -1,5 +1,5 @@
 tests/ka/CMakeFiles/test_ka.dir/test_macro.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/tests/ka/test_macro.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/tests/ka/test_macro.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest.h \
  /usr/include/c++/11/cstddef \
@@ -254,7 +254,7 @@ tests/ka/CMakeFiles/test_ka.dir/test_macro.cpp.o: \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-typed-test.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest_pred_impl.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
@@ -497,8 +497,8 @@ tests/ka/CMakeFiles/test_ka.dir/test_macro.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/boost/container/container_fwd.hpp \
  /usr/include/boost/container/detail/std_fwd.hpp \
  /usr/include/boost/move/detail/std_ns_begin.hpp \
@@ -507,5 +507,5 @@ tests/ka/CMakeFiles/test_ka.dir/test_macro.cpp.o: \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc /usr/include/c++/11/list \
  /usr/include/c++/11/bits/stl_list.h /usr/include/c++/11/bits/list.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp

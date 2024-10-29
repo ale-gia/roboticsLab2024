@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/MemoryPairFloat.msg
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module msg {
+    struct MemoryPairFloat {
+      string memory_key;
+
+      float data;
+    };
+  };
+};

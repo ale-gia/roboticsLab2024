@@ -1,0 +1,41 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/AudioBuffer.msg
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Header.idl"
+
+module naoqi_bridge_msgs {
+  module msg {
+    module AudioBuffer_Constants {
+      @verbatim (language="comment", text=
+        "channel order properties :")
+      const uint8 CHANNEL_FRONT_LEFT = 0;
+      const uint8 CHANNEL_FRONT_CENTER = 1;
+      const uint8 CHANNEL_FRONT_RIGHT = 2;
+      const uint8 CHANNEL_REAR_LEFT = 3;
+      const uint8 CHANNEL_REAR_CENTER = 4;
+      const uint8 CHANNEL_REAR_RIGHT = 5;
+      const uint8 CHANNEL_SURROUND_LEFT = 6;
+      const uint8 CHANNEL_SURROUND_RIGHT = 7;
+      const uint8 CHANNEL_SUBWOOFER = 8;
+      const uint8 CHANNEL_LFE = 9;
+    };
+    @verbatim (language="comment", text=
+      "timestanp the audio buffer")
+    struct AudioBuffer {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "current frequency of the audio interface")
+      uint16 frequency;
+
+      @verbatim (language="comment", text=
+        "channel order of the current buffer")
+      sequence<uint8> channel_map;
+
+      @verbatim (language="comment", text=
+        "interlaced data of the audio buffer")
+      sequence<int16> data;
+    };
+  };
+};

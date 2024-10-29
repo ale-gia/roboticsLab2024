@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from naoqi_bridge_msgs/action/SpeechWithFeedback.action
+// generated code does not contain a copyright notice
+
+
+module naoqi_bridge_msgs {
+  module action {
+    @verbatim (language="comment", text=
+      "Purpose : To have feedback on when the speech was started and when " "\n"
+      "NAO stopped talking" "\n"
+      "Goal: The sentence for NAO to say " "\n"
+      "Result: NAO has finished speaking" "\n"
+      "Feedback: When NAO starts speaking")
+    struct SpeechWithFeedback_Goal {
+      string say;
+    };
+    @verbatim (language="comment", text=
+      "Empty result")
+    struct SpeechWithFeedback_Result {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Empty feedback")
+    struct SpeechWithFeedback_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libqicore.a CMakeFiles/qicore.dir/src/loglistener_proxy.cpp.o CMakeFiles/qicore.dir/src/logmanager_proxy.cpp.o CMakeFiles/qicore.dir/src/logprovider_proxy.cpp.o CMakeFiles/qicore.dir/src/registration.cpp.o CMakeFiles/qicore.dir/src/logproviderimpl.cpp.o CMakeFiles/qicore.dir/src/file_proxy.cpp.o CMakeFiles/qicore.dir/src/fileimpl.cpp.o CMakeFiles/qicore.dir/src/fileoperation.cpp.o CMakeFiles/qicore.dir/src/progressnotifier.cpp.o CMakeFiles/qicore.dir/src/progressnotifier_proxy.cpp.o
+/usr/bin/ranlib libqicore.a

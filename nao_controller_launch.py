@@ -24,7 +24,7 @@ def generate_launch_description():
       package="ros_gz_bridge",
       #namespace="gazebo_bridge",
       executable="parameter_bridge",
-      ros_arguments=["-p","config_file:=/home/rosario/ros2_ws/src/my_robot_controller/config/full.yaml"]
+      ros_arguments=["-p","config_file:=/home/ros/ros2_ws/src/my_robot_controller/config/full.yaml"]
    )
 
    ])

@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from naoqi_bridge_msgs/msg/FadeRGB.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Duration.idl"
+#include "std_msgs/msg/ColorRGBA.idl"
+
+module naoqi_bridge_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Message to fade leds")
+    struct FadeRGB {
+      string led_name;
+
+      std_msgs::msg::ColorRGBA color;
+
+      builtin_interfaces::msg::Duration fade_duration;
+    };
+  };
+};

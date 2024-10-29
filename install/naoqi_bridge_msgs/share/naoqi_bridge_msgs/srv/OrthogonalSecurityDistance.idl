@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/OrthogonalSecurityDistance.srv
+// generated code does not contain a copyright notice
+
+#include "std_msgs/msg/Float32.idl"
+
+module naoqi_bridge_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "Service for setting the orthogonal security distance of Pepper")
+    struct OrthogonalSecurityDistance_Request {
+      std_msgs::msg::Float32 orthogonal_distance;
+    };
+    @verbatim (language="comment", text=
+      "Empty response")
+    struct OrthogonalSecurityDistance_Response {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

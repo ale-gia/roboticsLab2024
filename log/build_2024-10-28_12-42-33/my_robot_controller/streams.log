@@ -1,0 +1,60 @@
+[2.200s] Invoking command in '/home/ros/ros2_ws/src/my_robot_controller': PYTHONPATH=/home/ros/ros2_ws/src/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /home/ros/ros2_ws/src/build/my_robot_controller/build install --record /home/ros/ros2_ws/src/build/my_robot_controller/install.log --single-version-externally-managed install_data
+[3.073s] running egg_info
+[3.075s] creating ../build/my_robot_controller/my_robot_controller.egg-info
+[3.076s] writing ../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[3.079s] writing dependency_links to ../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[3.079s] writing entry points to ../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[3.079s] writing requirements to ../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[3.080s] writing top-level names to ../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[3.085s] writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[3.096s] reading manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[3.096s] writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[3.096s] running build
+[3.096s] running build_py
+[3.096s] creating /home/ros/ros2_ws/src/build/my_robot_controller/build
+[3.097s] creating /home/ros/ros2_ws/src/build/my_robot_controller/build/lib
+[3.097s] creating /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.097s] copying my_robot_controller/nao_controller.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.097s] copying my_robot_controller/speech.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.098s] copying my_robot_controller/patient_data_controller.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.099s] copying my_robot_controller/patient_data_controller2.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.101s] copying my_robot_controller/sensor.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.101s] copying my_robot_controller/pose.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.101s] copying my_robot_controller/new.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.102s] copying my_robot_controller/__init__.py -> /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller
+[3.103s] running install
+[3.103s] running install_lib
+[3.106s] creating /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.106s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/nao_controller.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.106s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/speech.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.106s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/patient_data_controller.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.110s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/patient_data_controller2.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.110s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/sensor.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.110s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/pose.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.110s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/new.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.111s] copying /home/ros/ros2_ws/src/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[3.111s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/nao_controller.py to nao_controller.cpython-310.pyc
+[3.111s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/speech.py to speech.cpython-310.pyc
+[3.111s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/patient_data_controller.py to patient_data_controller.cpython-310.pyc
+[3.111s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/patient_data_controller2.py to patient_data_controller2.cpython-310.pyc
+[3.113s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/sensor.py to sensor.cpython-310.pyc
+[3.114s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pose.py to pose.cpython-310.pyc
+[3.115s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/new.py to new.cpython-310.pyc
+[3.116s] byte-compiling /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[3.116s] running install_data
+[3.116s] creating /home/ros/ros2_ws/src/install/my_robot_controller/share/ament_index
+[3.116s] creating /home/ros/ros2_ws/src/install/my_robot_controller/share/ament_index/resource_index
+[3.120s] creating /home/ros/ros2_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages
+[3.121s] copying resource/my_robot_controller -> /home/ros/ros2_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages
+[3.122s] copying package.xml -> /home/ros/ros2_ws/src/install/my_robot_controller/share/my_robot_controller
+[3.122s] running install_egg_info
+[3.122s] Copying ../build/my_robot_controller/my_robot_controller.egg-info to /home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[3.123s] running install_scripts
+[3.235s] Installing nao_controller script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] Installing new script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] Installing patient_data_controller script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] Installing patient_data_controller2 script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] Installing sensor script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] Installing speech script to /home/ros/ros2_ws/src/install/my_robot_controller/lib/my_robot_controller
+[3.235s] writing list of installed files to '/home/ros/ros2_ws/src/build/my_robot_controller/install.log'
+[3.449s] Invoked command in '/home/ros/ros2_ws/src/my_robot_controller' returned '0': PYTHONPATH=/home/ros/ros2_ws/src/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ros/ros2_ws/src/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_robot_controller build --build-base /home/ros/ros2_ws/src/build/my_robot_controller/build install --record /home/ros/ros2_ws/src/build/my_robot_controller/install.log --single-version-externally-managed install_data

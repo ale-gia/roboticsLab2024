@@ -1,5 +1,5 @@
 CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/src/consoleloghandler.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/src/consoleloghandler.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/sstream \
  /usr/include/c++/11/istream /usr/include/c++/11/ios \
  /usr/include/c++/11/iosfwd \
@@ -158,7 +158,7 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/c++/11/array /usr/include/c++/11/bits/uses_allocator.h \
  /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/os.hpp /usr/include/c++/11/map \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/os.hpp /usr/include/c++/11/map \
  /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/stl_map.h \
@@ -197,9 +197,9 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/api.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/api.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
  /usr/include/boost/preprocessor/seq/for_each.hpp \
  /usr/include/boost/preprocessor/arithmetic/dec.hpp \
  /usr/include/boost/preprocessor/config/config.hpp \
@@ -238,7 +238,7 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/boost/preprocessor/seq/fold_left.hpp \
  /usr/include/boost/preprocessor/seq/enum.hpp \
  /usr/include/boost/preprocessor/stringize.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp /usr/include/c++/11/cstddef \
@@ -443,10 +443,10 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/types.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/path.hpp \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_tempbuf.h \
+ /home/ros/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/types.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/path.hpp /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
  /usr/include/c++/11/bits/shared_ptr.h \
@@ -457,7 +457,7 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/c++/11/bits/atomic_base.h \
  /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/c++/11/backward/auto_ptr.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/clock.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/clock.hpp \
  /usr/include/boost/chrono/chrono.hpp \
  /usr/include/boost/chrono/duration.hpp \
  /usr/include/boost/chrono/config.hpp /usr/include/boost/predef.h \
@@ -682,9 +682,9 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/boost/chrono/clock_string.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/detail/clock.hxx \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/detail/clock.hxx \
  /usr/include/boost/chrono/ceil.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
  /usr/include/boost/uuid/uuid.hpp \
  /usr/include/boost/uuid/detail/config.hpp \
  /usr/include/boost/type_traits/is_pod.hpp \
@@ -988,7 +988,7 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/boost/core/noncopyable.hpp \
  /usr/include/boost/random/detail/auto_link.hpp \
  /usr/include/boost/system/config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/boost/functional/hash.hpp \
  /usr/include/boost/container_hash/hash.hpp \
@@ -1005,8 +1005,8 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/bitset \
  /usr/include/c++/11/complex \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
  /usr/include/boost/lexical_cast.hpp \
  /usr/include/boost/range/iterator_range_core.hpp \
  /usr/include/boost/iterator/iterator_traits.hpp \
@@ -1174,8 +1174,8 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/boost/math/tools/real_cast.hpp \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/quadmath.h \
  /usr/include/boost/detail/basic_pointerbuf.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/log.hpp \
- /usr/include/c++/11/cstdarg /usr/include/boost/format.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/log.hpp /usr/include/c++/11/cstdarg \
+ /usr/include/boost/format.hpp \
  /usr/include/boost/format/detail/compat_workarounds.hpp \
  /usr/include/boost/format/detail/config_macros.hpp \
  /usr/include/boost/format/detail/workarounds_gcc-2_95.hpp \
@@ -1267,16 +1267,16 @@ CMakeFiles/qi.dir/src/consoleloghandler.cpp.o: \
  /usr/include/boost/exception/detail/is_output_streamable.hpp \
  /usr/include/boost/exception/detail/object_hex_dump.hpp \
  /usr/include/boost/exception/current_exception_cast.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/errorhandling.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/errorhandling.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/detail/log.hxx \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/numeric.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/src/log_p.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/log/consoleloghandler.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/detail/log.hxx \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/numeric.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/src/log_p.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/log/consoleloghandler.hpp \
  /usr/include/boost/thread.hpp /usr/include/boost/thread/thread.hpp \
  /usr/include/boost/thread/thread_only.hpp \
  /usr/include/boost/thread/detail/platform.hpp \

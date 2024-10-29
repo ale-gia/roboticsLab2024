@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_libqi
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_libqi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_libqi
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_libqi
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_libqi /home/rosario/ros2_ws/src/naoqi_libqi /home/rosario/ros2_ws/src/build/naoqi_libqi /home/rosario/ros2_ws/src/build/naoqi_libqi /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_libqi /home/ros/ros2_ws/src/naoqi_libqi /home/ros/ros2_ws/src/build/naoqi_libqi /home/ros/ros2_ws/src/build/naoqi_libqi /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

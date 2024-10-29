@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_libqi
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_libqi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_libqi
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_libqi
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles /home/rosario/ros2_ws/src/build/naoqi_libqi/tests//CMakeFiles/progress.marks
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles /home/ros/ros2_ws/src/build/naoqi_libqi/tests//CMakeFiles/progress.marks
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/qitestutils.dir/rule:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/qitestutils.dir/rule
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/CMakeFiles/qitestutils.dir/rule
 .PHONY : tests/CMakeFiles/qitestutils.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ qitestutils: tests/CMakeFiles/qitestutils.dir/rule
 
 # fast build rule for target.
 qitestutils/fast:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/build
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/build
 .PHONY : qitestutils/fast
 
 qi/testutils/testutils.o: qi/testutils/testutils.cpp.o
@@ -190,7 +190,7 @@ qi/testutils/testutils.o: qi/testutils/testutils.cpp.o
 
 # target to build an object file
 qi/testutils/testutils.cpp.o:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o
 .PHONY : qi/testutils/testutils.cpp.o
 
 qi/testutils/testutils.i: qi/testutils/testutils.cpp.i
@@ -198,7 +198,7 @@ qi/testutils/testutils.i: qi/testutils/testutils.cpp.i
 
 # target to preprocess a source file
 qi/testutils/testutils.cpp.i:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i
 .PHONY : qi/testutils/testutils.cpp.i
 
 qi/testutils/testutils.s: qi/testutils/testutils.cpp.s
@@ -206,7 +206,7 @@ qi/testutils/testutils.s: qi/testutils/testutils.cpp.s
 
 # target to generate assembly for a file
 qi/testutils/testutils.cpp.s:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(MAKE) $(MAKESILENT) -f tests/CMakeFiles/qitestutils.dir/build.make tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s
 .PHONY : qi/testutils/testutils.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

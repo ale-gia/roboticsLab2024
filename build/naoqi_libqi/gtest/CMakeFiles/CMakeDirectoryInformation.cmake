@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/opt/ros/humble/src/gtest_vendor")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/rosario/ros2_ws/src/build/naoqi_libqi")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ros/ros2_ws/src/build/naoqi_libqi")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

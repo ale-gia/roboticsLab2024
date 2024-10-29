@@ -1,0 +1,16 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from naoqi_bridge_msgs/srv/GetBodyROI.srv
+// generated code does not contain a copyright notice
+
+#include "naoqi_bridge_msgs/msg/BodyROI.idl"
+
+module naoqi_bridge_msgs {
+  module srv {
+    struct GetBodyROI_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    struct GetBodyROI_Response {
+      sequence<naoqi_bridge_msgs::msg::BodyROI> bodies;
+    };
+  };
+};

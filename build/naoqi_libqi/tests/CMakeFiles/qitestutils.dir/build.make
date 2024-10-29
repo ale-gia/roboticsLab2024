@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rosario/ros2_ws/src/naoqi_libqi
+CMAKE_SOURCE_DIR = /home/ros/ros2_ws/src/naoqi_libqi
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rosario/ros2_ws/src/build/naoqi_libqi
+CMAKE_BINARY_DIR = /home/ros/ros2_ws/src/build/naoqi_libqi
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/qitestutils.dir/depend.make
@@ -70,18 +70,18 @@ include tests/CMakeFiles/qitestutils.dir/progress.make
 include tests/CMakeFiles/qitestutils.dir/flags.make
 
 tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o: tests/CMakeFiles/qitestutils.dir/flags.make
-tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o: /home/rosario/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp
+tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o: /home/ros/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp
 tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o: tests/CMakeFiles/qitestutils.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o"
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o -MF CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o.d -o CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o -c /home/rosario/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o"
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o -MF CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o.d -o CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o -c /home/ros/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp
 
 tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i"
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosario/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp > CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ros/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp > CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.i
 
 tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s"
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosario/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp -o CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ros/ros2_ws/src/naoqi_libqi/tests/qi/testutils/testutils.cpp -o CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.s
 
 # Object files for target qitestutils
 qitestutils_OBJECTS = \
@@ -93,19 +93,19 @@ qitestutils_EXTERNAL_OBJECTS =
 tests/libqitestutils.a: tests/CMakeFiles/qitestutils.dir/qi/testutils/testutils.cpp.o
 tests/libqitestutils.a: tests/CMakeFiles/qitestutils.dir/build.make
 tests/libqitestutils.a: tests/CMakeFiles/qitestutils.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosario/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libqitestutils.a"
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -P CMakeFiles/qitestutils.dir/cmake_clean_target.cmake
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qitestutils.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ros/ros2_ws/src/build/naoqi_libqi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libqitestutils.a"
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -P CMakeFiles/qitestutils.dir/cmake_clean_target.cmake
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qitestutils.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/qitestutils.dir/build: tests/libqitestutils.a
 .PHONY : tests/CMakeFiles/qitestutils.dir/build
 
 tests/CMakeFiles/qitestutils.dir/clean:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -P CMakeFiles/qitestutils.dir/cmake_clean.cmake
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi/tests && $(CMAKE_COMMAND) -P CMakeFiles/qitestutils.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/qitestutils.dir/clean
 
 tests/CMakeFiles/qitestutils.dir/depend:
-	cd /home/rosario/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/rosario/ros2_ws/src/naoqi_libqi /home/rosario/ros2_ws/src/naoqi_libqi/tests /home/rosario/ros2_ws/src/build/naoqi_libqi /home/rosario/ros2_ws/src/build/naoqi_libqi/tests /home/rosario/ros2_ws/src/build/naoqi_libqi/tests/CMakeFiles/qitestutils.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ros/ros2_ws/src/build/naoqi_libqi && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ros/ros2_ws/src/naoqi_libqi /home/ros/ros2_ws/src/naoqi_libqi/tests /home/ros/ros2_ws/src/build/naoqi_libqi /home/ros/ros2_ws/src/build/naoqi_libqi/tests /home/ros/ros2_ws/src/build/naoqi_libqi/tests/CMakeFiles/qitestutils.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/qitestutils.dir/depend
 

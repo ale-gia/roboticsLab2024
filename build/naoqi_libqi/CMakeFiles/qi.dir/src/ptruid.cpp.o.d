@@ -1,5 +1,5 @@
 CMakeFiles/qi.dir/src/ptruid.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/src/ptruid.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/src/ptruid.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/array \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -526,7 +526,7 @@ CMakeFiles/qi.dir/src/ptruid.cpp.o: \
  /usr/include/boost/iterator/advance.hpp \
  /usr/include/boost/range/iterator_range_io.hpp \
  /usr/include/boost/core/ignore_unused.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/ptruid.hpp \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/boost/functional/hash.hpp \
  /usr/include/boost/container_hash/hash.hpp \
@@ -558,7 +558,7 @@ CMakeFiles/qi.dir/src/ptruid.cpp.o: \
  /usr/include/c++/11/bits/stl_set.h \
  /usr/include/c++/11/bits/stl_multiset.h /usr/include/c++/11/bitset \
  /usr/include/c++/11/complex \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/uuid.hpp \
  /usr/include/boost/uuid/uuid.hpp \
  /usr/include/boost/uuid/detail/config.hpp \
  /usr/include/boost/uuid/detail/uuid_x86.ipp \
@@ -801,16 +801,16 @@ CMakeFiles/qi.dir/src/ptruid.cpp.o: \
  /usr/include/boost/random/detail/auto_link.hpp \
  /usr/include/boost/system/config.hpp \
  /usr/include/boost/system/api_config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/api.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/api.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/preproc.hpp \
  /usr/include/boost/preprocessor/seq/for_each.hpp \
  /usr/include/boost/preprocessor/seq/remove.hpp \
  /usr/include/boost/preprocessor/seq/first_n.hpp \
  /usr/include/boost/preprocessor/seq/detail/split.hpp \
  /usr/include/boost/preprocessor/seq/rest_n.hpp \
  /usr/include/boost/preprocessor/comparison/not_equal.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/predef/compiler.h \
  /usr/include/boost/predef/compiler/borland.h \
  /usr/include/boost/predef/compiler/clang.h \
@@ -971,16 +971,16 @@ CMakeFiles/qi.dir/src/ptruid.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/sha1.hpp \
- /usr/include/openssl/sha.h /usr/include/openssl/macros.h \
+ /home/ros/ros2_ws/src/build/naoqi_libqi/qi/config.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/qi/assert.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/sha1.hpp /usr/include/openssl/sha.h \
+ /usr/include/openssl/macros.h \
  /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
  /usr/include/x86_64-linux-gnu/openssl/configuration.h \
  /usr/include/openssl/opensslv.h /usr/include/openssl/e_os2.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/scoped.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/scoped.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
  /usr/include/boost/optional.hpp /usr/include/boost/optional/optional.hpp \
  /usr/include/boost/core/explicit_operator_bool.hpp \
  /usr/include/boost/core/swap.hpp \
@@ -1016,18 +1016,18 @@ CMakeFiles/qi.dir/src/ptruid.cpp.o: \
  /usr/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/include/boost/optional/detail/optional_relops.hpp \
  /usr/include/boost/optional/detail/optional_swap.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
  /usr/include/boost/weak_ptr.hpp \
  /usr/include/boost/smart_ptr/weak_ptr.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/boost/container/container_fwd.hpp \
  /usr/include/boost/container/detail/std_fwd.hpp \
  /usr/include/boost/move/detail/std_ns_begin.hpp \
  /usr/include/boost/move/detail/std_ns_end.hpp \
  /usr/include/c++/11/forward_list /usr/include/c++/11/bits/forward_list.h \
  /usr/include/c++/11/bits/forward_list.tcc \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/src.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/opt.hpp
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/src.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/opt.hpp

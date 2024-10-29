@@ -1,0 +1,15 @@
+from naoqi_bridge_msgs.srv._cmd_pose_service import CmdPoseService  # noqa: F401
+from naoqi_bridge_msgs.srv._cmd_vel_service import CmdVelService  # noqa: F401
+from naoqi_bridge_msgs.srv._get_body_roi import GetBodyROI  # noqa: F401
+from naoqi_bridge_msgs.srv._get_faces_roi import GetFacesROI  # noqa: F401
+from naoqi_bridge_msgs.srv._get_float import GetFloat  # noqa: F401
+from naoqi_bridge_msgs.srv._get_installed_behaviors import GetInstalledBehaviors  # noqa: F401
+from naoqi_bridge_msgs.srv._get_robot_info import GetRobotInfo  # noqa: F401
+from naoqi_bridge_msgs.srv._get_string import GetString  # noqa: F401
+from naoqi_bridge_msgs.srv._get_truepose import GetTruepose  # noqa: F401
+from naoqi_bridge_msgs.srv._orthogonal_security_distance import OrthogonalSecurityDistance  # noqa: F401
+from naoqi_bridge_msgs.srv._set_arms_enabled import SetArmsEnabled  # noqa: F401
+from naoqi_bridge_msgs.srv._set_float import SetFloat  # noqa: F401
+from naoqi_bridge_msgs.srv._set_string import SetString  # noqa: F401
+from naoqi_bridge_msgs.srv._set_transform import SetTransform  # noqa: F401
+from naoqi_bridge_msgs.srv._tangential_security_distance import TangentialSecurityDistance  # noqa: F401

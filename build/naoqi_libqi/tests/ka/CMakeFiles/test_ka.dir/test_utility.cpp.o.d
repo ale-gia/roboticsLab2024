@@ -1,5 +1,5 @@
 tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
- /home/rosario/ros2_ws/src/naoqi_libqi/tests/ka/test_utility.cpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/tests/ka/test_utility.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -253,7 +253,7 @@ tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-test-part.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest-typed-test.h \
  /opt/ros/humble/src/gtest_vendor/include/gtest/gtest_pred_impl.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/testutils.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/testutils.hpp \
  /usr/include/c++/11/list /usr/include/c++/11/bits/stl_list.h \
  /usr/include/c++/11/bits/list.tcc /usr/include/c++/11/deque \
  /usr/include/c++/11/bits/stl_deque.h /usr/include/c++/11/bits/deque.tcc \
@@ -265,8 +265,8 @@ tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
  /usr/include/c++/11/bits/unordered_set.h \
  /usr/include/c++/11/unordered_map \
  /usr/include/c++/11/bits/unordered_map.h \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/empty.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/empty.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macro.hpp \
  /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
  /usr/include/boost/config/detail/select_compiler_config.hpp \
  /usr/include/boost/config/compiler/gcc.hpp \
@@ -509,10 +509,10 @@ tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
  /usr/include/boost/preprocessor/variadic/to_seq.hpp \
  /usr/include/boost/preprocessor/variadic/to_tuple.hpp \
  /usr/include/boost/preprocessor/wstringize.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/macroregular.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/utility.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/unit.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/functional.hpp \
  /usr/include/boost/optional.hpp /usr/include/boost/optional/optional.hpp \
  /usr/include/boost/assert.hpp /usr/include/boost/core/addressof.hpp \
  /usr/include/boost/core/enable_if.hpp \
@@ -604,8 +604,8 @@ tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
  /usr/include/boost/optional/detail/optional_reference_spec.hpp \
  /usr/include/boost/optional/detail/optional_relops.hpp \
  /usr/include/boost/optional/detail/optional_swap.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/integersequence.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/memory.hpp \
  /usr/include/boost/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/shared_ptr.hpp \
  /usr/include/boost/smart_ptr/detail/shared_count.hpp \
@@ -634,11 +634,11 @@ tests/ka/CMakeFiles/test_ka.dir/test_utility.cpp.o: \
  /usr/include/boost/smart_ptr/detail/local_counted_base.hpp \
  /usr/include/boost/weak_ptr.hpp \
  /usr/include/boost/smart_ptr/weak_ptr.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/typetraits.hpp \
  /usr/include/boost/container/container_fwd.hpp \
  /usr/include/boost/container/detail/std_fwd.hpp \
  /usr/include/boost/move/detail/std_ns_begin.hpp \
  /usr/include/boost/move/detail/std_ns_end.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/src.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/opt.hpp \
- /home/rosario/ros2_ws/src/naoqi_libqi/ka/scoped.hpp
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/src.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/opt.hpp \
+ /home/ros/ros2_ws/src/naoqi_libqi/ka/scoped.hpp
