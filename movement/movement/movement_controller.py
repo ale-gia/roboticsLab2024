@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 import rclpy
 from rclpy.node import Node
-from naoqi_bridge_msgs.msg import JointAnglesWithSpeed
+#from my_robot_controller.msg import Movement
 from geometry_msgs.msg import Twist,PoseStamped
-from std_msgs.msg import Float64
+from std_msgs.msg import Float64, Int32, Float32MultiArray
 from nav_msgs.msg import Odometry
+
 import sys
 import time
 
@@ -16,10 +17,13 @@ import math
 class Movement_controller(Node):
     def __init__(self):
         super().__init__("movement_controller")
-        self.joint_pub = self.create_publisher(JointAnglesWithSpeed, "/joint_angles", 10)
+        #self.controller_sub = self.create_subscription(Movement, "/movement", self.movement_callback, 10)
 
+        self.walkTo_pub = self.create_publisher(Float32MultiArray, "/walkTo", 10)
+        self.set_state_pub = self.create_publisher(Int32, "/state", 10)
 
-        #self.walk_pub = self.create_publisher(Twist, "/cmd_vel", 10)
+        
+
         #self.publisher = self.create_publisher(PoseStamped, '/move_base_simple/goal', 10)
         #self.subscription = self.create_subscription(Float64, "/move", self.move_callback, 10)
         #self.subscription_odo = self.create_subscription(Odometry,'/odom',self.odom_callback,10)
@@ -28,15 +32,14 @@ class Movement_controller(Node):
         #self.subscription
         #self.subscription_od
         self.get_logger().info("Movement Node Run ..")
-    '''
-    def move_callback(self,msg):
-        dist=msg.data
-        self.get_logger().info(f"_______________{dist} start________________________________________________________")
-        p0=self.position_x
-        self.p_target=p0+dist
-        self.walk()
+    
+    def movement_callback(self,msg):
+        if msg.key[0]=='walk':
+            self.walk(msg.value[0])
+
+
         
-        
+    '''  
  
     def odom_callback(self, msg):
         # Estrai i dati di posizione e velocità dal messaggio
@@ -55,100 +58,29 @@ class Movement_controller(Node):
         self.get_logger().info(f"Velocità angolare -> z: {twist.angular.z}")
     '''
 
-    def arm_down(self):
-
-        self.publish_joint_angles(['LShoulderPitch', 'RShoulderPitch'], [1.5, 1.5], 0.1)
-
-        
-
-    def arm_up(self):
-        self.publish_joint_angles(['LShoulderPitch', 'RShoulderPitch'], [0.0, 0.0], 0.1)
-
-    def arm_up2(self):
-        self.publish_joint_angles(['LShoulderPitch', 'RShoulderPitch'], [-1.5, -1.5], 0.1)
-    
-
-    
-    def stand(self):
-
-        joint = [
-        "HeadYaw",
-        "HeadPitch",
-        "LShoulderPitch",
-        "LShoulderRoll",
-        "LElbowYaw",
-        "LElbowRoll",
-        "LWristYaw",
-        
-        "LHipYawPitch",
-        "LHipRoll",
-        "LHipPitch",
-        "LKneePitch",
-        "LAnklePitch",
-        "LAnkleRoll",
-        "RHipYawPitch",
-        "RHipRoll",
-        "RHipPitch",
-        "RKneePitch",
-        "RAnklePitch",
-        "RAnkleRoll",
-        "RShoulderPitch",
-        "RShoulderRoll",
-        "RElbowYaw",
-        "RElbowRoll",
-        "RWristYaw",
-        
-        ]
-
-        angles = [
-            -0.018450021743774414,
-            -0.1565098762512207,
-            1.4956080913543701,
-            0.17636799812316895,
-            -1.1658821105957031,
-            -0.3880600929260254,
-            0.07052206993103027,
-            
-            -0.17023205757141113,
-            0.09975194931030273,
-            0.1304318904876709,
-            -0.09054803848266602,
-            0.08893013000488281,
-            -0.13034796714782715,
-            -0.17023205757141113,
-            -0.09966802597045898,
-            0.1288139820098877,
-            -0.08893013000488281,
-            0.09054803848266602,
-            0.1304318904876709,
-            1.4880218505859375,
-            -0.17491793632507324,
-            1.1688660383224487,
-            0.39427995681762695,
-            0.0858621597290039,
-            
-        ]
-
-
-        
-        self.publish_joint_angles(joint,angles, 0.05)
 
 
     
-    def publish_joint_angles(self, joint_names, angles, speed):
-        msg = JointAnglesWithSpeed()
-        msg.joint_names = joint_names
-        msg.joint_angles = angles
-        msg.speed = speed
-        self.joint_pub.publish(msg)
-        time.sleep(1)
 
-    '''
-    def walk(self):
-        self.is_walking=True
-        self.publish_walk_command(-0.5, 0.0, 0.0)  # Walk forward with a linear speed of 0.5
+
+
+
+    def set_state(self):
+        msg=Int32()
+        msg.data=0
+        self.get_logger().info("wake up")
+        self.set_state_pub.publish(msg)
+    
+    def walkTo(self):
+        
+        msg=Float32MultiArray()
+        msg.data=[0.5,-0.5,1.57]
         self.get_logger().info("start_move")
-
+        self.walkTo_pub.publish(msg)
+    
+    
+        
+    '''
     def stop(self):
         self.is_walking=False
         self.publish_walk_command(0.0, 0.0, 0.0)  # Stop walking
@@ -168,10 +100,9 @@ def main(args=None):
     node = Movement_controller()
 
     command_to_function = {
-        "arm_down": node.arm_down,
-        "arm_up": node.arm_up,
-        "arm_up2": node.arm_up2,
-        "stand": node.stand,
+   
+        "walkTo": node.walkTo,
+        "wakeup":node.set_state,
 
     
         

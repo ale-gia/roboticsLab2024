@@ -3,13 +3,15 @@ import rclpy
 import argparse
 from rclpy.node import Node
 import sys
-from std_msgs.msg import Int32
+from std_msgs.msg import Int32, Float32MultiArray,String
 
 class Qi_Unipa_controller(Node):
     def __init__(self, args):
         super().__init__('qi_unipa_controller')
         self.session = self.set_connection(args)
-        self.subscription = self.create_subscription(Int32, "/state", self.set_state, 10)
+        self.state_sub = self.create_subscription(Int32, "/state", self.set_state, 10)
+        self.walkTo_sub = self.create_subscription(Float32MultiArray, "/walkTo", self.walkTo, 10)
+        self.walkTo_sub = self.create_subscription(String, "/listen", self.listen, 10)
 
 
     def set_connection(self, args):
@@ -29,6 +31,18 @@ class Qi_Unipa_controller(Node):
             state_service.wakeUp()
         else:
             state_service.rest()
+    
+    def walkTo(self,msg):
+        x,y,theta=msg.data
+        walk_service = self.session.service("ALMotion")
+        walk_service.moveTo(x,y,theta)
+
+    def walkTo(self,msg):
+        x,y,theta=msg.data
+        walk_service = self.session.service("ALMotion")
+        walk_service.moveTo(x,y,theta)
+
+
 
     
 
