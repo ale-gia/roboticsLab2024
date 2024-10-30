@@ -68,7 +68,7 @@ def main(args=None):
     args = parser.parse_args()
 
     rclpy.init(args=args)
-    node = QiUnipa(args)
+    node = QiUnipa_Movement(args)
     
     rclpy.spin(node)
     rclpy.shutdown()
