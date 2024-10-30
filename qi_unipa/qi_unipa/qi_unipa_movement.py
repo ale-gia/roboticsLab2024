@@ -37,7 +37,7 @@ class QiUnipa_Movement(Node):
 
     def set_joint_angles_with_speed(self, msg):
         names = msg.names
-        angles = msg.angles
+        angles = msg.angles.tolist()
         speed = msg.speed
         joints_service = self.session.service("ALMotion")
         joints_service.angleInterpolationWithSpeed(names, angles, speed)
