@@ -58,7 +58,7 @@ class QiUnipa_Movement(Node):
 
 
 def main(args=None):
-    
+    rclpy.init(args=args)
     parser = argparse.ArgumentParser()
     parser.add_argument("--ip", type=str, default="127.0.0.1",
                         help="Robot IP address. On robot or Local Naoqi: use '127.0.0.1'.")
@@ -67,7 +67,7 @@ def main(args=None):
     
     args = parser.parse_args()
 
-    rclpy.init(args=args)
+    
     node = QiUnipa_Movement(args)
     
     rclpy.spin(node)
