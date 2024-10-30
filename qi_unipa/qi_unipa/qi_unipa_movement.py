@@ -7,9 +7,9 @@ from std_msgs.msg import Int32
 from geometry_msgs.msg import Pose2D
 from qi_unipa_msgs.msg import PostureWithSpeed
 
-class QiUnipa(Node):
+class QiUnipa_Movement(Node):
     def __init__(self, args):
-        super().__init__('qi_unipa')
+        super().__init__('qi_unipa_movement')
         self.session = self.set_connection(args)
         self.subscription = self.create_subscription(Int32, "/state", self.set_state, 10)
         self.subscription = self.create_subscription(Int32, "/joint_angles_with_speed", self.set_joint_angles_with_speed, 10)
