@@ -50,7 +50,7 @@ class QiUnipa_Movement(Node):
         walk_service.moveTo(x,y,theta)
 
     def set_posture(self, msg):
-        pose_name = msg.postureName
+        pose_name = msg.posture_name
         speed = msg.speed
         posture_service = self.session.service("AlRobotPosture")
         posture_service.goToPosture(pose_name,speed)
