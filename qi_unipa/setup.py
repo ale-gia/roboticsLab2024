@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "qi_unipa_controller = qi_unipa.qi_unipa_controller:main"
+            "qi_unipa_movement = qi_unipa.qi_unipa_movement:main"
         ],
     },
 )

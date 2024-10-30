@@ -6,9 +6,9 @@ import sys
 from std_msgs.msg import Int32, Float32MultiArray,String
 import time 
 
-class Qi_Unipa_controller(Node):
+class QiUnipa_Movement(Node):
     def __init__(self, args):
-        super().__init__('qi_unipa_controller')
+        super().__init__('qi_unipa_movement')
         self.session = self.set_connection(args)
         self.state_sub = self.create_subscription(Int32, "/state", self.set_state, 10)
         self.walkTo_sub = self.create_subscription(Float32MultiArray, "/walkTo", self.walkTo, 10)
