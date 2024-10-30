@@ -13,7 +13,7 @@ class Qi_Unipa_controller(Node):
         self.state_sub = self.create_subscription(Int32, "/state", self.set_state, 10)
         self.walkTo_sub = self.create_subscription(Float32MultiArray, "/walkTo", self.walkTo, 10)
         #self.walkTo_sub = self.create_subscription(String, "/listen", self.listen, 10)
-
+    #suca
 
     def set_connection(self, args):
         session = qi.Session()
