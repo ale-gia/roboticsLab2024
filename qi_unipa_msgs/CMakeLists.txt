@@ -24,3 +24,7 @@ if(BUILD_TESTING)
 endif()
 
 ament_package()
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/PostureWithSpeed.msg
+)
