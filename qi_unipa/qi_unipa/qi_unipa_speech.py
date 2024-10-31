@@ -3,11 +3,15 @@ import time
 import sys
 import rclpy
 from rclpy.node import Node
+from std_msgs.msg import Bool
 
-class qi_unipa_speech(Node):
+class QiUnipaSpeech(Node):  
     def __init__(self, robot_ip, robot_port=9559):
         super().__init__('qi_unipa_speech')
-        # Connessione al robot
+        
+        self.is_recognizing = False
+        self.vocabulary = ["ciao", "come stai", "arrivederci"]
+        
         self.session = qi.Session()
         try:
             self.session.connect(f"tcp://{robot_ip}:{robot_port}")
@@ -16,11 +20,26 @@ class qi_unipa_speech(Node):
             print("Impossibile connettersi a Pepper")
             sys.exit(1)
             
-        # Inizializzazione dei servizi necessari
+      
         self.asr_service = self.session.service("ALSpeechRecognition")
         self.memory = self.session.service("ALMemory")
+        self.speech_sub = self.create_subscription(Bool, "/speech_start", self.speech_callback, 10)
+        # Setup iniziale del riconoscimento vocale
+        self.setup_recognition()
         
-    def setup_recognition(self, vocabulary):
+        # Timer per il controllo periodico del riconoscimento vocale
+        self.create_timer(0.1, self.check_recognition)
+
+    def speech_callback(self, msg):
+        """Callback per il topic /speech"""
+        if msg.data:
+            if not self.is_recognizing:
+                self.start_recognition()
+        else:
+            if self.is_recognizing:
+                self.stop_recognition()
+
+    def setup_recognition(self):
         """Configura il riconoscimento vocale con il vocabolario specificato"""
         try:
             # Imposta la lingua in italiano
@@ -28,8 +47,8 @@ class qi_unipa_speech(Node):
             print("Lingua impostata a Italiano")
             
             # Imposta il vocabolario
-            self.asr_service.setVocabulary(vocabulary, False)
-            print(f"Vocabolario impostato: {vocabulary}")
+            self.asr_service.setVocabulary(self.vocabulary, False)
+            print(f"Vocabolario impostato: {self.vocabulary}")
             
             # Creazione del proxy per l'evento
             self.memory.declareEvent("WordRecognized")
@@ -42,52 +61,52 @@ class qi_unipa_speech(Node):
     def start_recognition(self):
         """Avvia il riconoscimento vocale"""
         try:
-            # Avvia il riconoscimento vocale
-            self.asr_service.subscribe("SpeechRecognition")
-            print("Riconoscimento vocale avviato")
-            
-            # Inizia il loop di controllo della memoria
-            while True:
-                # Leggi direttamente dalla memoria
-                word_data = self.memory.getData("WordRecognized")
-                if word_data and len(word_data) >= 2:
-                    word = word_data[0]
-                    confidence = word_data[1]
-                    if confidence > 0.5:  # Soglia di confidenza personalizzabile
-                        print(f"Parola riconosciuta: {word} (confidenza: {confidence})")
-                time.sleep(0.1)  # Piccola pausa per non sovraccaricare la CPU
-                
-        except KeyboardInterrupt:
-            self.stop_recognition()
+            if not self.is_recognizing:
+                self.asr_service.subscribe("SpeechRecognition")
+                self.is_recognizing = True
+                print("Riconoscimento vocale avviato")
         except Exception as e:
-            print(f"Errore durante il riconoscimento: {e}")
-            self.stop_recognition()
+            print(f"Errore nell'avvio del riconoscimento: {e}")
+            self.is_recognizing = False
         
     def stop_recognition(self):
         """Ferma il riconoscimento vocale"""
         try:
-            self.asr_service.unsubscribe("SpeechRecognition")
-            print("Riconoscimento vocale fermato")
+            if self.is_recognizing:
+                self.asr_service.unsubscribe("SpeechRecognition")
+                self.is_recognizing = False
+                print("Riconoscimento vocale fermato")
         except Exception as e:
             print(f"Errore nell'arresto del riconoscimento vocale: {e}")
+            
+    def check_recognition(self):
+        """Controlla periodicamente i risultati del riconoscimento vocale"""
+        if not self.is_recognizing:
+            return
+            
+        try:
+            word_data = self.memory.getData("WordRecognized")
+            if word_data and len(word_data) >= 2:
+                word = word_data[0]
+                confidence = word_data[1]
+                if confidence > 0.5:
+                    print(f"Parola riconosciuta: {word} (confidenza: {confidence})")
+        except Exception as e:
+            print(f"Errore durante il controllo del riconoscimento: {e}")
 
+def main(args=None):
+    rclpy.init(args=args)
+    
+    robot_ip = "192.168.0.161"
+    node = QiUnipaSpeech(robot_ip)
+    
+    try:
+        rclpy.spin(node)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == "__main__":
-    rclpy.init()
-    node = qi_unipa_speech()
-    
-    rclpy.spin(node)
-  
-    robot_ip = "192.168.0.161" 
-    
-  
-    # Creazione dell'istanza
-    speech = qi_unipa_speech(robot_ip)
-    
-    # Configurazione del vocabolario
-    vocabulary = ["ciao", "come stai", "arrivederci"]
-    speech.setup_recognition(vocabulary)
-    
-    # Avvio del riconoscimento
-    speech.start_recognition()
-    rclpy.shutdown()
+    main()
