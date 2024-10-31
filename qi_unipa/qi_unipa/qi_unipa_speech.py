@@ -1,9 +1,12 @@
 import qi
 import time
 import sys
+import rclpy
+from rclpy.node import Node
 
-class SpeechRecognition:
+class qi_unipa_speech(Node):
     def __init__(self, robot_ip, robot_port=9559):
+        super().__init__('qi_unipa_speech')
         # Connessione al robot
         self.session = qi.Session()
         try:
@@ -70,19 +73,21 @@ class SpeechRecognition:
 
 
 if __name__ == "__main__":
+    rclpy.init()
+    node = qi_unipa_speech()
+    
+    rclpy.spin(node)
+  
     robot_ip = "192.168.0.161" 
     
-    try:
-        # Creazione dell'istanza
-        speech = SpeechRecognition(robot_ip)
-        
-        # Configurazione del vocabolario
-        vocabulary = ["ciao", "come stai", "arrivederci"]
-        speech.setup_recognition(vocabulary)
-        
-        # Avvio del riconoscimento
-        speech.start_recognition()
-        
-    except Exception as e:
-        print(f"Errore generale: {e}")
-        sys.exit(1)
+  
+    # Creazione dell'istanza
+    speech = qi_unipa_speech(robot_ip)
+    
+    # Configurazione del vocabolario
+    vocabulary = ["ciao", "come stai", "arrivederci"]
+    speech.setup_recognition(vocabulary)
+    
+    # Avvio del riconoscimento
+    speech.start_recognition()
+    rclpy.shutdown()
