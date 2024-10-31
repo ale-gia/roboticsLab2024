@@ -1,3 +1,0 @@
-[console_scripts]
-movement_controller = movement.movement_controller:main
-

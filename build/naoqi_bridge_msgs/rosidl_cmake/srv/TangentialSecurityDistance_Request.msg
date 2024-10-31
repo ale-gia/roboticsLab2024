@@ -1,3 +1,0 @@
-# Service for setting the tangential security distance of Pepper
-
-std_msgs/Float32 tangential_distance

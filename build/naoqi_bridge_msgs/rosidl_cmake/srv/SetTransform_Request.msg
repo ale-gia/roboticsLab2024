@@ -1,2 +1,0 @@
-# Send a new manual offset to the odometry
-geometry_msgs/Transform offset

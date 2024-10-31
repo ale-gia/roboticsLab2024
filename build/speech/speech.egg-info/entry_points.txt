@@ -1,3 +1,0 @@
-[console_scripts]
-speech_controller = speech.speech_controller:main
-

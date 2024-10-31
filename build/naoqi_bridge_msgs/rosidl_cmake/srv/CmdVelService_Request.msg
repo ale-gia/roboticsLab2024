@@ -1,2 +1,0 @@
-# Command velocity as service:
-geometry_msgs/Twist twist

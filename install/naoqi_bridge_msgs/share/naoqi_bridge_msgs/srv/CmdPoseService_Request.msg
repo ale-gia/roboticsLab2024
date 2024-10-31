@@ -1,2 +1,0 @@
-# Command pose as service:
-geometry_msgs/Pose2D pose

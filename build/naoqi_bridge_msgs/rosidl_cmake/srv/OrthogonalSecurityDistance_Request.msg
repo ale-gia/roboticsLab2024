@@ -1,3 +1,0 @@
-# Service for setting the orthogonal security distance of Pepper
-
-std_msgs/Float32 orthogonal_distance
