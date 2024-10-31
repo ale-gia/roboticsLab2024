@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "qi_unipa_movement = qi_unipa.qi_unipa_movement:main",
-            "qi_unipa_tts = qi_unipa.qi_unipa_tts:main"
+            "qi_unipa_tts = qi_unipa.qi_unipa_tts:main",
+            "qi_unipa_sensor = qi_unipa.qi_unipa_sensor:main"
         ],
     },
 )
