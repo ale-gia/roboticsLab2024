@@ -4,6 +4,7 @@ import argparse
 from rclpy.node import Node
 import sys
 from std_msgs.msg import Int32
+from std_msgs.msg import String
 from geometry_msgs.msg import Vector3
 from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed
 
@@ -15,6 +16,7 @@ class QiUnipa_Movement(Node):
         self.subscription2= self.create_subscription(JointAnglesWithSpeed, "/joint_angles_with_speed", self.set_joint_angles_with_speed, 10)
         self.subscription3 = self.create_subscription(Vector3, "/walk", self.set_walking, 10)
         self.subscription4 = self.create_subscription(PostureWithSpeed, "/posture", self.set_posture, 10)
+        self.subscription5 = self.create_subscription(String, "/hand", self.set_hand, 10)
 
 
     def set_connection(self, args):
@@ -54,6 +56,11 @@ class QiUnipa_Movement(Node):
         speed = msg.speed
         posture_service = self.session.service("ALRobotPosture")
         posture_service.goToPosture(pose_name,speed)
+    
+    def set_hand(self, msg):
+        hand = msg.data
+        hand_service = self.session.service("ALMotion")
+        hand_service.openHand(hand)
     
 
 
