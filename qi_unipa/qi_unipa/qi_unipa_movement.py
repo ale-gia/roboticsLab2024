@@ -6,7 +6,7 @@ import sys
 from std_msgs.msg import Int32
 from std_msgs.msg import String
 from geometry_msgs.msg import Vector3
-from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed
+from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed, Hand
 
 class QiUnipa_Movement(Node):
     def __init__(self, args):
@@ -16,7 +16,7 @@ class QiUnipa_Movement(Node):
         self.subscription2= self.create_subscription(JointAnglesWithSpeed, "/joint_angles_with_speed", self.set_joint_angles_with_speed, 10)
         self.subscription3 = self.create_subscription(Vector3, "/walk", self.set_walking, 10)
         self.subscription4 = self.create_subscription(PostureWithSpeed, "/posture", self.set_posture, 10)
-        self.subscription5 = self.create_subscription(String, "/hand", self.set_hand, 10)
+        self.subscription5 = self.create_subscription(Hand, "/hand", self.set_hand, 10)
 
 
     def set_connection(self, args):
@@ -58,9 +58,13 @@ class QiUnipa_Movement(Node):
         posture_service.goToPosture(pose_name,speed)
     
     def set_hand(self, msg):
-        hand = msg.data
+        hand = msg.hand
+        fun = msg.fun
         hand_service = self.session.service("ALMotion")
-        hand_service.openHand(hand)
+        if fun == 0:
+            hand_service.openHand(hand)
+        else:
+            hand_service.closeHand(hand)
     
 
 
