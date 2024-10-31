@@ -19,6 +19,8 @@ class QiUnipa_sensor(Node):
         self.sonar_service= self.session.service("ALSonar")
         self.memory_service= self.session.service("ALMemory")
 
+        self.timer = self.create_timer(1.0, self.set_sonar)
+
         
 
         
@@ -56,9 +58,7 @@ def main(args=None):
     args = parser.parse_args()
     node = QiUnipa_sensor(args)
 
-    while(True):
-        node.set_sonar()
-        time.sleep(1)
+
 
 
 
