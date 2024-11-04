@@ -12,7 +12,7 @@ class QiUnipaSpeech(Node):
         self.is_recognizing = False
         self.last_word=""
         self.vocabulary = ["ciao", "come stai", "arrivederci"]
-        self.reply={"ciao":"Ciao a te","come stai": " Io sto bene e tu come ti senti?"}
+        self.reply={"ciao":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) a te ^wait(animations/Stand/BodyTalk/BodyTalk_1) ","come stai": " Io sto bene e tu come ti senti?"}
         self.session = qi.Session()
         try:
             self.session.connect(f"tcp://{robot_ip}:{robot_port}")
@@ -24,8 +24,10 @@ class QiUnipaSpeech(Node):
       
         self.asr_service = self.session.service("ALSpeechRecognition")
         self.memory = self.session.service("ALMemory")
-       
+        self.animated_service = self.session.service("ALAnimatedSpeech")
         self.tts_service= self.session.service("ALTextToSpeech")
+        self.configuration = {"bodyLanguageMode":"contextual"}
+        
         self.speech_sub = self.create_subscription(Bool, "/speech_start", self.speech_callback, 10)
         self.tts_sub = self.create_subscription(String, "/tts", self.tts, 10)
         # Setup iniziale del riconoscimento vocale
@@ -49,6 +51,7 @@ class QiUnipaSpeech(Node):
             # Imposta la lingua in italiano
             self.asr_service.setLanguage("Italian")
             self.tts_service.setLanguage("Italian")
+            
             print("Lingua impostata a Italiano")
             
             # Imposta il vocabolario
@@ -113,7 +116,7 @@ class QiUnipaSpeech(Node):
         if word  in self.reply:
             print(f'risposta :{self.reply[word]}')
             ans=self.reply[word]
-            self.tts_service.say(ans)
+            self.animated_service.say(ans)
 
 
 def main(args=None):
