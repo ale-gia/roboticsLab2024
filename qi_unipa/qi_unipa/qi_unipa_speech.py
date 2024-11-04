@@ -9,17 +9,20 @@ class QiUnipaSpeech(Node):
     def __init__(self, robot_ip, robot_port=9559):
         super().__init__('qi_unipa_speech')
         
+        # Ottieni i parametri
+        self.declare_parameter('ip', '192.168.0.161')
+        self.declare_parameter('port', 9559)
+        ip = self.get_parameter('ip').get_parameter_value().string_value
+        port = self.get_parameter('port').get_parameter_value().integer_value
+        
+        # Connessione sessione
+        self.session = self.set_connection(ip, port)
+
         self.is_recognizing = False
         self.last_word=""
         self.vocabulary = ["ciao", "come stai", "arrivederci"]
         self.reply={"ciao":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) a te ^wait(animations/Stand/BodyTalk/BodyTalk_1) ","come stai": " Io sto bene e tu come ti senti?"}
-        self.session = qi.Session()
-        try:
-            self.session.connect(f"tcp://{robot_ip}:{robot_port}")
-            print("Connesso a Pepper")
-        except RuntimeError:
-            print("Impossibile connettersi a Pepper")
-            sys.exit(1)
+        
             
       
         self.asr_service = self.session.service("ALSpeechRecognition")
@@ -36,6 +39,16 @@ class QiUnipaSpeech(Node):
         # Timer per il controllo periodico del riconoscimento vocale
         self.create_timer(1, self.check_recognition)
 
+    def set_connection(self, ip, port):
+        session = qi.Session()
+        try:
+            session.connect(f"tcp://{ip}:{port}")
+        except RuntimeError:
+            self.get_logger().error(f"Can't connect to Naoqi at ip \"{ip}\" on port {port}.\n"
+                                    "Please check your script arguments.")
+            sys.exit(1)
+        return session
+    
     def speech_callback(self, msg):
         """Callback per il topic /speech"""
         if msg.data:
@@ -121,17 +134,13 @@ class QiUnipaSpeech(Node):
 
 def main(args=None):
     rclpy.init(args=args)
+ 
+    node = QiUnipaSpeech(args)
+
+
     
-    robot_ip = "192.168.0.161"
-    node = QiUnipaSpeech(robot_ip)
-    
-    try:
-        rclpy.spin(node)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        node.destroy_node()
-        rclpy.shutdown()
+    rclpy.spin(node)
+    rclpy.shutdown()
 
 if __name__ == "__main__":
     main()

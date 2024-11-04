@@ -17,7 +17,7 @@ def generate_launch_description():
         description='Naoqi port number'
     )
 
-    # Nodo ROS 2 per il controller
+    
     qi_unipa_sensor_node = Node(
         package='qi_unipa',
         executable='qi_unipa_sensor',  # Assicurati che sia il nome giusto dell'eseguibile
@@ -39,6 +39,17 @@ def generate_launch_description():
             'port': LaunchConfiguration('port')
         }]
     )
+
+    qi_unipa_speech_node = Node(
+        package='qi_unipa',
+        executable='qi_unipa_speech',  # Assicurati che sia il nome giusto dell'eseguibile
+        name='qi_unipa_speech',
+        output='screen',
+        parameters=[{
+            'ip': LaunchConfiguration('ip'),
+            'port': LaunchConfiguration('port')
+        }]
+    )
     
     
 
@@ -46,6 +57,7 @@ def generate_launch_description():
         ip_arg,
         port_arg,
         qi_unipa_sensor_node,
-        qi_unipa_movement_node
+        qi_unipa_movement_node,
+        qi_unipa_speech_node
     ])
 
