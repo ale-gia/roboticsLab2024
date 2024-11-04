@@ -11,7 +11,14 @@ class QiUnipa_sensor(Node):
     
     def __init__(self, args):
         super().__init__('qi_unipa_sensor')
-        self.session = self.set_connection(args)
+         # Ottieni i parametri
+        self.declare_parameter('ip', '192.168.0.161')
+        self.declare_parameter('port', 9559)
+        ip = self.get_parameter('ip').get_parameter_value().string_value
+        port = self.get_parameter('port').get_parameter_value().integer_value
+        
+        # Connessione sessione
+        self.session = self.set_connection(ip, port)
         
         
         self.sonar_pub = self.create_publisher(Sonar, "/sonar", 10)
@@ -26,13 +33,13 @@ class QiUnipa_sensor(Node):
         
        
 
-    def set_connection(self, args):
+    def set_connection(self, ip, port):
         session = qi.Session()
         try:
-            session.connect("tcp://" + args.ip + ":" + str(args.port))
+            session.connect(f"tcp://{ip}:{port}")
         except RuntimeError:
-            print ("Can't connect to Naoqi at ip \"" + args.ip + "\" on port " + str(args.port) +".\n"
-                    "Please check your script arguments. Run with -h option for help.")
+            self.get_logger().error(f"Can't connect to Naoqi at ip \"{ip}\" on port {port}.\n"
+                                    "Please check your script arguments.")
             sys.exit(1)
         return session
     
@@ -49,13 +56,7 @@ class QiUnipa_sensor(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--ip", type=str, default="192.168.0.161",
-                        help="Robot IP address. On robot or Local Naoqi: use '127.0.0.1'.")
-    parser.add_argument("--port", type=int, default=9559,
-                        help="Naoqi port number")
-    
-    args = parser.parse_args()
+ 
     node = QiUnipa_sensor(args)
 
 
