@@ -8,7 +8,6 @@ from std_msgs.msg import Int32
 from std_msgs.msg import String
 from geometry_msgs.msg import Vector3
 from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed, Hand
-import Qi_Module
 
 class QiUnipa_Movement(Node):
     def __init__(self):
