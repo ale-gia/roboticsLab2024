@@ -8,6 +8,7 @@ from std_msgs.msg import Int32
 from std_msgs.msg import String
 from geometry_msgs.msg import Vector3
 from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed, Hand
+import Qi_Module
 
 class QiUnipa_Movement(Node):
     def __init__(self, args):
@@ -29,6 +30,9 @@ class QiUnipa_Movement(Node):
         self.subscription4 = self.create_subscription(PostureWithSpeed, "/posture", self.set_posture, 10)
         self.subscription5 = self.create_subscription(Hand, "/hand", self.set_hand, 10)
         self.getPosition_pub = self.create_publisher(Vector3, "/getPosition", 10)
+        self.memory = self.session.service("ALMemory")
+        self.module = Qi_Module()
+        self.memory.subscribeToEvent("WordRecognized", "Qi_Module", "callback")
 
         self.timer = self.create_timer(1.0, self.get_Position)
 
