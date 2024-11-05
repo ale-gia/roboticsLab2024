@@ -79,13 +79,13 @@ class QiUnipa_Movement(Node):
                 hand_service.openHand("RHand")
                 hand_service.openHand("LHand")
             else:
-                hand_service.openHand("RHand")
-                hand_service.openHand("LHand")
+                hand_service.closeHand("RHand")
+                hand_service.closeHand("LHand")
         else:
             if fun == 0:
                 hand_service.openHand(hand)
             else:
-                hand_service.openHand(hand)
+                hand_service.closeHand(hand)
 
 
 

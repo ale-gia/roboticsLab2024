@@ -23,16 +23,15 @@ class QiUnipaSpeech(Node):
         self.vocabulary = ["ciao", "come stai", "arrivederci"]
         self.reply={"ciao":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) a te ^wait(animations/Stand/BodyTalk/BodyTalk_1) ","come stai": " Io sto bene e tu come ti senti?"}
         
-            
-      
+        
         self.asr_service = self.session.service("ALSpeechRecognition")
         self.memory = self.session.service("ALMemory")
         self.animated_service = self.session.service("ALAnimatedSpeech")
         self.tts_service= self.session.service("ALTextToSpeech")
         self.configuration = {"bodyLanguageMode":"contextual"}
         
-        self.speech_sub = self.create_subscription(Bool, "/speech_start", self.speech_callback, 10)
-        self.tts_sub = self.create_subscription(String, "/tts", self.tts, 10)
+        self.speech_sub = self.create_subscription(Bool, "/listen", self.speech_callback, 10)
+        self.tts_sub = self.create_subscription(String, "/speak", self.tts, 10)
         # Setup iniziale del riconoscimento vocale
         self.setup_recognition()
         
