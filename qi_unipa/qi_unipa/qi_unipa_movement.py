@@ -74,10 +74,20 @@ class QiUnipa_Movement(Node):
         hand = msg.hand
         fun = msg.fun
         hand_service = self.session.service("ALMotion")
-        if fun == 0:
-            hand_service.openHand(hand)
+        if hand == "Hands":
+            if fun == 0:
+                hand_service.openHand("RHand")
+                hand_service.openHand("LHand")
+            else:
+                hand_service.openHand("RHand")
+                hand_service.openHand("LHand")
         else:
-            hand_service.closeHand(hand)
+            if fun == 0:
+                hand_service.openHand(hand)
+            else:
+                hand_service.openHand(hand)
+
+
 
     def get_Position(self):
         motion_service = self.session.service("ALMotion")
