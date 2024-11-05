@@ -23,16 +23,12 @@ class QiUnipa_Movement(Node):
         # Connessione sessione
         self.session = self.set_connection(ip, port)
 
-        
         self.subscription1 = self.create_subscription(Int32, "/state", self.set_state, 10)
         self.subscription2= self.create_subscription(JointAnglesWithSpeed, "/joint_angles_with_speed", self.set_joint_angles_with_speed, 10)
         self.subscription3 = self.create_subscription(Vector3, "/walk", self.set_walking, 10)
         self.subscription4 = self.create_subscription(PostureWithSpeed, "/posture", self.set_posture, 10)
         self.subscription5 = self.create_subscription(Hand, "/hand", self.set_hand, 10)
         self.getPosition_pub = self.create_publisher(Vector3, "/getPosition", 10)
-        self.memory = self.session.service("ALMemory")
-        self.module = Qi_Module()
-        self.memory.subscribeToEvent("WordRecognized", "Qi_Module", "callback")
 
         self.timer = self.create_timer(1.0, self.get_Position)
 
@@ -100,8 +96,6 @@ def main(args=None):
     rclpy.init(args=args)
     
     node = QiUnipa_Movement()
-    
-    
     
     rclpy.spin(node)
     rclpy.shutdown()
