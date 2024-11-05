@@ -9,7 +9,7 @@ import time
 
 class QiUnipa_sensor(Node):
     
-    def __init__(self, args):
+    def __init__(self):
         super().__init__('qi_unipa_sensor')
          # Ottieni i parametri
         self.declare_parameter('ip', '192.168.0.161')
@@ -57,13 +57,7 @@ class QiUnipa_sensor(Node):
 def main(args=None):
     rclpy.init(args=args)
  
-    node = QiUnipa_sensor(args)
-
-
-
-
-
-
+    node = QiUnipa_sensor()
     
     rclpy.spin(node)
     rclpy.shutdown()
