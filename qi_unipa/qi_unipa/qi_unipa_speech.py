@@ -6,7 +6,7 @@ from rclpy.node import Node
 from std_msgs.msg import Bool,String
 
 class QiUnipaSpeech(Node):  
-    def __init__(self, robot_ip, robot_port=9559):
+    def __init__(self):
         super().__init__('qi_unipa_speech')
         
         # Ottieni i parametri
@@ -135,7 +135,7 @@ class QiUnipaSpeech(Node):
 def main(args=None):
     rclpy.init(args=args)
  
-    node = QiUnipaSpeech(args)
+    node = QiUnipaSpeech()
 
 
     

@@ -11,7 +11,7 @@ from qi_unipa_msgs.msg import PostureWithSpeed, JointAnglesWithSpeed, Hand
 import Qi_Module
 
 class QiUnipa_Movement(Node):
-    def __init__(self, args):
+    def __init__(self):
         super().__init__('qi_unipa_movement')
 
         # Ottieni i parametri
@@ -99,7 +99,7 @@ class QiUnipa_Movement(Node):
 def main(args=None):
     rclpy.init(args=args)
     
-    node = QiUnipa_Movement(args)
+    node = QiUnipa_Movement()
     
     
     
