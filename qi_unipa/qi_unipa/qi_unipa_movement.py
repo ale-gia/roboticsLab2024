@@ -88,7 +88,6 @@ class QiUnipa_Movement(Node):
                 hand_service.closeHand(hand)
 
 
-
     def get_Position(self):
         motion_service = self.session.service("ALMotion")
         pose=motion_service.getRobotPosition(False)
