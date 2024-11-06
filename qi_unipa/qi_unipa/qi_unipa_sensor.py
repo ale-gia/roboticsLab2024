@@ -23,7 +23,7 @@ class QiUnipa_sensor(Node):
         
         self.sonar_pub = self.create_publisher(Sonar, "/sonar", 10)
         self.bumper_pub = self.create_publisher(Bumper, "/bumper", 10)
-        self.tts_pub = self.create_publisher(String, "/tts", 10)
+        self.speak_pub = self.create_publisher(String, "/speak", 10)
         self.count_s=0
 
         self.sonar_service= self.session.service("ALSonar")
@@ -58,7 +58,6 @@ class QiUnipa_sensor(Node):
     
     def get_bumper(self):
 
-        
         msg=Bumper()
         msg.left=self.memory_service.getData("Device/SubDeviceList/Platform/FrontLeft/Bumper/Sensor/Value")
         msg.right=self.memory_service.getData("Device/SubDeviceList/Platform/FrontRight/Bumper/Sensor/Value")
@@ -67,20 +66,16 @@ class QiUnipa_sensor(Node):
 
 
         if(self.count_s == 0):
-
             string=String()
-
             if(msg.left==1.0):
                 string.data="ho urtato a sinistra"
-                self.tts_pub.publish(string)
+                self.speak_pub.publish(string)
             if(msg.right==1.0):
                 string.data="ho urtato a destra"
-                self.tts_pub.publish(string)
+                self.speak_pub.publish(string)
             if(msg.back==1.0):
                 string.data="ho urtato dietro"
-                self.tts_pub.publish(string)
-            
-
+                self.speak_pub.publish(string)
             self.count_s=1
 
         if(msg.left==0.0 and msg.right==0.0 and msg.back==0.0 and self.count_s==1):
