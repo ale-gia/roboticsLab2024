@@ -20,7 +20,7 @@ def generate_launch_description():
     
     qi_unipa_sensor_node = Node(
         package='qi_unipa',
-        executable='qi_unipa_sensor',  # Assicurati che sia il nome giusto dell'eseguibile
+        executable='qi_unipa_sensor',  
         name='qi_unipa_sensor',
         output='screen',
         parameters=[{
@@ -31,7 +31,7 @@ def generate_launch_description():
     
     qi_unipa_movement_node = Node(
         package='qi_unipa',
-        executable='qi_unipa_movement',  # Assicurati che sia il nome giusto dell'eseguibile
+        executable='qi_unipa_movement',  
         name='qi_unipa_movement',
         output='screen',
         parameters=[{
@@ -42,8 +42,18 @@ def generate_launch_description():
 
     qi_unipa_speech_node = Node(
         package='qi_unipa',
-        executable='qi_unipa_speech',  # Assicurati che sia il nome giusto dell'eseguibile
+        executable='qi_unipa_speech',  
         name='qi_unipa_speech',
+        output='screen',
+        parameters=[{
+            'ip': LaunchConfiguration('ip'),
+            'port': LaunchConfiguration('port')
+        }]
+    )
+    qi_unipa_tracking_node = Node(
+        package='qi_unipa',
+        executable='qi_unipa_tracking',  
+        name='qi_unipa_tracking',
         output='screen',
         parameters=[{
             'ip': LaunchConfiguration('ip'),
@@ -52,12 +62,14 @@ def generate_launch_description():
     )
     
     
+    
 
     return LaunchDescription([
         ip_arg,
         port_arg,
         qi_unipa_sensor_node,
         qi_unipa_movement_node,
-        qi_unipa_speech_node
+        qi_unipa_speech_node,
+        qi_unipa_tracking_node
     ])
 

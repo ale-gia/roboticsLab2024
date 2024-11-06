@@ -25,8 +25,8 @@ setup(
         'console_scripts': [
             "qi_unipa_movement = qi_unipa.qi_unipa_movement:main",
             "qi_unipa_sensor = qi_unipa.qi_unipa_sensor:main",
-            "qi_unipa_speech = qi_unipa.qi_unipa_speech:main"
-            
+            "qi_unipa_speech = qi_unipa.qi_unipa_speech:main",
+            "qi_unipa_tracking = qi_unipa.qi_unipa_tracking:main"
         ],
     },
 )

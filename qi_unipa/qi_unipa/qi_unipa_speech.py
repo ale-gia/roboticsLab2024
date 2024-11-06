@@ -1,5 +1,4 @@
 import qi
-import time
 import sys
 import rclpy
 from rclpy.node import Node
@@ -110,10 +109,11 @@ class QiUnipaSpeech(Node):
             if word_data and len(word_data) >= 2:
                 word = word_data[0]
                 confidence = word_data[1]
+                self.last_word=word
                 if confidence > 0.5 and word!=self.last_word:
                     print(f"Parola riconosciuta: {word} (confidenza: {confidence})")
                     self.answers(word)
-                    self.last_word=word
+                    
         except Exception as e:
             print(f"Errore durante il controllo del riconoscimento: {e}")
 
