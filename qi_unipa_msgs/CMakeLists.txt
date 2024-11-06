@@ -31,11 +31,8 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/JointAnglesWithSpeed.msg"
   "msg/Sonar.msg"
   "msg/Hand.msg"
-<<<<<<< Updated upstream
   "msg/Bumper.msg"
-=======
   "msg/Track.msg"
->>>>>>> Stashed changes
 )
 
 ament_package()

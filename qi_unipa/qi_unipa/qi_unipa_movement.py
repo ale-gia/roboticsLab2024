@@ -24,7 +24,7 @@ class QiUnipa_Movement(Node):
         self.subscription3 = self.create_subscription(Vector3, "/walk", self.set_walking, 10)
         self.subscription4 = self.create_subscription(PostureWithSpeed, "/posture", self.set_posture, 10)
         self.subscription5 = self.create_subscription(Hand, "/hands", self.set_hand, 10)
-        self.getPosition_pub = self.create_publisher(Vector3, "/getPosition", 10)
+        self.getPosition_pub = self.create_publisher(Vector3, "/position", 10)
 
         self.timer = self.create_timer(1.0, self.get_Position)
 
