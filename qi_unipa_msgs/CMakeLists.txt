@@ -31,6 +31,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/JointAnglesWithSpeed.msg"
   "msg/Sonar.msg"
   "msg/Hand.msg"
+  "msg/Bumper.msg"
 )
 
 ament_package()

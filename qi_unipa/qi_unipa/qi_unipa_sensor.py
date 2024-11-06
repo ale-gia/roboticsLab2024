@@ -4,7 +4,7 @@ import argparse
 from rclpy.node import Node
 import sys
 from std_msgs.msg import String
-from qi_unipa_msgs.msg import Sonar
+from qi_unipa_msgs.msg import Sonar, Bumper
 import time
 
 class QiUnipa_sensor(Node):
@@ -22,11 +22,15 @@ class QiUnipa_sensor(Node):
         
         
         self.sonar_pub = self.create_publisher(Sonar, "/sonar", 10)
+        self.bumper_pub = self.create_publisher(Bumper, "/bumper", 10)
+        self.tts_pub = self.create_publisher(String, "/tts", 10)
+        self.count_s=0
 
         self.sonar_service= self.session.service("ALSonar")
         self.memory_service= self.session.service("ALMemory")
 
-        self.timer = self.create_timer(1.0, self.set_sonar)
+        self.timer = self.create_timer(1.0, self.get_sonar)
+        self.timer = self.create_timer(0.3, self.get_bumper)
 
         
 
@@ -43,7 +47,7 @@ class QiUnipa_sensor(Node):
             sys.exit(1)
         return session
     
-    def set_sonar(self):
+    def get_sonar(self):
 
         self.sonar_service.subscribe("Sonar_app")
         msg=Sonar()
@@ -51,6 +55,43 @@ class QiUnipa_sensor(Node):
         msg.back_sonar=self.memory_service.getData("Device/SubDeviceList/Platform/Back/Sonar/Sensor/Value")
         self.sonar_pub.publish(msg)
         self.sonar_service.unsubscribe("Sonar_app")
+    
+    def get_bumper(self):
+
+        
+        msg=Bumper()
+        msg.left=self.memory_service.getData("Device/SubDeviceList/Platform/FrontLeft/Bumper/Sensor/Value")
+        msg.right=self.memory_service.getData("Device/SubDeviceList/Platform/FrontRight/Bumper/Sensor/Value")
+        msg.back=self.memory_service.getData("Device/SubDeviceList/Platform/Back/Bumper/Sensor/Value")
+        self.bumper_pub.publish(msg)
+
+
+        if(self.count_s == 0):
+
+            string=String()
+
+            if(msg.left==1.0):
+                string.data="ho urtato a sinistra"
+                self.tts_pub.publish(string)
+            if(msg.right==1.0):
+                string.data="ho urtato a destra"
+                self.tts_pub.publish(string)
+            if(msg.back==1.0):
+                string.data="ho urtato dietro"
+                self.tts_pub.publish(string)
+            
+
+            self.count_s=1
+
+        if(msg.left==0.0 and msg.right==0.0 and msg.back==0.0 and self.count_s==1):
+             self.count_s=0
+
+     
+
+            
+
+        
+
         
  
 
