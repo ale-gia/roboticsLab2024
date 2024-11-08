@@ -47,23 +47,25 @@ class QiUnipatracking(Node):
     def start_tracking(self,msg_in):
 
         msg=PostureWithSpeed()
-        msg.posture_name="Stand"
+        msg.posture_name="StandInit"
         msg.speed=0.5
         self.posture_pub.publish(msg)
         params=""
         if(msg_in.target_name =="Face"):
-          
             params=msg_in.distance
-            
+
         elif(msg_in.target_name =="Sound"):
             confidence=0.5
             params=[msg_in.distance,confidence]
+
         elif(msg_in.target_name =="Stop"):
             self.stop_tracking()
+            msg.posture_name="Sit"
+            self.posture_pub.publish(msg)
             return 
 
         self.tracker_service.registerTarget(msg_in.target_name, params)
-
+        self.tracker_service.setRelativePosition([-0.5, 0.0, 0.0, 0.1, 0.1, 0.3])
         self.tracker_service.track(msg_in.target_name)
         print ("ALTracker successfully started")
         self.is_tracking=True
@@ -75,6 +77,10 @@ class QiUnipatracking(Node):
         self.tracker_service.unregisterAllTargets()
         print ("ALTracker stopped")
         self.is_tracking=False
+        msg=PostureWithSpeed()
+        msg.posture_name="Sit"
+        msg.speed=0.5
+        self.posture_pub.publish(msg)
     
 
 
