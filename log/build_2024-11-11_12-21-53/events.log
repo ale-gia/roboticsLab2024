@@ -1,0 +1,827 @@
+[0.000000] (-) TimerEvent: {}
+[0.001742] (movement) JobQueued: {'identifier': 'movement', 'dependencies': OrderedDict()}
+[0.001919] (my_robot_controller) JobQueued: {'identifier': 'my_robot_controller', 'dependencies': OrderedDict()}
+[0.002027] (naoqi_interface) JobQueued: {'identifier': 'naoqi_interface', 'dependencies': OrderedDict()}
+[0.002306] (qi_unipa) JobQueued: {'identifier': 'qi_unipa', 'dependencies': OrderedDict()}
+[0.002457] (qi_unipa_msgs) JobQueued: {'identifier': 'qi_unipa_msgs', 'dependencies': OrderedDict()}
+[0.002582] (movement) JobStarted: {'identifier': 'movement'}
+[0.045274] (my_robot_controller) JobStarted: {'identifier': 'my_robot_controller'}
+[0.064127] (naoqi_interface) JobStarted: {'identifier': 'naoqi_interface'}
+[0.085104] (qi_unipa) JobStarted: {'identifier': 'qi_unipa'}
+[0.100345] (-) TimerEvent: {}
+[0.109763] (qi_unipa_msgs) JobStarted: {'identifier': 'qi_unipa_msgs'}
+[0.200601] (-) TimerEvent: {}
+[0.301238] (-) TimerEvent: {}
+[0.401907] (-) TimerEvent: {}
+[0.502483] (-) TimerEvent: {}
+[0.603080] (-) TimerEvent: {}
+[0.704010] (-) TimerEvent: {}
+[0.805047] (-) TimerEvent: {}
+[0.905700] (-) TimerEvent: {}
+[1.006450] (-) TimerEvent: {}
+[1.107129] (-) TimerEvent: {}
+[1.207793] (-) TimerEvent: {}
+[1.308455] (-) TimerEvent: {}
+[1.409152] (-) TimerEvent: {}
+[1.510083] (-) TimerEvent: {}
+[1.610977] (-) TimerEvent: {}
+[1.711450] (-) TimerEvent: {}
+[1.811974] (-) TimerEvent: {}
+[1.912615] (-) TimerEvent: {}
+[2.013147] (-) TimerEvent: {}
+[2.113756] (-) TimerEvent: {}
+[2.214377] (-) TimerEvent: {}
+[2.314824] (-) TimerEvent: {}
+[2.415229] (-) TimerEvent: {}
+[2.515770] (-) TimerEvent: {}
+[2.616388] (-) TimerEvent: {}
+[2.624899] (qi_unipa_msgs) JobProgress: {'identifier': 'qi_unipa_msgs', 'progress': 'cmake'}
+[2.625876] (qi_unipa_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/daniele/git_ws/src/qi_unipa_msgs', '-DCMAKE_INSTALL_PREFIX=/home/daniele/git_ws/src/install/qi_unipa_msgs'], 'cwd': '/home/daniele/git_ws/src/build/qi_unipa_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'daniele'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/daniele'), ('OLDPWD', '/home/daniele/git_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/daniele/git_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'daniele'), ('NAME', 'LAPTOP-HP55VQOE'), ('WSL_INTEROP', '/run/WSL/341_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin'), ('WT_SESSION', '94c41e42-a148-49bb-8cfa-0a9fdea683fe'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/daniele/git_ws/src/build/qi_unipa_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[2.716660] (-) TimerEvent: {}
+[2.817482] (-) TimerEvent: {}
+[2.918165] (-) TimerEvent: {}
+[3.018853] (-) TimerEvent: {}
+[3.119499] (-) TimerEvent: {}
+[3.220070] (-) TimerEvent: {}
+[3.320633] (-) TimerEvent: {}
+[3.407120] (qi_unipa_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[3.420811] (-) TimerEvent: {}
+[3.521362] (-) TimerEvent: {}
+[3.622925] (-) TimerEvent: {}
+[3.723607] (-) TimerEvent: {}
+[3.824365] (-) TimerEvent: {}
+[3.925070] (-) TimerEvent: {}
+[4.025864] (-) TimerEvent: {}
+[4.126550] (-) TimerEvent: {}
+[4.227169] (-) TimerEvent: {}
+[4.327841] (-) TimerEvent: {}
+[4.428653] (-) TimerEvent: {}
+[4.529602] (-) TimerEvent: {}
+[4.602480] (my_robot_controller) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/my_robot_controller', 'build', '--build-base', '/home/daniele/git_ws/src/build/my_robot_controller/build', 'install', '--record', '/home/daniele/git_ws/src/build/my_robot_controller/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/daniele/git_ws/src/my_robot_controller', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniele', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/daniele', 'OLDPWD': '/home/daniele/git_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/daniele/git_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'daniele', 'NAME': 'LAPTOP-HP55VQOE', 'WSL_INTEROP': '/run/WSL/341_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin', 'WT_SESSION': '94c41e42-a148-49bb-8cfa-0a9fdea683fe', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/daniele/git_ws/src/build/my_robot_controller', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniele/git_ws/src/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[4.619093] (qi_unipa) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/qi_unipa', 'build', '--build-base', '/home/daniele/git_ws/src/build/qi_unipa/build', 'install', '--record', '/home/daniele/git_ws/src/build/qi_unipa/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/daniele/git_ws/src/qi_unipa', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniele', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/daniele', 'OLDPWD': '/home/daniele/git_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/daniele/git_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'daniele', 'NAME': 'LAPTOP-HP55VQOE', 'WSL_INTEROP': '/run/WSL/341_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin', 'WT_SESSION': '94c41e42-a148-49bb-8cfa-0a9fdea683fe', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/daniele/git_ws/src/build/qi_unipa', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniele/git_ws/src/build/qi_unipa/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[4.628073] (movement) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/movement', 'build', '--build-base', '/home/daniele/git_ws/src/build/movement/build', 'install', '--record', '/home/daniele/git_ws/src/build/movement/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/daniele/git_ws/src/movement', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniele', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/daniele', 'OLDPWD': '/home/daniele/git_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/daniele/git_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'daniele', 'NAME': 'LAPTOP-HP55VQOE', 'WSL_INTEROP': '/run/WSL/341_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin', 'WT_SESSION': '94c41e42-a148-49bb-8cfa-0a9fdea683fe', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/daniele/git_ws/src/build/movement', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniele/git_ws/src/build/movement/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages:/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[4.638412] (-) TimerEvent: {}
+[4.641106] (naoqi_interface) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../build/naoqi_interface', 'build', '--build-base', '/home/daniele/git_ws/src/build/naoqi_interface/build', 'install', '--record', '/home/daniele/git_ws/src/build/naoqi_interface/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/daniele/git_ws/src/naoqi_interface', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'daniele', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'WT_PROFILE_ID': '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}', 'HOME': '/home/daniele', 'OLDPWD': '/home/daniele/git_ws', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'WSL_DISTRO_NAME': 'Ubuntu-22.04', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/daniele/git_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'daniele', 'NAME': 'LAPTOP-HP55VQOE', 'WSL_INTEROP': '/run/WSL/341_interop', 'PULSE_SERVER': 'unix:/mnt/wslg/PulseServer', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'TERM': 'xterm-256color', 'ROS_LOCALHOST_ONLY': '1', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin', 'WT_SESSION': '94c41e42-a148-49bb-8cfa-0a9fdea683fe', 'XDG_RUNTIME_DIR': '/run/user/1000/', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/daniele/git_ws/src/build/naoqi_interface', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/daniele/git_ws/src/build/naoqi_interface/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'WSL2_GUI_APPS_ENABLED': '1', 'HOSTTYPE': 'x86_64', 'CMAKE_PREFIX_PATH': '/home/daniele/git_ws/install/qi_unipa_msgs', 'WSLENV': 'WT_SESSION::WT_PROFILE_ID'}, 'shell': False}
+[4.727197] (qi_unipa_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[4.738643] (-) TimerEvent: {}
+[4.839287] (-) TimerEvent: {}
+[4.939720] (-) TimerEvent: {}
+[5.040227] (-) TimerEvent: {}
+[5.140797] (-) TimerEvent: {}
+[5.187892] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.241045] (-) TimerEvent: {}
+[5.341630] (-) TimerEvent: {}
+[5.383094] (qi_unipa) StdoutLine: {'line': b'running egg_info\n'}
+[5.387962] (qi_unipa) StdoutLine: {'line': b'creating ../build/qi_unipa/qi_unipa.egg-info\n'}
+[5.390710] (qi_unipa) StdoutLine: {'line': b'writing ../build/qi_unipa/qi_unipa.egg-info/PKG-INFO\n'}
+[5.391808] (qi_unipa) StdoutLine: {'line': b'writing dependency_links to ../build/qi_unipa/qi_unipa.egg-info/dependency_links.txt\n'}
+[5.392361] (qi_unipa) StdoutLine: {'line': b'writing entry points to ../build/qi_unipa/qi_unipa.egg-info/entry_points.txt\n'}
+[5.392614] (qi_unipa) StdoutLine: {'line': b'writing requirements to ../build/qi_unipa/qi_unipa.egg-info/requires.txt\n'}
+[5.392956] (qi_unipa) StdoutLine: {'line': b'writing top-level names to ../build/qi_unipa/qi_unipa.egg-info/top_level.txt\n'}
+[5.393171] (qi_unipa) StdoutLine: {'line': b"writing manifest file '../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt'\n"}
+[5.398399] (qi_unipa) StdoutLine: {'line': b"reading manifest file '../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt'\n"}
+[5.401065] (qi_unipa) StdoutLine: {'line': b"writing manifest file '../build/qi_unipa/qi_unipa.egg-info/SOURCES.txt'\n"}
+[5.403064] (qi_unipa) StdoutLine: {'line': b'running build\n'}
+[5.403823] (qi_unipa) StdoutLine: {'line': b'running build_py\n'}
+[5.404709] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/qi_unipa/build\n'}
+[5.405426] (movement) StdoutLine: {'line': b'running egg_info\n'}
+[5.405946] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/qi_unipa/build/lib\n'}
+[5.406413] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.407111] (movement) StdoutLine: {'line': b'creating ../build/movement/movement.egg-info\n'}
+[5.407596] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_unipa_sensor.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.408245] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_unipa_movement.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.408875] (movement) StdoutLine: {'line': b'writing ../build/movement/movement.egg-info/PKG-INFO\n'}
+[5.410997] (movement) StdoutLine: {'line': b'writing dependency_links to ../build/movement/movement.egg-info/dependency_links.txt\n'}
+[5.411576] (movement) StdoutLine: {'line': b'writing entry points to ../build/movement/movement.egg-info/entry_points.txt\n'}
+[5.411900] (movement) StdoutLine: {'line': b'writing requirements to ../build/movement/movement.egg-info/requires.txt\n'}
+[5.412185] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_unipa_speech.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.412683] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_module.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.412924] (movement) StdoutLine: {'line': b'writing top-level names to ../build/movement/movement.egg-info/top_level.txt\n'}
+[5.413193] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_unipa_vision.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.413397] (movement) StdoutLine: {'line': b"writing manifest file '../build/movement/movement.egg-info/SOURCES.txt'\n"}
+[5.413616] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/qi_unipa_tracking.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.413769] (qi_unipa) StdoutLine: {'line': b'copying qi_unipa/__init__.py -> /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa\n'}
+[5.413881] (qi_unipa) StdoutLine: {'line': b'running install\n'}
+[5.414010] (qi_unipa) StdoutLine: {'line': b'running install_lib\n'}
+[5.415047] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.416313] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_unipa_sensor.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.416823] (movement) StdoutLine: {'line': b"reading manifest file '../build/movement/movement.egg-info/SOURCES.txt'\n"}
+[5.417686] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_unipa_movement.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.418530] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_unipa_speech.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.419681] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_module.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.420844] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_unipa_vision.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.422638] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/qi_unipa_tracking.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.422980] (movement) StdoutLine: {'line': b"writing manifest file '../build/movement/movement.egg-info/SOURCES.txt'\n"}
+[5.423349] (movement) StdoutLine: {'line': b'running build\n'}
+[5.423865] (movement) StdoutLine: {'line': b'running build_py\n'}
+[5.424458] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/movement/build\n'}
+[5.424924] (qi_unipa) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/qi_unipa/build/lib/qi_unipa/__init__.py -> /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa\n'}
+[5.426042] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/movement/build/lib\n'}
+[5.426346] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/movement/build/lib/movement\n'}
+[5.427019] (movement) StdoutLine: {'line': b'copying movement/movement_controller.py -> /home/daniele/git_ws/src/build/movement/build/lib/movement\n'}
+[5.427766] (movement) StdoutLine: {'line': b'copying movement/__init__.py -> /home/daniele/git_ws/src/build/movement/build/lib/movement\n'}
+[5.428545] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_unipa_sensor.py to qi_unipa_sensor.cpython-310.pyc\n'}
+[5.428868] (naoqi_interface) StdoutLine: {'line': b'running egg_info\n'}
+[5.429115] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_unipa_movement.py to qi_unipa_movement.cpython-310.pyc\n'}
+[5.429602] (naoqi_interface) StdoutLine: {'line': b'creating ../build/naoqi_interface/naoqi_interface.egg-info\n'}
+[5.430107] (movement) StdoutLine: {'line': b'running install\n'}
+[5.431159] (movement) StdoutLine: {'line': b'running install_lib\n'}
+[5.431464] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement\n'}
+[5.431686] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_unipa_speech.py to qi_unipa_speech.cpython-310.pyc\n'}
+[5.431949] (naoqi_interface) StdoutLine: {'line': b'writing ../build/naoqi_interface/naoqi_interface.egg-info/PKG-INFO\n'}
+[5.432165] (naoqi_interface) StdoutLine: {'line': b'writing dependency_links to ../build/naoqi_interface/naoqi_interface.egg-info/dependency_links.txt\n'}
+[5.433004] (naoqi_interface) StdoutLine: {'line': b'writing entry points to ../build/naoqi_interface/naoqi_interface.egg-info/entry_points.txt\n'}
+[5.437974] (naoqi_interface) StdoutLine: {'line': b'writing requirements to ../build/naoqi_interface/naoqi_interface.egg-info/requires.txt\n'}
+[5.438402] (naoqi_interface) StdoutLine: {'line': b'writing top-level names to ../build/naoqi_interface/naoqi_interface.egg-info/top_level.txt\n'}
+[5.440594] (movement) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/movement/build/lib/movement/movement_controller.py -> /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement\n'}
+[5.441094] (movement) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/movement/build/lib/movement/__init__.py -> /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement\n'}
+[5.441442] (naoqi_interface) StdoutLine: {'line': b"writing manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'\n"}
+[5.442175] (-) TimerEvent: {}
+[5.442686] (movement) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement/movement_controller.py to movement_controller.cpython-310.pyc\n'}
+[5.442996] (movement) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement/__init__.py to __init__.cpython-310.pyc\n'}
+[5.444980] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_module.py to qi_module.cpython-310.pyc\n'}
+[5.447922] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_unipa_vision.py to qi_unipa_vision.cpython-310.pyc\n'}
+[5.449275] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/qi_unipa_tracking.py to qi_unipa_tracking.cpython-310.pyc\n'}
+[5.449591] (my_robot_controller) StdoutLine: {'line': b'running egg_info\n'}
+[5.449830] (naoqi_interface) StdoutLine: {'line': b"reading manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'\n"}
+[5.450023] (my_robot_controller) StdoutLine: {'line': b'creating ../build/my_robot_controller/my_robot_controller.egg-info\n'}
+[5.450196] (qi_unipa) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa/__init__.py to __init__.cpython-310.pyc\n'}
+[5.450378] (movement) StdoutLine: {'line': b'running install_data\n'}
+[5.450558] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/movement/share/ament_index\n'}
+[5.450741] (naoqi_interface) StdoutLine: {'line': b"writing manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'\n"}
+[5.450932] (qi_unipa) StdoutLine: {'line': b'running install_data\n'}
+[5.451792] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/qi_unipa/share/ament_index\n'}
+[5.455080] (naoqi_interface) StdoutLine: {'line': b'running build\n'}
+[5.455375] (naoqi_interface) StdoutLine: {'line': b'running build_py\n'}
+[5.455843] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/naoqi_interface/build\n'}
+[5.456338] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/qi_unipa/share/ament_index/resource_index\n'}
+[5.456817] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/movement/share/ament_index/resource_index\n'}
+[5.457818] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/naoqi_interface/build/lib\n'}
+[5.458171] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/qi_unipa/share/ament_index/resource_index/packages\n'}
+[5.458570] (my_robot_controller) StdoutLine: {'line': b'writing ../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO\n'}
+[5.459135] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface\n'}
+[5.459737] (qi_unipa) StdoutLine: {'line': b'copying resource/qi_unipa -> /home/daniele/git_ws/src/install/qi_unipa/share/ament_index/resource_index/packages\n'}
+[5.461593] (qi_unipa) StdoutLine: {'line': b'copying package.xml -> /home/daniele/git_ws/src/install/qi_unipa/share/qi_unipa\n'}
+[5.462996] (qi_unipa) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/qi_unipa/share/qi_unipa/launch\n'}
+[5.463298] (my_robot_controller) StdoutLine: {'line': b'writing dependency_links to ../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt\n'}
+[5.463557] (my_robot_controller) StdoutLine: {'line': b'writing entry points to ../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt\n'}
+[5.463904] (my_robot_controller) StdoutLine: {'line': b'writing requirements to ../build/my_robot_controller/my_robot_controller.egg-info/requires.txt\n'}
+[5.464985] (my_robot_controller) StdoutLine: {'line': b'writing top-level names to ../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt\n'}
+[5.465485] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[5.465734] (naoqi_interface) StdoutLine: {'line': b'copying naoqi_interface/interface_controller.py -> /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface\n'}
+[5.466047] (naoqi_interface) StdoutLine: {'line': b'copying naoqi_interface/__init__.py -> /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface\n'}
+[5.466277] (naoqi_interface) StdoutLine: {'line': b'running install\n'}
+[5.466492] (movement) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/movement/share/ament_index/resource_index/packages\n'}
+[5.466721] (movement) StdoutLine: {'line': b'copying resource/movement -> /home/daniele/git_ws/src/install/movement/share/ament_index/resource_index/packages\n'}
+[5.467103] (movement) StdoutLine: {'line': b'copying package.xml -> /home/daniele/git_ws/src/install/movement/share/movement\n'}
+[5.467513] (movement) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.467983] (qi_unipa) StdoutLine: {'line': b'copying launch/qi_unipa.launch.py -> /home/daniele/git_ws/src/install/qi_unipa/share/qi_unipa/launch\n'}
+[5.468323] (naoqi_interface) StdoutLine: {'line': b'running install_lib\n'}
+[5.468801] (qi_unipa) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.469430] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface\n'}
+[5.469946] (movement) StdoutLine: {'line': b'Copying ../build/movement/movement.egg-info to /home/daniele/git_ws/src/install/movement/lib/python3.10/site-packages/movement-0.0.0-py3.10.egg-info\n'}
+[5.470542] (naoqi_interface) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface/interface_controller.py -> /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface\n'}
+[5.471206] (my_robot_controller) StdoutLine: {'line': b"reading manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[5.472159] (naoqi_interface) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface/__init__.py -> /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface\n'}
+[5.472459] (qi_unipa) StdoutLine: {'line': b'Copying ../build/qi_unipa/qi_unipa.egg-info to /home/daniele/git_ws/src/install/qi_unipa/lib/python3.10/site-packages/qi_unipa-0.0.0-py3.10.egg-info\n'}
+[5.472711] (my_robot_controller) StdoutLine: {'line': b"writing manifest file '../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'\n"}
+[5.472984] (my_robot_controller) StdoutLine: {'line': b'running build\n'}
+[5.473174] (my_robot_controller) StdoutLine: {'line': b'running build_py\n'}
+[5.475395] (movement) StdoutLine: {'line': b'running install_scripts\n'}
+[5.484562] (naoqi_interface) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface/interface_controller.py to interface_controller.cpython-310.pyc\n'}
+[5.484982] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/my_robot_controller/build\n'}
+[5.487004] (qi_unipa) StdoutLine: {'line': b'running install_scripts\n'}
+[5.487865] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/my_robot_controller/build/lib\n'}
+[5.489689] (naoqi_interface) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface/__init__.py to __init__.cpython-310.pyc\n'}
+[5.491315] (naoqi_interface) StdoutLine: {'line': b'running install_data\n'}
+[5.492099] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index\n'}
+[5.492827] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.493064] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/sensor.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.493280] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/new.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.493503] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/nao_controller.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.493720] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index\n'}
+[5.493930] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/pose.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.505566] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/patient_data_controller.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.505995] (naoqi_interface) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index/packages\n'}
+[5.506516] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/__init__.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.506970] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/patient_data_controller2.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.507407] (my_robot_controller) StdoutLine: {'line': b'copying my_robot_controller/speech.py -> /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller\n'}
+[5.508835] (my_robot_controller) StdoutLine: {'line': b'running install\n'}
+[5.509534] (my_robot_controller) StdoutLine: {'line': b'running install_lib\n'}
+[5.509748] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.509940] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/sensor.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.510132] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/new.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.510329] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/nao_controller.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.510548] (naoqi_interface) StdoutLine: {'line': b'copying resource/naoqi_interface -> /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index/packages\n'}
+[5.510750] (naoqi_interface) StdoutLine: {'line': b'copying package.xml -> /home/daniele/git_ws/src/install/naoqi_interface/share/naoqi_interface\n'}
+[5.510935] (naoqi_interface) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.511119] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/pose.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.511302] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/patient_data_controller.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.511895] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.512111] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/patient_data_controller2.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.512297] (naoqi_interface) StdoutLine: {'line': b'Copying ../build/naoqi_interface/naoqi_interface.egg-info to /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface-0.0.0-py3.10.egg-info\n'}
+[5.512509] (my_robot_controller) StdoutLine: {'line': b'copying /home/daniele/git_ws/src/build/my_robot_controller/build/lib/my_robot_controller/speech.py -> /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller\n'}
+[5.512741] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/sensor.py to sensor.cpython-310.pyc\n'}
+[5.515189] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/new.py to new.cpython-310.pyc\n'}
+[5.519019] (naoqi_interface) StdoutLine: {'line': b'running install_scripts\n'}
+[5.526156] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/nao_controller.py to nao_controller.cpython-310.pyc\n'}
+[5.526757] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/pose.py to pose.cpython-310.pyc\n'}
+[5.527472] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/patient_data_controller.py to patient_data_controller.cpython-310.pyc\n'}
+[5.529663] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc\n'}
+[5.530221] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/patient_data_controller2.py to patient_data_controller2.cpython-310.pyc\n'}
+[5.537536] (my_robot_controller) StdoutLine: {'line': b'byte-compiling /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/speech.py to speech.cpython-310.pyc\n'}
+[5.541029] (my_robot_controller) StdoutLine: {'line': b'running install_data\n'}
+[5.541440] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/my_robot_controller/share/ament_index\n'}
+[5.541953] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/my_robot_controller/share/ament_index/resource_index\n'}
+[5.542266] (-) TimerEvent: {}
+[5.544022] (my_robot_controller) StdoutLine: {'line': b'creating /home/daniele/git_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[5.546918] (my_robot_controller) StdoutLine: {'line': b'copying resource/my_robot_controller -> /home/daniele/git_ws/src/install/my_robot_controller/share/ament_index/resource_index/packages\n'}
+[5.547719] (my_robot_controller) StdoutLine: {'line': b'copying package.xml -> /home/daniele/git_ws/src/install/my_robot_controller/share/my_robot_controller\n'}
+[5.548493] (my_robot_controller) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.554550] (my_robot_controller) StdoutLine: {'line': b'Copying ../build/my_robot_controller/my_robot_controller.egg-info to /home/daniele/git_ws/src/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info\n'}
+[5.563870] (my_robot_controller) StdoutLine: {'line': b'running install_scripts\n'}
+[5.577636] (movement) StdoutLine: {'line': b'Installing movement_controller script to /home/daniele/git_ws/src/install/movement/lib/movement\n'}
+[5.579789] (movement) StdoutLine: {'line': b"writing list of installed files to '/home/daniele/git_ws/src/build/movement/install.log'\n"}
+[5.584638] (qi_unipa) StdoutLine: {'line': b'Installing qi_unipa_movement script to /home/daniele/git_ws/src/install/qi_unipa/lib/qi_unipa\n'}
+[5.586569] (qi_unipa) StdoutLine: {'line': b'Installing qi_unipa_sensor script to /home/daniele/git_ws/src/install/qi_unipa/lib/qi_unipa\n'}
+[5.587424] (qi_unipa) StdoutLine: {'line': b'Installing qi_unipa_speech script to /home/daniele/git_ws/src/install/qi_unipa/lib/qi_unipa\n'}
+[5.588084] (qi_unipa) StdoutLine: {'line': b'Installing qi_unipa_tracking script to /home/daniele/git_ws/src/install/qi_unipa/lib/qi_unipa\n'}
+[5.589911] (qi_unipa) StdoutLine: {'line': b"writing list of installed files to '/home/daniele/git_ws/src/build/qi_unipa/install.log'\n"}
+[5.618126] (naoqi_interface) StdoutLine: {'line': b'Installing interface_controller script to /home/daniele/git_ws/src/install/naoqi_interface/lib/naoqi_interface\n'}
+[5.620872] (naoqi_interface) StdoutLine: {'line': b"writing list of installed files to '/home/daniele/git_ws/src/build/naoqi_interface/install.log'\n"}
+[5.642936] (-) TimerEvent: {}
+[5.664408] (my_robot_controller) StdoutLine: {'line': b'Installing nao_controller script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.668626] (my_robot_controller) StdoutLine: {'line': b'Installing new script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.669705] (my_robot_controller) StdoutLine: {'line': b'Installing patient_data_controller script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.670662] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.671528] (my_robot_controller) StdoutLine: {'line': b'Installing patient_data_controller2 script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.672255] (my_robot_controller) StdoutLine: {'line': b'Installing sensor script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.673292] (my_robot_controller) StdoutLine: {'line': b'Installing speech script to /home/daniele/git_ws/src/install/my_robot_controller/lib/my_robot_controller\n'}
+[5.675508] (my_robot_controller) StdoutLine: {'line': b"writing list of installed files to '/home/daniele/git_ws/src/build/my_robot_controller/install.log'\n"}
+[5.723361] (qi_unipa_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.730136] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.738266] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.743708] (-) TimerEvent: {}
+[5.765881] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.778002] (movement) CommandEnded: {'returncode': 0}
+[5.843810] (-) TimerEvent: {}
+[5.856422] (movement) JobEnded: {'identifier': 'movement', 'rc': 0}
+[5.863855] (qi_unipa) CommandEnded: {'returncode': 0}
+[5.888594] (qi_unipa) JobEnded: {'identifier': 'qi_unipa', 'rc': 0}
+[5.890850] (naoqi_interface) CommandEnded: {'returncode': 0}
+[5.921599] (naoqi_interface) JobEnded: {'identifier': 'naoqi_interface', 'rc': 0}
+[5.925500] (my_robot_controller) CommandEnded: {'returncode': 0}
+[5.944273] (-) TimerEvent: {}
+[5.950434] (my_robot_controller) JobEnded: {'identifier': 'my_robot_controller', 'rc': 0}
+[6.044462] (-) TimerEvent: {}
+[6.131345] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.144679] (-) TimerEvent: {}
+[6.145361] (qi_unipa_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.145661] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.147297] (qi_unipa_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.181519] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[6.245130] (-) TimerEvent: {}
+[6.346200] (-) TimerEvent: {}
+[6.447343] (-) TimerEvent: {}
+[6.548512] (-) TimerEvent: {}
+[6.649414] (-) TimerEvent: {}
+[6.749957] (-) TimerEvent: {}
+[6.800319] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[6.850221] (-) TimerEvent: {}
+[6.950964] (-) TimerEvent: {}
+[7.051550] (-) TimerEvent: {}
+[7.152065] (-) TimerEvent: {}
+[7.179878] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[7.252330] (-) TimerEvent: {}
+[7.352809] (-) TimerEvent: {}
+[7.373254] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.409931] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.453226] (-) TimerEvent: {}
+[7.466512] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[7.553554] (-) TimerEvent: {}
+[7.654753] (-) TimerEvent: {}
+[7.756071] (-) TimerEvent: {}
+[7.856945] (-) TimerEvent: {}
+[7.958086] (-) TimerEvent: {}
+[8.059077] (-) TimerEvent: {}
+[8.159923] (-) TimerEvent: {}
+[8.260436] (-) TimerEvent: {}
+[8.303609] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.360712] (-) TimerEvent: {}
+[8.461438] (-) TimerEvent: {}
+[8.562081] (-) TimerEvent: {}
+[8.662759] (-) TimerEvent: {}
+[8.763373] (-) TimerEvent: {}
+[8.864025] (-) TimerEvent: {}
+[8.964782] (-) TimerEvent: {}
+[9.020179] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[9.065041] (-) TimerEvent: {}
+[9.165802] (-) TimerEvent: {}
+[9.266459] (-) TimerEvent: {}
+[9.367059] (-) TimerEvent: {}
+[9.467555] (-) TimerEvent: {}
+[9.492289] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[9.567793] (-) TimerEvent: {}
+[9.668401] (-) TimerEvent: {}
+[9.769060] (-) TimerEvent: {}
+[9.870211] (-) TimerEvent: {}
+[9.970975] (-) TimerEvent: {}
+[10.071715] (-) TimerEvent: {}
+[10.172297] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[10.172618] (-) TimerEvent: {}
+[10.273167] (-) TimerEvent: {}
+[10.373947] (-) TimerEvent: {}
+[10.474976] (-) TimerEvent: {}
+[10.576166] (-) TimerEvent: {}
+[10.677287] (-) TimerEvent: {}
+[10.743058] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[10.758063] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[10.777573] (-) TimerEvent: {}
+[10.878381] (-) TimerEvent: {}
+[10.979065] (-) TimerEvent: {}
+[11.079961] (-) TimerEvent: {}
+[11.180893] (-) TimerEvent: {}
+[11.282040] (-) TimerEvent: {}
+[11.382943] (-) TimerEvent: {}
+[11.484028] (-) TimerEvent: {}
+[11.584975] (-) TimerEvent: {}
+[11.686120] (-) TimerEvent: {}
+[11.787146] (-) TimerEvent: {}
+[11.888137] (-) TimerEvent: {}
+[11.989197] (-) TimerEvent: {}
+[12.090484] (-) TimerEvent: {}
+[12.191545] (-) TimerEvent: {}
+[12.292443] (-) TimerEvent: {}
+[12.393499] (-) TimerEvent: {}
+[12.494573] (-) TimerEvent: {}
+[12.595490] (-) TimerEvent: {}
+[12.696610] (-) TimerEvent: {}
+[12.717217] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[12.718496] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[12.718822] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[12.719147] (qi_unipa_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[12.796926] (-) TimerEvent: {}
+[12.807041] (qi_unipa_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[12.897403] (-) TimerEvent: {}
+[12.998312] (-) TimerEvent: {}
+[13.099328] (-) TimerEvent: {}
+[13.200451] (-) TimerEvent: {}
+[13.216399] (qi_unipa_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.226929] (qi_unipa_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.281931] (qi_unipa_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.300737] (-) TimerEvent: {}
+[13.401504] (-) TimerEvent: {}
+[13.438138] (qi_unipa_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[13.445391] (qi_unipa_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/daniele/git_ws/src/build/qi_unipa_msgs\n'}
+[13.461643] (qi_unipa_msgs) CommandEnded: {'returncode': 0}
+[13.466117] (qi_unipa_msgs) JobProgress: {'identifier': 'qi_unipa_msgs', 'progress': 'build'}
+[13.466289] (qi_unipa_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/daniele/git_ws/src/build/qi_unipa_msgs', '--', '-j8', '-l8'], 'cwd': '/home/daniele/git_ws/src/build/qi_unipa_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'daniele'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/daniele'), ('OLDPWD', '/home/daniele/git_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/daniele/git_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'daniele'), ('NAME', 'LAPTOP-HP55VQOE'), ('WSL_INTEROP', '/run/WSL/341_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin'), ('WT_SESSION', '94c41e42-a148-49bb-8cfa-0a9fdea683fe'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/daniele/git_ws/src/build/qi_unipa_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[13.501785] (-) TimerEvent: {}
+[13.566360] (qi_unipa_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[13.599042] (qi_unipa_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[13.602218] (-) TimerEvent: {}
+[13.634688] (qi_unipa_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_qi_unipa_msgs\n'}
+[13.702552] (-) TimerEvent: {}
+[13.803538] (-) TimerEvent: {}
+[13.904008] (-) TimerEvent: {}
+[14.004417] (-) TimerEvent: {}
+[14.104837] (-) TimerEvent: {}
+[14.205289] (-) TimerEvent: {}
+[14.221746] (qi_unipa_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[14.222780] (qi_unipa_msgs) StdoutLine: {'line': b'creating qi_unipa_msgs.egg-info\n'}
+[14.223543] (qi_unipa_msgs) StdoutLine: {'line': b'writing qi_unipa_msgs.egg-info/PKG-INFO\n'}
+[14.223939] (qi_unipa_msgs) StdoutLine: {'line': b'writing dependency_links to qi_unipa_msgs.egg-info/dependency_links.txt\n'}
+[14.224270] (qi_unipa_msgs) StdoutLine: {'line': b'writing top-level names to qi_unipa_msgs.egg-info/top_level.txt\n'}
+[14.224686] (qi_unipa_msgs) StdoutLine: {'line': b"writing manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'\n"}
+[14.229090] (qi_unipa_msgs) StdoutLine: {'line': b"reading manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'\n"}
+[14.230412] (qi_unipa_msgs) StdoutLine: {'line': b"writing manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'\n"}
+[14.272075] (qi_unipa_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_qi_unipa_msgs_egg\n'}
+[14.305466] (-) TimerEvent: {}
+[14.405939] (-) TimerEvent: {}
+[14.494802] (qi_unipa_msgs) StdoutLine: {'line': b'[  2%] Built target qi_unipa_msgs__cpp\n'}
+[14.506147] (-) TimerEvent: {}
+[14.509854] (qi_unipa_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[14.510305] (qi_unipa_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[14.510541] (qi_unipa_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[14.606352] (-) TimerEvent: {}
+[14.637214] (qi_unipa_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/posture_with_speed__functions.c.o\x1b[0m\n'}
+[14.637646] (qi_unipa_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.c.o\x1b[0m\n'}
+[14.638756] (qi_unipa_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/hand__functions.c.o\x1b[0m\n'}
+[14.639206] (qi_unipa_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/sonar__functions.c.o\x1b[0m\n'}
+[14.639768] (qi_unipa_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/bumper__functions.c.o\x1b[0m\n'}
+[14.706495] (-) TimerEvent: {}
+[14.806869] (-) TimerEvent: {}
+[14.821682] (qi_unipa_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/track__functions.c.o\x1b[0m\n'}
+[14.894483] (qi_unipa_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libqi_unipa_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[14.906998] (-) TimerEvent: {}
+[15.007388] (-) TimerEvent: {}
+[15.076385] (qi_unipa_msgs) StdoutLine: {'line': b'[ 16%] Built target qi_unipa_msgs__rosidl_generator_c\n'}
+[15.090092] (qi_unipa_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[15.090393] (qi_unipa_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[15.092062] (qi_unipa_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.107562] (-) TimerEvent: {}
+[15.176896] (qi_unipa_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/joint_angles_with_speed__type_support.cpp.o\x1b[0m\n'}
+[15.177276] (qi_unipa_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/sonar__type_support.cpp.o\x1b[0m\n'}
+[15.177608] (qi_unipa_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/posture_with_speed__type_support.cpp.o\x1b[0m\n'}
+[15.207689] (-) TimerEvent: {}
+[15.308229] (-) TimerEvent: {}
+[15.415256] (-) TimerEvent: {}
+[15.515851] (-) TimerEvent: {}
+[15.616450] (-) TimerEvent: {}
+[15.639172] (qi_unipa_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.cpp.o\x1b[0m\n'}
+[15.716644] (-) TimerEvent: {}
+[15.760476] (qi_unipa_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/posture_with_speed__type_support.cpp.o\x1b[0m\n'}
+[15.816844] (-) TimerEvent: {}
+[15.917291] (-) TimerEvent: {}
+[16.017741] (-) TimerEvent: {}
+[16.118211] (-) TimerEvent: {}
+[16.184940] (qi_unipa_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/posture_with_speed__type_support.cpp.o\x1b[0m\n'}
+[16.192312] (qi_unipa_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/joint_angles_with_speed__type_support.cpp.o\x1b[0m\n'}
+[16.192736] (qi_unipa_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/hand__type_support.cpp.o\x1b[0m\n'}
+[16.201005] (qi_unipa_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/bumper__type_support.cpp.o\x1b[0m\n'}
+[16.218352] (-) TimerEvent: {}
+[16.256399] (qi_unipa_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/sonar__type_support.cpp.o\x1b[0m\n'}
+[16.266902] (qi_unipa_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/hand__type_support.cpp.o\x1b[0m\n'}
+[16.318526] (-) TimerEvent: {}
+[16.321544] (qi_unipa_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/bumper__type_support.cpp.o\x1b[0m\n'}
+[16.335499] (qi_unipa_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/track__type_support.cpp.o\x1b[0m\n'}
+[16.418744] (-) TimerEvent: {}
+[16.431544] (qi_unipa_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32m\x1b[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.474355] (qi_unipa_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.c.o\x1b[0m\n'}
+[16.501454] (qi_unipa_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/track__type_support.cpp.o\x1b[0m\n'}
+[16.518943] (-) TimerEvent: {}
+[16.543634] (qi_unipa_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/posture_with_speed__type_support_c.cpp.o\x1b[0m\n'}
+[16.602435] (qi_unipa_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.c.o\x1b[0m\n'}
+[16.619163] (-) TimerEvent: {}
+[16.670804] (qi_unipa_msgs) StdoutLine: {'line': b'[ 46%] Built target qi_unipa_msgs__rosidl_typesupport_c\n'}
+[16.689453] (qi_unipa_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/sonar__type_support.c.o\x1b[0m\n'}
+[16.700610] (qi_unipa_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/hand__type_support.c.o\x1b[0m\n'}
+[16.719375] (-) TimerEvent: {}
+[16.761810] (qi_unipa_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/bumper__type_support.c.o\x1b[0m\n'}
+[16.775773] (qi_unipa_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/track__type_support.c.o\x1b[0m\n'}
+[16.819521] (-) TimerEvent: {}
+[16.850547] (qi_unipa_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/sonar__type_support.cpp.o\x1b[0m\n'}
+[16.851099] (qi_unipa_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.cpp.o\x1b[0m\n'}
+[16.862206] (qi_unipa_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C shared library libqi_unipa_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.919970] (-) TimerEvent: {}
+[16.976248] (qi_unipa_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support_c.cpp.o\x1b[0m\n'}
+[16.990165] (qi_unipa_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/joint_angles_with_speed__type_support.cpp.o\x1b[0m\n'}
+[17.019907] (qi_unipa_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/sonar__type_support.cpp.o\x1b[0m\n'}
+[17.020291] (-) TimerEvent: {}
+[17.104333] (qi_unipa_msgs) StdoutLine: {'line': b'[ 60%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_c\n'}
+[17.120896] (-) TimerEvent: {}
+[17.137751] (qi_unipa_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/hand__type_support.cpp.o\x1b[0m\n'}
+[17.221055] (-) TimerEvent: {}
+[17.306925] (qi_unipa_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[17.321221] (-) TimerEvent: {}
+[17.421845] (-) TimerEvent: {}
+[17.522425] (-) TimerEvent: {}
+[17.571465] (qi_unipa_msgs) StdoutLine: {'line': b'[ 63%] Built target qi_unipa_msgs__rosidl_typesupport_cpp\n'}
+[17.593634] (qi_unipa_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o\x1b[0m\n'}
+[17.594152] (qi_unipa_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/sonar__type_support_c.cpp.o\x1b[0m\n'}
+[17.622592] (-) TimerEvent: {}
+[17.723096] (-) TimerEvent: {}
+[17.823636] (-) TimerEvent: {}
+[17.930595] (-) TimerEvent: {}
+[18.013757] (qi_unipa_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/hand__type_support.cpp.o\x1b[0m\n'}
+[18.030762] (-) TimerEvent: {}
+[18.036733] (qi_unipa_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/hand__type_support_c.cpp.o\x1b[0m\n'}
+[18.130961] (-) TimerEvent: {}
+[18.231567] (-) TimerEvent: {}
+[18.315679] (qi_unipa_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/track__type_support.cpp.o\x1b[0m\n'}
+[18.331750] (-) TimerEvent: {}
+[18.344618] (qi_unipa_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/bumper__type_support.cpp.o\x1b[0m\n'}
+[18.431897] (-) TimerEvent: {}
+[18.452198] (qi_unipa_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/track__type_support.cpp.o\x1b[0m\n'}
+[18.532053] (-) TimerEvent: {}
+[18.576273] (qi_unipa_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/bumper__type_support_c.cpp.o\x1b[0m\n'}
+[18.632227] (-) TimerEvent: {}
+[18.700597] (qi_unipa_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/track__type_support_c.cpp.o\x1b[0m\n'}
+[18.734113] (-) TimerEvent: {}
+[18.834721] (-) TimerEvent: {}
+[18.935306] (-) TimerEvent: {}
+[19.035868] (-) TimerEvent: {}
+[19.137725] (-) TimerEvent: {}
+[19.238466] (-) TimerEvent: {}
+[19.339133] (-) TimerEvent: {}
+[19.439897] (-) TimerEvent: {}
+[19.540811] (-) TimerEvent: {}
+[19.595984] (qi_unipa_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.640958] (-) TimerEvent: {}
+[19.720909] (qi_unipa_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[19.741237] (-) TimerEvent: {}
+[19.777016] (qi_unipa_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[19.841446] (-) TimerEvent: {}
+[19.924113] (qi_unipa_msgs) StdoutLine: {'line': b'[ 80%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[19.941801] (-) TimerEvent: {}
+[20.037899] (qi_unipa_msgs) StdoutLine: {'line': b'[ 80%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_cpp\n'}
+[20.042036] (-) TimerEvent: {}
+[20.110276] (qi_unipa_msgs) StdoutLine: {'line': b'[ 80%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_c\n'}
+[20.142492] (-) TimerEvent: {}
+[20.180427] (qi_unipa_msgs) StdoutLine: {'line': b'[ 80%] Built target qi_unipa_msgs\n'}
+[20.242895] (-) TimerEvent: {}
+[20.251392] (qi_unipa_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.343184] (-) TimerEvent: {}
+[20.444016] (-) TimerEvent: {}
+[20.544687] (-) TimerEvent: {}
+[20.645292] (-) TimerEvent: {}
+[20.745830] (-) TimerEvent: {}
+[20.846416] (-) TimerEvent: {}
+[20.946923] (-) TimerEvent: {}
+[21.047524] (-) TimerEvent: {}
+[21.148066] (-) TimerEvent: {}
+[21.248498] (-) TimerEvent: {}
+[21.349027] (-) TimerEvent: {}
+[21.449596] (-) TimerEvent: {}
+[21.550283] (-) TimerEvent: {}
+[21.651026] (-) TimerEvent: {}
+[21.751685] (-) TimerEvent: {}
+[21.752453] (qi_unipa_msgs) StdoutLine: {'line': b'[ 81%] Built target qi_unipa_msgs__py\n'}
+[21.785377] (qi_unipa_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_joint_angles_with_speed_s.c.o\x1b[0m\n'}
+[21.785752] (qi_unipa_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_sonar_s.c.o\x1b[0m\n'}
+[21.787356] (qi_unipa_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_posture_with_speed_s.c.o\x1b[0m\n'}
+[21.788034] (qi_unipa_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_hand_s.c.o\x1b[0m\n'}
+[21.788290] (qi_unipa_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_bumper_s.c.o\x1b[0m\n'}
+[21.788967] (qi_unipa_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_track_s.c.o\x1b[0m\n'}
+[21.851886] (-) TimerEvent: {}
+[21.952365] (-) TimerEvent: {}
+[22.053716] (-) TimerEvent: {}
+[22.154327] (-) TimerEvent: {}
+[22.255285] (-) TimerEvent: {}
+[22.339237] (qi_unipa_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/libqi_unipa_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[22.355707] (-) TimerEvent: {}
+[22.457013] (-) TimerEvent: {}
+[22.558161] (-) TimerEvent: {}
+[22.659362] (-) TimerEvent: {}
+[22.760544] (-) TimerEvent: {}
+[22.861768] (-) TimerEvent: {}
+[22.900461] (qi_unipa_msgs) StdoutLine: {'line': b'[ 91%] Built target qi_unipa_msgs__rosidl_generator_py\n'}
+[22.962178] (-) TimerEvent: {}
+[22.976977] (qi_unipa_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[22.978325] (qi_unipa_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[22.979570] (qi_unipa_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[23.062621] (-) TimerEvent: {}
+[23.163740] (-) TimerEvent: {}
+[23.264843] (-) TimerEvent: {}
+[23.365870] (-) TimerEvent: {}
+[23.462335] (qi_unipa_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.466138] (-) TimerEvent: {}
+[23.475018] (qi_unipa_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.480357] (qi_unipa_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[23.566655] (-) TimerEvent: {}
+[23.667735] (-) TimerEvent: {}
+[23.768976] (-) TimerEvent: {}
+[23.829634] (qi_unipa_msgs) StdoutLine: {'line': b'[100%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[23.840033] (qi_unipa_msgs) StdoutLine: {'line': b'[100%] Built target qi_unipa_msgs__rosidl_typesupport_c__pyext\n'}
+[23.840727] (qi_unipa_msgs) StdoutLine: {'line': b'[100%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[23.869435] (-) TimerEvent: {}
+[23.888973] (qi_unipa_msgs) CommandEnded: {'returncode': 0}
+[23.969875] (-) TimerEvent: {}
+[24.070884] (-) TimerEvent: {}
+[24.171955] (-) TimerEvent: {}
+[24.273100] (-) TimerEvent: {}
+[24.374166] (-) TimerEvent: {}
+[24.475841] (qi_unipa_msgs) JobProgress: {'identifier': 'qi_unipa_msgs', 'progress': 'install'}
+[24.476576] (-) TimerEvent: {}
+[24.509376] (qi_unipa_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/daniele/git_ws/src/build/qi_unipa_msgs'], 'cwd': '/home/daniele/git_ws/src/build/qi_unipa_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'daniele'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('WT_PROFILE_ID', '{4ff56d04-d9cf-57ea-bae2-ad396374e7e3}'), ('HOME', '/home/daniele'), ('OLDPWD', '/home/daniele/git_ws'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/daniele/git_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'daniele'), ('NAME', 'LAPTOP-HP55VQOE'), ('WSL_INTEROP', '/run/WSL/341_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files/Common Files/Oracle/Java/javapath:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/Intel/WiFi/bin/:/mnt/c/Program Files/Common Files/Intel/WirelessCommon/:/mnt/c/Program Files (x86)/Smart Projects/IsoBuster:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/dany_/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/dany_/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/dany_/.dotnet/tools:/snap/bin'), ('WT_SESSION', '94c41e42-a148-49bb-8cfa-0a9fdea683fe'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/daniele/git_ws/src/build/qi_unipa_msgs'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/daniele/git_ws/install/speech/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa_msgs/local/lib/python3.10/dist-packages:/home/daniele/git_ws/install/qi_unipa_msgs/lib/python3.10/site-packages:/home/daniele/git_ws/install/qi_unipa/lib/python3.10/site-packages:/home/daniele/git_ws/install/naoqi_interface/lib/python3.10/site-packages:/home/daniele/git_ws/install/my_robot_controller/lib/python3.10/site-packages:/home/daniele/git_ws/install/movement/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/daniele/git_ws/install/qi_unipa_msgs:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble'), ('WSLENV', 'WT_SESSION::WT_PROFILE_ID')]), 'shell': False}
+[24.537643] (qi_unipa_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.541775] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/rosidl_interfaces/qi_unipa_msgs\n'}
+[24.543209] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.544345] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.545396] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/posture_with_speed.h\n'}
+[24.546730] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[24.547532] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/hand.h\n'}
+[24.549345] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/joint_angles_with_speed.h\n'}
+[24.549815] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/sonar.h\n'}
+[24.550540] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/track.h\n'}
+[24.551345] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/bumper.h\n'}
+[24.552514] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.553341] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__functions.c\n'}
+[24.554159] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__functions.h\n'}
+[24.554893] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.h\n'}
+[24.555645] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__struct.h\n'}
+[24.556861] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__functions.c\n'}
+[24.557983] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__struct.h\n'}
+[24.559389] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__functions.h\n'}
+[24.560474] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__functions.h\n'}
+[24.561824] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.h\n'}
+[24.562524] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.h\n'}
+[24.563268] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.h\n'}
+[24.563982] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.h\n'}
+[24.564781] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__struct.h\n'}
+[24.565392] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__functions.h\n'}
+[24.566196] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__functions.h\n'}
+[24.566923] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__struct.h\n'}
+[24.567887] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.h\n'}
+[24.568249] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__functions.c\n'}
+[24.568542] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.h\n'}
+[24.569620] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__struct.h\n'}
+[24.570559] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__functions.c\n'}
+[24.571294] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__functions.c\n'}
+[24.572008] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.c\n'}
+[24.572721] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__struct.h\n'}
+[24.573431] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/library_path.sh\n'}
+[24.574178] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/library_path.dsv\n'}
+[24.574885] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_c.so\n'}
+[24.575597] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_c.so" to ""\n'}
+[24.576866] (-) TimerEvent: {}
+[24.577592] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.579388] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.580663] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[24.581854] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.583030] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h\n'}
+[24.584083] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[24.585058] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_fastrtps_c.h\n'}
+[24.586401] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_fastrtps_c.h\n'}
+[24.587835] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_fastrtps_c.h\n'}
+[24.588246] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_fastrtps_c.h\n'}
+[24.589381] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[24.590769] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[24.591519] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.592261] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.592990] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[24.593716] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.594729] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.c\n'}
+[24.596373] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.c\n'}
+[24.597565] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_introspection_c.h\n'}
+[24.597969] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h\n'}
+[24.598914] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.c\n'}
+[24.600218] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_introspection_c.h\n'}
+[24.600977] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.c\n'}
+[24.601743] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.c\n'}
+[24.602541] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_introspection_c.h\n'}
+[24.603256] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_introspection_c.h\n'}
+[24.604091] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_introspection_c.h\n'}
+[24.605031] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.c\n'}
+[24.606046] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_c.so\n'}
+[24.607139] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[24.607938] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_c.so\n'}
+[24.608932] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_c.so" to ""\n'}
+[24.609841] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.610733] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.611459] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/bumper.hpp\n'}
+[24.612233] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/sonar.hpp\n'}
+[24.613769] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/joint_angles_with_speed.hpp\n'}
+[24.614724] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/track.hpp\n'}
+[24.615198] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/hand.hpp\n'}
+[24.615559] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/posture_with_speed.hpp\n'}
+[24.616665] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.618002] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__builder.hpp\n'}
+[24.618973] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__struct.hpp\n'}
+[24.619973] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__traits.hpp\n'}
+[24.620793] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__builder.hpp\n'}
+[24.621837] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__struct.hpp\n'}
+[24.622955] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__builder.hpp\n'}
+[24.624548] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__builder.hpp\n'}
+[24.626137] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__traits.hpp\n'}
+[24.627761] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__struct.hpp\n'}
+[24.629242] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__traits.hpp\n'}
+[24.629640] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__traits.hpp\n'}
+[24.629937] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__builder.hpp\n'}
+[24.630645] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__traits.hpp\n'}
+[24.631469] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__traits.hpp\n'}
+[24.633296] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__struct.hpp\n'}
+[24.633772] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__builder.hpp\n'}
+[24.634090] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__struct.hpp\n'}
+[24.634626] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__struct.hpp\n'}
+[24.635044] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.635323] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.635591] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[24.635857] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.636243] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.636534] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.637130] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/dds_fastrtps\n'}
+[24.637970] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.638873] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.639853] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.640718] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[24.642151] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[24.642941] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[24.643935] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs\n'}
+[24.645524] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg\n'}
+[24.647423] (qi_unipa_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail\n'}
+[24.648951] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.cpp\n'}
+[24.650624] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.cpp\n'}
+[24.651087] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.cpp\n'}
+[24.651873] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.cpp\n'}
+[24.652606] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.cpp\n'}
+[24.653487] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.654798] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.655182] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.656388] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.656962] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.657435] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_introspection_cpp.hpp\n'}
+[24.657933] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.cpp\n'}
+[24.658411] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[24.658916] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[24.659557] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_cpp.so\n'}
+[24.660045] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[24.660556] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/pythonpath.sh\n'}
+[24.661062] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/pythonpath.dsv\n'}
+[24.661540] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info\n'}
+[24.662016] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[24.662483] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[24.662935] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[24.663456] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[24.663952] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs\n'}
+[24.664423] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg\n'}
+[24.665063] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper.py\n'}
+[24.665635] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar.py\n'}
+[24.666335] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track.py\n'}
+[24.666932] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed.py\n'}
+[24.667441] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand_s.c\n'}
+[24.667940] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper_s.c\n'}
+[24.668494] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track_s.c\n'}
+[24.669000] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed_s.c\n'}
+[24.669513] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar_s.c\n'}
+[24.670046] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed.py\n'}
+[24.670566] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/__init__.py\n'}
+[24.671247] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed_s.c\n'}
+[24.671789] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand.py\n'}
+[24.672384] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[24.672990] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[24.673535] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.674073] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[24.674601] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.675128] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/libqi_unipa_msgs__rosidl_generator_py.so\n'}
+[24.675653] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.676287] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/__init__.py\n'}
+[24.676930] (-) TimerEvent: {}
+[24.778041] (-) TimerEvent: {}
+[24.846546] (qi_unipa_msgs) StdoutLine: {'line': b"Listing '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs'...\n"}
+[24.846843] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/__init__.py'...\n"}
+[24.846997] (qi_unipa_msgs) StdoutLine: {'line': b"Listing '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg'...\n"}
+[24.847130] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/__init__.py'...\n"}
+[24.847353] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper.py'...\n"}
+[24.847501] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand.py'...\n"}
+[24.847639] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed.py'...\n"}
+[24.847767] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed.py'...\n"}
+[24.847891] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar.py'...\n"}
+[24.848012] (qi_unipa_msgs) StdoutLine: {'line': b"Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track.py'...\n"}
+[24.855564] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.855989] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.856519] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.857248] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.857789] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[24.858420] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[24.858860] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_py.so\n'}
+[24.859356] (qi_unipa_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_py.so" to ""\n'}
+[24.860357] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/PostureWithSpeed.idl\n'}
+[24.860988] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/JointAnglesWithSpeed.idl\n'}
+[24.861394] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Sonar.idl\n'}
+[24.861978] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Hand.idl\n'}
+[24.862481] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Bumper.idl\n'}
+[24.862842] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Track.idl\n'}
+[24.863245] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/PostureWithSpeed.msg\n'}
+[24.863576] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/JointAnglesWithSpeed.msg\n'}
+[24.864031] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Sonar.msg\n'}
+[24.864195] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Hand.msg\n'}
+[24.864305] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Bumper.msg\n'}
+[24.864400] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Track.msg\n'}
+[24.864488] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/package_run_dependencies/qi_unipa_msgs\n'}
+[24.872585] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/parent_prefix_path/qi_unipa_msgs\n'}
+[24.873393] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/ament_prefix_path.sh\n'}
+[24.873902] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/ament_prefix_path.dsv\n'}
+[24.874140] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/path.sh\n'}
+[24.874448] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/path.dsv\n'}
+[24.874862] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.bash\n'}
+[24.875182] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.sh\n'}
+[24.875724] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.zsh\n'}
+[24.875890] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.dsv\n'}
+[24.876020] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/package.dsv\n'}
+[24.877001] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/packages/qi_unipa_msgs\n'}
+[24.878144] (-) TimerEvent: {}
+[24.878552] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cExport.cmake\n'}
+[24.879031] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[24.879688] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[24.879903] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[24.880621] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[24.881021] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[24.881503] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cExport.cmake\n'}
+[24.881756] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[24.882043] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cppExport.cmake\n'}
+[24.882516] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[24.882671] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[24.882905] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[24.883362] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[24.884038] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[24.884192] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[24.884551] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_pyExport.cmake\n'}
+[24.884731] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[24.885044] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[24.885312] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[24.885845] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[24.886326] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[24.886558] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[24.886884] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.887207] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[24.887512] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgsConfig.cmake\n'}
+[24.887820] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgsConfig-version.cmake\n'}
+[24.888325] (qi_unipa_msgs) StdoutLine: {'line': b'-- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/package.xml\n'}
+[24.891799] (qi_unipa_msgs) CommandEnded: {'returncode': 0}
+[24.978374] (-) TimerEvent: {}
+[25.079162] (-) TimerEvent: {}
+[25.179917] (-) TimerEvent: {}
+[25.280445] (-) TimerEvent: {}
+[25.342005] (qi_unipa_msgs) JobEnded: {'identifier': 'qi_unipa_msgs', 'rc': 0}
+[25.346891] (-) EventReactorShutdown: {}

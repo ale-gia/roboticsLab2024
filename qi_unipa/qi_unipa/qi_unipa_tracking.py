@@ -20,7 +20,7 @@ class QiUnipatracking(Node):
         self.tracker_service = self.session.service("ALTracker")
         self.motion_service = self.session.service("ALMotion")
         self.tracker_service.setMode("Move")
-        self.tracking_sub = self.create_subscription(Track, "/track", self.tracking_callback, 10)
+        self.tracking_sub = self.create_subscription(Track, "/track", self.set_tracking, 10)
        
         self.posture_pub = self.create_publisher(PostureWithSpeed, "/posture", 10)
 
@@ -34,8 +34,10 @@ class QiUnipatracking(Node):
                                         "Please check your script arguments.")
                 sys.exit(1)
             return session
-    
-    def tracking_callback(self, msg):
+
+
+
+    def set_tracking(self, msg):
         """Callback per il topic /track"""
         
         if not self.is_tracking:

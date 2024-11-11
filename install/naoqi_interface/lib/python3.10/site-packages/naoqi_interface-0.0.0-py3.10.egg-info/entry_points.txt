@@ -1,0 +1,3 @@
+[console_scripts]
+interface_controller = naoqi_interface.interface_controller:main
+

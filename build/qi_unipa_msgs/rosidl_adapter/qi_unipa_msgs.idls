@@ -1,0 +1,6 @@
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/PostureWithSpeed.idl
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/JointAnglesWithSpeed.idl
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Sonar.idl
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Hand.idl
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Bumper.idl
+/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Track.idl

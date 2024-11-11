@@ -1,0 +1,29 @@
+{
+  "package_name": "qi_unipa_msgs",
+  "output_dir": "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_typesupport_fastrtps_c/qi_unipa_msgs",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
+  "idl_tuples": [
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/PostureWithSpeed.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/JointAnglesWithSpeed.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Sonar.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Hand.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Bumper.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs:msg/Track.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/idl__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
+    "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/PostureWithSpeed.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/JointAnglesWithSpeed.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/Sonar.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/Hand.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/Bumper.idl",
+    "/home/daniele/git_ws/src/build/qi_unipa_msgs/rosidl_adapter/qi_unipa_msgs/msg/Track.idl"
+  ]
+}

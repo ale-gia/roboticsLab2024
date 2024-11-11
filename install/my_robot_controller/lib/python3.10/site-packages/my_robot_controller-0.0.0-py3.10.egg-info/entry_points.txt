@@ -1,0 +1,8 @@
+[console_scripts]
+nao_controller = my_robot_controller.nao_controller:main
+new = my_robot_controller.new:main
+patient_data_controller = my_robot_controller.patient_data_controller:main
+patient_data_controller2 = my_robot_controller.patient_data_controller2:main
+sensor = my_robot_controller.sensor:main
+speech = my_robot_controller.speech:main
+

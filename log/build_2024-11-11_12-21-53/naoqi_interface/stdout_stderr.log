@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/naoqi_interface/naoqi_interface.egg-info
+writing ../build/naoqi_interface/naoqi_interface.egg-info/PKG-INFO
+writing dependency_links to ../build/naoqi_interface/naoqi_interface.egg-info/dependency_links.txt
+writing entry points to ../build/naoqi_interface/naoqi_interface.egg-info/entry_points.txt
+writing requirements to ../build/naoqi_interface/naoqi_interface.egg-info/requires.txt
+writing top-level names to ../build/naoqi_interface/naoqi_interface.egg-info/top_level.txt
+writing manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'
+reading manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'
+writing manifest file '../build/naoqi_interface/naoqi_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/daniele/git_ws/src/build/naoqi_interface/build
+creating /home/daniele/git_ws/src/build/naoqi_interface/build/lib
+creating /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface
+copying naoqi_interface/interface_controller.py -> /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface
+copying naoqi_interface/__init__.py -> /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface
+running install
+running install_lib
+creating /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface
+copying /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface/interface_controller.py -> /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface
+copying /home/daniele/git_ws/src/build/naoqi_interface/build/lib/naoqi_interface/__init__.py -> /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface
+byte-compiling /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface/interface_controller.py to interface_controller.cpython-310.pyc
+byte-compiling /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index
+creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index
+creating /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index/packages
+copying resource/naoqi_interface -> /home/daniele/git_ws/src/install/naoqi_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/daniele/git_ws/src/install/naoqi_interface/share/naoqi_interface
+running install_egg_info
+Copying ../build/naoqi_interface/naoqi_interface.egg-info to /home/daniele/git_ws/src/install/naoqi_interface/lib/python3.10/site-packages/naoqi_interface-0.0.0-py3.10.egg-info
+running install_scripts
+Installing interface_controller script to /home/daniele/git_ws/src/install/naoqi_interface/lib/naoqi_interface
+writing list of installed files to '/home/daniele/git_ws/src/build/naoqi_interface/install.log'
