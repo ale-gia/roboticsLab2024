@@ -1,0 +1,11 @@
+{
+  "package_name": "qi_unipa_msgs",
+  "non_idl_tuples": [
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/PostureWithSpeed.msg",
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/JointAnglesWithSpeed.msg",
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/Sonar.msg",
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/Hand.msg",
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/Bumper.msg",
+    "/home/daniele/git_ws/src/qi_unipa_msgs:msg/Track.msg"
+  ]
+}

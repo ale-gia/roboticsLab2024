@@ -1,0 +1,365 @@
+[2.530s] Invoking command in '/home/daniele/git_ws/src/build/qi_unipa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake /home/daniele/git_ws/src/qi_unipa_msgs -DCMAKE_INSTALL_PREFIX=/home/daniele/git_ws/src/install/qi_unipa_msgs
+[3.298s] -- The C compiler identification is GNU 11.4.0
+[4.618s] -- The CXX compiler identification is GNU 11.4.0
+[5.078s] -- Detecting C compiler ABI info
+[5.561s] -- Detecting C compiler ABI info - done
+[5.615s] -- Check for working C compiler: /usr/bin/cc - skipped
+[5.621s] -- Detecting C compile features
+[5.629s] -- Detecting C compile features - done
+[5.657s] -- Detecting CXX compiler ABI info
+[6.022s] -- Detecting CXX compiler ABI info - done
+[6.036s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[6.036s] -- Detecting CXX compile features
+[6.038s] -- Detecting CXX compile features - done
+[6.072s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.697s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[7.070s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[7.264s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.300s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[7.357s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.194s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.911s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.383s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.063s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[10.634s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[10.649s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[12.608s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[12.609s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.609s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[12.609s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[12.698s] -- Found PythonExtra: .so  
+[13.107s] -- Added test 'lint_cmake' to check CMake code style
+[13.117s] -- Added test 'xmllint' to check XML markup files
+[13.173s] -- Configuring done
+[13.328s] -- Generating done
+[13.336s] -- Build files have been written to: /home/daniele/git_ws/src/build/qi_unipa_msgs
+[13.352s] Invoked command in '/home/daniele/git_ws/src/build/qi_unipa_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake /home/daniele/git_ws/src/qi_unipa_msgs -DCMAKE_INSTALL_PREFIX=/home/daniele/git_ws/src/install/qi_unipa_msgs
+[13.357s] Invoking command in '/home/daniele/git_ws/src/build/qi_unipa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake --build /home/daniele/git_ws/src/build/qi_unipa_msgs -- -j8 -l8
+[13.457s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.490s] [  2%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[13.525s] [  2%] Built target ament_cmake_python_copy_qi_unipa_msgs
+[14.112s] running egg_info
+[14.113s] creating qi_unipa_msgs.egg-info
+[14.114s] writing qi_unipa_msgs.egg-info/PKG-INFO
+[14.114s] writing dependency_links to qi_unipa_msgs.egg-info/dependency_links.txt
+[14.115s] writing top-level names to qi_unipa_msgs.egg-info/top_level.txt
+[14.115s] writing manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'
+[14.119s] reading manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'
+[14.121s] writing manifest file 'qi_unipa_msgs.egg-info/SOURCES.txt'
+[14.162s] [  2%] Built target ament_cmake_python_build_qi_unipa_msgs_egg
+[14.385s] [  2%] Built target qi_unipa_msgs__cpp
+[14.400s] [  7%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[14.401s] [  7%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[14.401s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[14.528s] [  9%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/posture_with_speed__functions.c.o[0m
+[14.528s] [  9%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.c.o[0m
+[14.529s] [ 12%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/hand__functions.c.o[0m
+[14.530s] [ 12%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/sonar__functions.c.o[0m
+[14.530s] [ 14%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/bumper__functions.c.o[0m
+[14.712s] [ 15%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_c.dir/rosidl_generator_c/qi_unipa_msgs/msg/detail/track__functions.c.o[0m
+[14.785s] [ 16%] [32m[1mLinking C shared library libqi_unipa_msgs__rosidl_generator_c.so[0m
+[14.967s] [ 16%] Built target qi_unipa_msgs__rosidl_generator_c
+[14.980s] [ 19%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.981s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[14.982s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[15.067s] [ 25%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/joint_angles_with_speed__type_support.cpp.o[0m
+[15.068s] [ 25%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/sonar__type_support.cpp.o[0m
+[15.068s] [ 25%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/posture_with_speed__type_support.cpp.o[0m
+[15.530s] [ 26%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.cpp.o[0m
+[15.651s] [ 28%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/posture_with_speed__type_support.cpp.o[0m
+[16.075s] [ 29%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/posture_with_speed__type_support.cpp.o[0m
+[16.083s] [ 32%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/joint_angles_with_speed__type_support.cpp.o[0m
+[16.083s] [ 32%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/hand__type_support.cpp.o[0m
+[16.091s] [ 33%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/bumper__type_support.cpp.o[0m
+[16.147s] [ 35%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/sonar__type_support.cpp.o[0m
+[16.157s] [ 36%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/hand__type_support.cpp.o[0m
+[16.212s] [ 38%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/bumper__type_support.cpp.o[0m
+[16.226s] [ 39%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/qi_unipa_msgs/msg/track__type_support.cpp.o[0m
+[16.322s] [ 40%] [32m[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_c.so[0m
+[16.365s] [ 42%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.c.o[0m
+[16.392s] [ 43%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/qi_unipa_msgs/msg/track__type_support.cpp.o[0m
+[16.435s] [ 45%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/posture_with_speed__type_support_c.cpp.o[0m
+[16.493s] [ 46%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.c.o[0m
+[16.561s] [ 46%] Built target qi_unipa_msgs__rosidl_typesupport_c
+[16.580s] [ 47%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/sonar__type_support.c.o[0m
+[16.591s] [ 49%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/hand__type_support.c.o[0m
+[16.652s] [ 50%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/bumper__type_support.c.o[0m
+[16.667s] [ 52%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/qi_unipa_msgs/msg/detail/track__type_support.c.o[0m
+[16.741s] [ 54%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/sonar__type_support.cpp.o[0m
+[16.742s] [ 54%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.cpp.o[0m
+[16.753s] [ 56%] [32m[1mLinking C shared library libqi_unipa_msgs__rosidl_typesupport_introspection_c.so[0m
+[16.867s] [ 57%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support_c.cpp.o[0m
+[16.881s] [ 59%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/joint_angles_with_speed__type_support.cpp.o[0m
+[16.910s] [ 60%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/sonar__type_support.cpp.o[0m
+[16.995s] [ 60%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_c
+[17.028s] [ 61%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/hand__type_support.cpp.o[0m
+[17.197s] [ 63%] [32m[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_cpp.so[0m
+[17.462s] [ 63%] Built target qi_unipa_msgs__rosidl_typesupport_cpp
+[17.484s] [ 66%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/bumper__type_support.cpp.o[0m
+[17.484s] [ 66%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/sonar__type_support_c.cpp.o[0m
+[17.904s] [ 67%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/hand__type_support.cpp.o[0m
+[17.928s] [ 69%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/hand__type_support_c.cpp.o[0m
+[18.206s] [ 70%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/qi_unipa_msgs/msg/detail/dds_fastrtps/track__type_support.cpp.o[0m
+[18.235s] [ 71%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/bumper__type_support.cpp.o[0m
+[18.343s] [ 73%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/qi_unipa_msgs/msg/detail/track__type_support.cpp.o[0m
+[18.467s] [ 74%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/bumper__type_support_c.cpp.o[0m
+[18.591s] [ 76%] [32mBuilding CXX object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/qi_unipa_msgs/msg/detail/track__type_support_c.cpp.o[0m
+[19.487s] [ 77%] [32m[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[19.611s] [ 78%] [32m[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[19.667s] [ 80%] [32m[1mLinking CXX shared library libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[19.815s] [ 80%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_cpp
+[19.928s] [ 80%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_cpp
+[20.001s] [ 80%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_c
+[20.071s] [ 80%] Built target qi_unipa_msgs
+[20.142s] [ 81%] [34m[1mGenerating Python code for ROS interfaces[0m
+[21.643s] [ 81%] Built target qi_unipa_msgs__py
+[21.676s] [ 84%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_joint_angles_with_speed_s.c.o[0m
+[21.676s] [ 84%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_sonar_s.c.o[0m
+[21.678s] [ 85%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_posture_with_speed_s.c.o[0m
+[21.678s] [ 87%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_hand_s.c.o[0m
+[21.679s] [ 88%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_bumper_s.c.o[0m
+[21.679s] [ 90%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_generator_py.dir/rosidl_generator_py/qi_unipa_msgs/msg/_track_s.c.o[0m
+[22.230s] [ 91%] [32m[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/libqi_unipa_msgs__rosidl_generator_py.so[0m
+[22.791s] [ 91%] Built target qi_unipa_msgs__rosidl_generator_py
+[22.868s] [ 92%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[22.869s] [ 94%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[22.870s] [ 95%] [32mBuilding C object CMakeFiles/qi_unipa_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[23.353s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.365s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.371s] [100%] [32m[1mLinking C shared library rosidl_generator_py/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[23.720s] [100%] Built target qi_unipa_msgs__rosidl_typesupport_fastrtps_c__pyext
+[23.731s] [100%] Built target qi_unipa_msgs__rosidl_typesupport_c__pyext
+[23.731s] [100%] Built target qi_unipa_msgs__rosidl_typesupport_introspection_c__pyext
+[23.780s] Invoked command in '/home/daniele/git_ws/src/build/qi_unipa_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake --build /home/daniele/git_ws/src/build/qi_unipa_msgs -- -j8 -l8
+[24.401s] Invoking command in '/home/daniele/git_ws/src/build/qi_unipa_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake --install /home/daniele/git_ws/src/build/qi_unipa_msgs
+[24.428s] -- Install configuration: ""
+[24.432s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/rosidl_interfaces/qi_unipa_msgs
+[24.434s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.435s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.437s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/posture_with_speed.h
+[24.437s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_generator_c__visibility_control.h
+[24.438s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/hand.h
+[24.440s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/joint_angles_with_speed.h
+[24.440s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/sonar.h
+[24.441s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/track.h
+[24.442s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/bumper.h
+[24.443s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.444s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__functions.c
+[24.445s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__functions.h
+[24.446s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.h
+[24.446s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__struct.h
+[24.448s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__functions.c
+[24.449s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__struct.h
+[24.450s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__functions.h
+[24.452s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__functions.h
+[24.452s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.h
+[24.453s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.h
+[24.454s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.h
+[24.455s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.h
+[24.455s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__struct.h
+[24.456s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__functions.h
+[24.457s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__functions.h
+[24.458s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__struct.h
+[24.458s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.h
+[24.459s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__functions.c
+[24.459s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.h
+[24.460s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__struct.h
+[24.461s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__functions.c
+[24.462s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__functions.c
+[24.463s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__functions.c
+[24.463s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__struct.h
+[24.464s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/library_path.sh
+[24.465s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/library_path.dsv
+[24.466s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_c.so
+[24.467s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_c.so" to ""
+[24.468s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.470s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.472s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[24.473s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.474s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_c.h
+[24.475s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_fastrtps_c.h
+[24.476s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_fastrtps_c.h
+[24.478s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_fastrtps_c.h
+[24.478s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_fastrtps_c.h
+[24.479s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_fastrtps_c.h
+[24.480s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so
+[24.481s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[24.482s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.483s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.484s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[24.485s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.486s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.c
+[24.488s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.c
+[24.488s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_introspection_c.h
+[24.489s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_introspection_c.h
+[24.490s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.c
+[24.491s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_introspection_c.h
+[24.492s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.c
+[24.492s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.c
+[24.493s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_introspection_c.h
+[24.494s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_introspection_c.h
+[24.495s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_introspection_c.h
+[24.496s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.c
+[24.497s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_c.so
+[24.498s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_c.so" to ""
+[24.499s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_c.so
+[24.500s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_c.so" to ""
+[24.501s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.501s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.502s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/bumper.hpp
+[24.503s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/sonar.hpp
+[24.505s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/joint_angles_with_speed.hpp
+[24.505s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/track.hpp
+[24.506s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/hand.hpp
+[24.506s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/posture_with_speed.hpp
+[24.508s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.509s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__builder.hpp
+[24.510s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__struct.hpp
+[24.511s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__traits.hpp
+[24.512s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__builder.hpp
+[24.513s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__struct.hpp
+[24.514s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__builder.hpp
+[24.516s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__builder.hpp
+[24.517s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__traits.hpp
+[24.519s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__struct.hpp
+[24.520s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__traits.hpp
+[24.520s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__traits.hpp
+[24.521s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__builder.hpp
+[24.521s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__traits.hpp
+[24.523s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__traits.hpp
+[24.524s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__struct.hpp
+[24.524s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__builder.hpp
+[24.525s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__struct.hpp
+[24.525s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__struct.hpp
+[24.525s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.526s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.526s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[24.526s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.527s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_fastrtps_cpp.hpp
+[24.527s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_fastrtps_cpp.hpp
+[24.528s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/dds_fastrtps
+[24.529s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_fastrtps_cpp.hpp
+[24.530s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_fastrtps_cpp.hpp
+[24.531s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_fastrtps_cpp.hpp
+[24.532s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_fastrtps_cpp.hpp
+[24.533s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so
+[24.534s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[24.535s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs
+[24.537s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg
+[24.539s] -- Up-to-date: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail
+[24.540s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__type_support.cpp
+[24.541s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__type_support.cpp
+[24.542s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__type_support.cpp
+[24.543s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__type_support.cpp
+[24.543s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__type_support.cpp
+[24.545s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__rosidl_typesupport_introspection_cpp.hpp
+[24.545s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/joint_angles_with_speed__rosidl_typesupport_introspection_cpp.hpp
+[24.546s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/hand__rosidl_typesupport_introspection_cpp.hpp
+[24.547s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/sonar__rosidl_typesupport_introspection_cpp.hpp
+[24.547s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/posture_with_speed__rosidl_typesupport_introspection_cpp.hpp
+[24.548s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/track__rosidl_typesupport_introspection_cpp.hpp
+[24.548s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/include/qi_unipa_msgs/qi_unipa_msgs/msg/detail/bumper__type_support.cpp
+[24.549s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so
+[24.550s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[24.550s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_cpp.so
+[24.551s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_typesupport_cpp.so" to ""
+[24.551s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/pythonpath.sh
+[24.552s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/pythonpath.dsv
+[24.552s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info
+[24.552s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/SOURCES.txt
+[24.553s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/PKG-INFO
+[24.553s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/top_level.txt
+[24.554s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs-0.0.0-py3.10.egg-info/dependency_links.txt
+[24.554s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs
+[24.555s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg
+[24.556s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper.py
+[24.556s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar.py
+[24.557s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track.py
+[24.557s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed.py
+[24.558s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand_s.c
+[24.558s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper_s.c
+[24.559s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track_s.c
+[24.559s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed_s.c
+[24.560s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar_s.c
+[24.561s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed.py
+[24.561s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/__init__.py
+[24.562s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed_s.c
+[24.562s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand.py
+[24.563s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[24.563s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[24.564s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.565s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/_qi_unipa_msgs_s.ep.rosidl_typesupport_c.c
+[24.565s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.566s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/libqi_unipa_msgs__rosidl_generator_py.so
+[24.566s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.567s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/__init__.py
+[24.737s] Listing '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs'...
+[24.737s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/__init__.py'...
+[24.737s] Listing '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg'...
+[24.737s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/__init__.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_bumper.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_hand.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_joint_angles_with_speed.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_posture_with_speed.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_sonar.py'...
+[24.738s] Compiling '/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/msg/_track.py'...
+[24.746s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[24.746s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.747s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[24.748s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.748s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[24.749s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/local/lib/python3.10/dist-packages/qi_unipa_msgs/qi_unipa_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[24.749s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_py.so
+[24.750s] -- Set runtime path of "/home/daniele/git_ws/src/install/qi_unipa_msgs/lib/libqi_unipa_msgs__rosidl_generator_py.so" to ""
+[24.751s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/PostureWithSpeed.idl
+[24.751s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/JointAnglesWithSpeed.idl
+[24.752s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Sonar.idl
+[24.752s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Hand.idl
+[24.753s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Bumper.idl
+[24.753s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Track.idl
+[24.754s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/PostureWithSpeed.msg
+[24.754s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/JointAnglesWithSpeed.msg
+[24.754s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Sonar.msg
+[24.754s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Hand.msg
+[24.755s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Bumper.msg
+[24.755s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/msg/Track.msg
+[24.755s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/package_run_dependencies/qi_unipa_msgs
+[24.763s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/parent_prefix_path/qi_unipa_msgs
+[24.764s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/ament_prefix_path.sh
+[24.764s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/ament_prefix_path.dsv
+[24.764s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/path.sh
+[24.765s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/environment/path.dsv
+[24.765s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.bash
+[24.765s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.sh
+[24.766s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.zsh
+[24.766s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/local_setup.dsv
+[24.766s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/package.dsv
+[24.767s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/ament_index/resource_index/packages/qi_unipa_msgs
+[24.769s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cExport.cmake
+[24.769s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cExport-noconfig.cmake
+[24.770s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[24.770s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[24.771s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cExport.cmake
+[24.771s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[24.772s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cExport.cmake
+[24.772s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[24.772s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_cppExport.cmake
+[24.773s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[24.773s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[24.773s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[24.774s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[24.774s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cppExport.cmake
+[24.775s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[24.775s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_pyExport.cmake
+[24.775s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/export_qi_unipa_msgs__rosidl_generator_pyExport-noconfig.cmake
+[24.775s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake-extras.cmake
+[24.776s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.776s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[24.777s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[24.777s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[24.777s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.778s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[24.778s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgsConfig.cmake
+[24.778s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/cmake/qi_unipa_msgsConfig-version.cmake
+[24.779s] -- Installing: /home/daniele/git_ws/src/install/qi_unipa_msgs/share/qi_unipa_msgs/package.xml
+[24.782s] Invoked command in '/home/daniele/git_ws/src/build/qi_unipa_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/daniele/git_ws/install/speech:/home/daniele/git_ws/install/qi_unipa:/home/daniele/git_ws/install/naoqi_interface:/home/daniele/git_ws/install/my_robot_controller:/home/daniele/git_ws/install/movement:/opt/ros/humble /usr/bin/cmake --install /home/daniele/git_ws/src/build/qi_unipa_msgs
