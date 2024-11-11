@@ -1,6 +1,0 @@
-setup.py
-qi_unipa_msgs/__init__.py
-qi_unipa_msgs.egg-info/PKG-INFO
-qi_unipa_msgs.egg-info/SOURCES.txt
-qi_unipa_msgs.egg-info/dependency_links.txt
-qi_unipa_msgs.egg-info/top_level.txt

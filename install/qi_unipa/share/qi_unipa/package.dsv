@@ -1,6 +1,0 @@
-source;share/qi_unipa/hook/pythonpath.ps1
-source;share/qi_unipa/hook/pythonpath.dsv
-source;share/qi_unipa/hook/pythonpath.sh
-source;share/qi_unipa/hook/ament_prefix_path.ps1
-source;share/qi_unipa/hook/ament_prefix_path.dsv
-source;share/qi_unipa/hook/ament_prefix_path.sh
