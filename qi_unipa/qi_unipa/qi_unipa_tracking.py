@@ -2,7 +2,6 @@ import qi
 import sys
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Bool
 from qi_unipa_msgs.msg import PostureWithSpeed,Track
 class QiUnipatracking(Node):  
     def __init__(self):
@@ -62,8 +61,6 @@ class QiUnipatracking(Node):
 
         elif(msg_in.target_name =="Stop"):
             self.stop_tracking()
-            msg.posture_name="Sit"
-            self.posture_pub.publish(msg)
             return 
 
         self.tracker_service.registerTarget(msg_in.target_name, params)
