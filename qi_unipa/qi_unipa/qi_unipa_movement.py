@@ -26,7 +26,7 @@ class QiUnipa_Movement(Node):
         self.subscription5 = self.create_subscription(Hand, "/hands", self.set_hand, 10)
         self.getPosition_pub = self.create_publisher(Vector3, "/position", 10)
 
-        self.timer = self.create_timer(1.0, self.get_Position)
+        self.timer = self.create_timer(1.0, self.get_position)
 
 
     def set_connection(self, ip, port):
@@ -84,7 +84,7 @@ class QiUnipa_Movement(Node):
             else:
                 hand_service.closeHand(hand)
 
-    def get_Position(self):
+    def get_position(self):
         motion_service = self.session.service("ALMotion")
         pose=motion_service.getRobotPosition(False)
         msg=Vector3()
