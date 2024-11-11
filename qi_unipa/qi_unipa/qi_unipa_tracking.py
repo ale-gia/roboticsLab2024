@@ -18,6 +18,7 @@ class QiUnipatracking(Node):
 
         self.is_tracking=False
         self.tracker_service = self.session.service("ALTracker")
+        self.motion_service = self.session.service("ALMotion")
         self.tracker_service.setMode("Move")
         self.tracking_sub = self.create_subscription(Track, "/track", self.tracking_callback, 10)
        
@@ -62,7 +63,22 @@ class QiUnipatracking(Node):
             return 
 
         self.tracker_service.registerTarget(msg_in.target_name, params)
-        self.tracker_service.setRelativePosition([-0.5, 0.0, 0.0, 0.1, 0.1, 0.3])
+        self.tracker_service.setRelativePosition([-1.0, 0.0, 0.0, 0.1, 0.1, 0.3])
+        # TARGET VELOCITY
+        X         = 0.6
+        Y         = 0.0
+        Theta     = 0.0
+        Frequency = 1.0
+        self.tracker_service.setMaximumVelocity(0.8) #Head
+
+        self.tracker_service.setMaximumDistanceDetection(msg_in.distance) # Oltre il target è perso
+        
+        self.motion_service.moveToward(X, Y, Theta,[["MaxVelXY" , 0.2],   # maximum planar velocity (meters/second)
+                                                    ["MaxVelTheta" , 0.2],# maximum angular velocity (radians/second)
+                                                    ["MaxAccXY" , 0.2],   # maximum planar acceleration (meters/second²)
+                                                    ["MaxAccTheta" , 0.2],# maximum angular acceleration (radians/second²)
+                                                    ])
+        #self.motion_service.moveToward(X, Y, Theta, [["Frequency", Frequency]]) # per testare le velocità di movimento
         self.tracker_service.track(msg_in.target_name)
         print ("ALTracker successfully started")
         self.is_tracking=True

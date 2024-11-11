@@ -102,7 +102,7 @@ class QiUnipaSpeech(Node):
                 # Avvio Tracking
                 msg=Track()
                 msg.target_name="Face"
-                msg.distance=1.0
+                msg.distance=3.0
                 self.tracking_pub.publish(msg)
                 self.get_logger().info("Tracking Facciale avviato")
 
@@ -123,7 +123,7 @@ class QiUnipaSpeech(Node):
               
                 msg=Track()
                 msg.target_name="Stop"
-                msg.distance=1.0
+                msg.distance=3.0
                 self.tracking_pub.publish(msg)
                 self.get_logger().info("Tracking Facciale disattivato")
 
