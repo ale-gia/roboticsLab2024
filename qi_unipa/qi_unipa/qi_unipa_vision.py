@@ -41,7 +41,7 @@ class QiUnipa_vision(Node):
         self.face_service = self.session.service("ALFaceDetection")
         self.memory_service = self.session.service("ALMemory")
         
-        self.camera_timer = self.create_timer(1, self.get_camera)
+        self.camera_timer = self.create_timer(0.1, self.get_camera)
         
     def set_connection(self, ip, port):
         session = qi.Session()
