@@ -54,7 +54,10 @@ class QiUnipa_sensor(Node):
         msg.front_sonar=self.memory_service.getData("Device/SubDeviceList/Platform/Front/Sonar/Sensor/Value")
         msg.back_sonar=self.memory_service.getData("Device/SubDeviceList/Platform/Back/Sonar/Sensor/Value")
         self.sonar_pub.publish(msg)
-        self.sonar_service.unsubscribe("Sonar_app")
+        subscribers = self.sonar_service.getSubscribersInfo()
+        if any("Sonar_app" in sub[0] for sub in subscribers):
+            self.sonar_service.unsubscribe("Sonar_app")
+        
     
     def get_bumper(self):
 
