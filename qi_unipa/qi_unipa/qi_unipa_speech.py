@@ -41,7 +41,6 @@ class QiUnipaSpeech(Node):
         self.asr_service = self.session.service("ALSpeechRecognition")
         self.memory = self.session.service("ALMemory")
         self.animated_service = self.session.service("ALAnimatedSpeech")
-        self.tts_service= self.session.service("ALTextToSpeech")
         self.configuration = {"bodyLanguageMode":"contextual"}
         
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
@@ -64,23 +63,11 @@ class QiUnipaSpeech(Node):
                                     "Please check your script arguments.")
             sys.exit(1)
         return session
-    
-    def set_speech(self, msg):
-        """Callback per il topic /speech"""
-        if msg.data:
-            if not self.is_recognizing:
-                self.start_recognition()
-        else:
-            if self.is_recognizing:
-                self.stop_recognition()
 
     def setup_recognition(self):
-        """Configura il riconoscimento vocale con il vocabolario specificato"""
         try:
             # Imposta la lingua in italiano
             self.asr_service.setLanguage("Italian")
-            self.tts_service.setLanguage("Italian")
-            
             self.get_logger().info("Lingua impostata a Italiano")
             
             # Imposta il vocabolario
@@ -94,47 +81,48 @@ class QiUnipaSpeech(Node):
         except Exception as e:
             self.get_logger().info(f"Errore nella configurazione: {e}")
             raise
+
+    def set_speech(self, msg):
+        if msg.data and not self.is_recognizing:
+            self.start_recognition()
+
+        elif not msg.data and self.is_recognizing:
+            self.stop_recognition()
+
+    def pub_track(self, name, distance):
+        msg=Track()
+        msg.target_name=name
+        msg.distance=distance
+        self.tracking_pub.publish(msg)
         
     def start_recognition(self):
-        """Avvia il riconoscimento vocale"""
         try:
-            if not self.is_recognizing:
-                # Avvio Tracking
-                msg=Track()
-                msg.target_name="Face"
-                msg.distance=3.0
-                self.tracking_pub.publish(msg)
-                self.get_logger().info("Tracking Facciale avviato")
-
-              
-
-                self.asr_service.subscribe("SpeechRecognition")
-                self.is_recognizing = True
-                self.get_logger().info("Riconoscimento vocale avviato")
+            self.pub_track("Face", 3.0)
+            self.asr_service.subscribe("SpeechRecognition")
+            self.is_recognizing = True
+            self.get_logger().info("Riconoscimento vocale avviato")
         except Exception as e:
             self.get_logger().info(f"Errore nell'avvio del riconoscimento: {e}")
             self.is_recognizing = False
         
     def stop_recognition(self):
-        """Ferma il riconoscimento vocale"""
         try:
-            if self.is_recognizing:
-                #Stop Tracking
-              
-                msg=Track()
-                msg.target_name="Stop"
-                msg.distance=3.0
-                self.tracking_pub.publish(msg)
-                self.get_logger().info("Tracking Facciale disattivato")
-
-                self.asr_service.unsubscribe("SpeechRecognition")
-                self.is_recognizing = False
-                self.get_logger().info("Riconoscimento vocale fermato")
+            self.pub_track("Stop", 3.0)
+            self.asr_service.unsubscribe("SpeechRecognition")
+            self.is_recognizing = False
+            self.get_logger().info("Riconoscimento vocale fermato")
         except Exception as e:
              self.get_logger().info(f"Errore nell'arresto del riconoscimento vocale: {e}")
+
+    def answers(self,word):
+        if word  in self.reply:
+            self.get_logger().info(f'risposta :{self.reply[word]}')
+            ans=self.reply[word]
+            self.animated_service.say(ans)
+            if word =="stop parlato" and self.is_recognizing :
+                self.stop_recognition()
             
     def check_recognition(self):
-        """Controlla periodicamente i risultati del riconoscimento vocale"""
         if not self.is_recognizing:
             return
             
@@ -148,42 +136,23 @@ class QiUnipaSpeech(Node):
             if word_data and word_data!=self.last_word:
                 
                 confidence = word_data[1]
-
                 self.get_logger().info(f"Parola riconosciuta: {word} (confidenza: {confidence})")
-                self.last_word=word
                 if confidence > 0.455 :
                     #self.get_logger().info(f"Parola riconosciuta: {word} (confidenza: {confidence})")
                     self.answers(word)
+                    self.last_word=word
                     
         except Exception as e:
              self.get_logger().info(f"Errore durante il controllo del riconoscimento: {e}")
 
-
-        
     def set_tts(self, msg):
-        
         self.animated_service.say(msg.data)
 
-    def answers(self,word):
-       
-        if word  in self.reply:
-            self.get_logger().info(f'risposta :{self.reply[word]}')
-            ans=self.reply[word]
-            self.animated_service.say(ans)
-            msg=PostureWithSpeed()
-            msg.posture_name="StandInit"
-            msg.speed=0.5
-            self.posture_pub.publish(msg)
-            if word =="stop parlato" :
-                self.stop_recognition()
-                
 
 def main(args=None):
     rclpy.init(args=args)
  
     node = QiUnipaSpeech()
-
-
     
     rclpy.spin(node)
     rclpy.shutdown()
