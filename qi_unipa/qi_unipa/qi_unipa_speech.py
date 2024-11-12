@@ -128,13 +128,13 @@ class QiUnipaSpeech(Node):
             
         try:
             word_data = self.memory.getData("WordRecognized")
-            self.get_logger().info(f"Sentence: {word_data}")
+            
             self.memory.insertData("WordRecognized","") #evita di leggere ripetutamente la stessa parola
             if word_data:
+                self.get_logger().info(f"Sentence: {word_data}")
                 word =re.sub(r'\W+', ' ', word_data[0]).strip() # Regex per eliminare tutto ciò che non è una parola
-
-            if word_data and word_data!=self.last_word:
                 
+            if word_data and word_data!=self.last_word:
                 confidence = word_data[1]
                 self.get_logger().info(f"Parola riconosciuta: {word} (confidenza: {confidence})")
                 if confidence > 0.455 :
