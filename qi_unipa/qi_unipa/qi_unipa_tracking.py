@@ -35,26 +35,29 @@ class QiUnipatracking(Node):
                 sys.exit(1)
             return session
     
-    def set_posture_init(self):
+    def pub_posture(self, name, speed):
         msg=PostureWithSpeed()
-        msg.posture_name="StandInit"
-        msg.speed=0.5
+        msg.posture_name=name
+        msg.speed=speed
         self.posture_pub.publish(msg)
 
     def start_tracking(self,msg_in):
 
-        self.set_posture_init()
-        #params = ""
-        if(msg_in.target_name =="Face"):
+        self.pub_posture("Stand", 0.5)
+        if msg_in.target_name =="Face":
             params=msg_in.distance
 
-        elif(msg_in.target_name =="Sound"):
+        elif msg_in.target_name =="Sound":
             confidence=0.5
             params=[msg_in.distance,confidence]
 
-        elif(msg_in.target_name =="Stop"):
+        elif msg_in.target_name =="Stop":
             self.stop_tracking()
             return 
+        
+        elif msg_in.target_name=="People":
+            params=[0]
+    
 
         self.tracker_service.registerTarget(msg_in.target_name, params)
 
@@ -71,8 +74,7 @@ class QiUnipatracking(Node):
     def stop_tracking(self):
         self.tracker_service.stopTracker()
         self.tracker_service.unregisterAllTargets()
-        self.set_posture_init()
-
+        self.pub_posture("Stand", 0.5)
 
 
 
