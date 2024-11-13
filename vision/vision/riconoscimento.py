@@ -18,7 +18,8 @@ class VisionYolo(Node):
         self.bridge = CvBridge()
 
         # Specifica il percorso ai file YOLO
-        yolo_dir = os.path.expanduser("../../../yolo_files")
+        yolo_dir = os.path.expanduser("/home/antonio/ros2_ws_robotics/yolo_files")
+        #yolo_dir = os.path.expanduser("../../yolo_files")
         weights_path = os.path.join(yolo_dir, "yolov3.weights")
         config_path = os.path.join(yolo_dir, "yolov3.cfg")
 
@@ -84,10 +85,7 @@ class VisionYolo(Node):
                     cv2.putText(cv_image, f"{label} {confidence:.2f}", (x, y + 30),
                               cv2.FONT_HERSHEY_PLAIN, 2, (0, 255, 0), 2)
 
-            # Visualizza l'immagine
-            #cv_image_rgb = cv2.cvtColor(cv_image, cv2.COLOR_BGR2RGB)
-
-    # Aspetta un tasto per chiudere la finestra
+            # Aspetta un tasto per chiudere la finestra
             plt.clf()
             plt.imshow(cv_image)
             plt.axis('off')
