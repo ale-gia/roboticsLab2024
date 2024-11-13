@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "riconoscimento = vision.riconoscimento:main"
+            "riconoscimento = vision.riconoscimento:main",
+            "look = vision.look:main"
         ],
     },
 )

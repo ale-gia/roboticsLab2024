@@ -27,21 +27,23 @@ class QiUnipa_vision(Node):
         # Ottieni i parametri
         self.declare_parameter('ip', '192.168.0.161')
         self.declare_parameter('port', 9559)
+        self.declare_parameter('camera_index', 1)#0 Top Camera, 1 Bottom Camera
         ip = self.get_parameter('ip').get_parameter_value().string_value
         port = self.get_parameter('port').get_parameter_value().integer_value
+        self.camera_index = self.get_parameter('camera_index').get_parameter_value().integer_value
+
         
         # Connessione sessione
         self.session = self.set_connection(ip, port)
         
         self.camera_pub = self.create_publisher(Image, '/camera', 10)
         self.recognition_pub = self.create_publisher(String, '/face_recognition', 10)
-        self.speak_pub = self.create_publisher(String, "/speak", 10)
         self.pressed = False
         self.video_service = self.session.service("ALVideoDevice")
         self.face_service = self.session.service("ALFaceDetection")
         self.memory_service = self.session.service("ALMemory")
         
-        self.camera_timer = self.create_timer(1, self.get_camera)
+        self.camera_timer = self.create_timer(0.1, self.get_camera)
         
     def set_connection(self, ip, port):
         session = qi.Session()
@@ -54,7 +56,7 @@ class QiUnipa_vision(Node):
         return session
     
     def get_camera(self):
-        self.video_client = self.video_service.subscribe("Camera", K_VGA, K_BGR, 30)
+        self.video_client = self.video_service.subscribeCamera("Camera", self.camera_index, K_VGA, K_BGR, 30)
         result = self.video_service.getImageRemote(self.video_client)
         
         if result is None:
