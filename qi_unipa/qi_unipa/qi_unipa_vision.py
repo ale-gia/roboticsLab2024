@@ -9,7 +9,7 @@ from cv_bridge import CvBridge
 import time
 import numpy as np
 
-# Costanti per la risoluzione
+# Costanti per la risoluzione (prova modifica)
 K_QVGA = 1     # 320x240
 K_VGA = 2      # 640x480
 K_HD = 4       # 1280x720
