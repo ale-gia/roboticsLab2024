@@ -18,7 +18,7 @@ class QiUnipatracking(Node):
 
         self.tracker_service = self.session.service("ALTracker")
         self.motion_service = self.session.service("ALMotion")
-        self.tracker_service.setMode("Move")
+        self.tracker_service.setMode("Head") #"WholeBody"
         #self.tracker_service.setMoveConfig([["MaxVelXY", 0.2], ["MaxVelTheta", 0.5], ["MaxAccXY", 0.2], ["MAxAccTheta", 0.5]])
 
         self.tracking_sub = self.create_subscription(Track, "/track", self.start_tracking, 10)
@@ -61,7 +61,7 @@ class QiUnipatracking(Node):
 
         self.tracker_service.registerTarget(msg_in.target_name, params)
 
-        #self.tracker_service.setRelativePosition([-1.0, 0.0, 0.0, 0.1, 0.1, 0.3])
+        self.tracker_service.setRelativePosition([-2.0, 0.0, 0.0, 0.1, 0.1, 0.3])
         #self.tracker_service.setMaximumVelocity(0.8) #Head
         #self.tracker_service.setMaximumDistanceDetection(msg_in.distance) # Oltre il target è perso
         
