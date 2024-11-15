@@ -1,6 +1,5 @@
 import qi
 import rclpy
-import argparse
 from rclpy.node import Node
 import sys
 from std_msgs.msg import String
@@ -27,7 +26,7 @@ class QiUnipa_vision(Node):
         # Ottieni i parametri
         self.declare_parameter('ip', '192.168.0.161')
         self.declare_parameter('port', 9559)
-        self.declare_parameter('camera_index', 1)#0 Top Camera, 1 Bottom Camera
+        self.declare_parameter('camera_index', 0)#0 Top Camera, 1 Bottom Camera
         ip = self.get_parameter('ip').get_parameter_value().string_value
         port = self.get_parameter('port').get_parameter_value().integer_value
         self.camera_index = self.get_parameter('camera_index').get_parameter_value().integer_value
@@ -37,12 +36,8 @@ class QiUnipa_vision(Node):
         self.session = self.set_connection(ip, port)
         
         self.camera_pub = self.create_publisher(Image, '/camera', 10)
-        self.recognition_pub = self.create_publisher(String, '/face_recognition', 10)
-        self.pressed = False
         self.video_service = self.session.service("ALVideoDevice")
-        self.face_service = self.session.service("ALFaceDetection")
-        self.memory_service = self.session.service("ALMemory")
-        
+
         self.camera_timer = self.create_timer(0.1, self.get_camera)
         
     def set_connection(self, ip, port):
@@ -62,16 +57,7 @@ class QiUnipa_vision(Node):
         if result is None:
             print("Cannot get image")
             return
-            
-        # L'immagine da NAO viene restituita come una tupla contenente:
-        # [0]: width
-        # [1]: height
-        # [2]: number of layers
-        # [3]: colorspace
-        # [4]: timestamp seconds
-        # [5]: timestamp microseconds
-        # [6]: binary array of size height * width * nblayers containing image data
-        
+                   
         width = result[0]
         height = result[1]
         channels = result[2]
