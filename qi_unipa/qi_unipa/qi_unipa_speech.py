@@ -21,12 +21,12 @@ class QiUnipaSpeech(Node):
 
         self.is_recognizing = False
         self.last_word=""
-        self.vocabulary = ["ciao", "come stai", "stop parlato", 
+        self.vocabulary = ["ciao paul", "come stai", "stop parlato", 
                            "gruppo di formiche","troppo rumoroso","nuova scoperta",
                            "potremmo differenziare","le cose","di ragazze",
                            "colorato assegnato"]
         
-        self.reply={"ciao":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Pepper, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
+        self.reply={"ciao paul":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Paul, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
                     "come stai": " Io sto bene e tu come ti senti?",
                     "stop parlato":"Ciao Ciao",
                     "gruppo di formiche": "Anche ^start(animations/Stand/Emotions/Positive/Peaceful_1) io, Simone. Le formiche sono affascinanti! Hanno una società così complessa...^wait(animations/Stand/Emotions/Positive/Peaceful_1)",
@@ -88,16 +88,23 @@ class QiUnipaSpeech(Node):
 
         elif not msg.data and self.is_recognizing:
             self.stop_recognition()
+            self.pub_track("Stop", 3.0)
 
     def pub_track(self, name, distance):
         msg=Track()
         msg.target_name=name
         msg.distance=distance
         self.tracking_pub.publish(msg)
-        
+
+    def pub_posture(self, name, speed):
+        msg=PostureWithSpeed()
+        msg.posture_name=name
+        msg.speed=speed
+        self.posture_pub.publish(msg)
+  
     def start_recognition(self):
         try:
-            self.pub_track("Face", 3.0)
+            self.pub_track("Sound", 1.0)
             self.asr_service.subscribe("SpeechRecognition")
             self.is_recognizing = True
             self.get_logger().info("Riconoscimento vocale avviato")
@@ -107,7 +114,7 @@ class QiUnipaSpeech(Node):
         
     def stop_recognition(self):
         try:
-            self.pub_track("Stop", 3.0)
+            #self.pub_posture("Stand", 0.5)
             self.asr_service.unsubscribe("SpeechRecognition")
             self.is_recognizing = False
             self.get_logger().info("Riconoscimento vocale fermato")
@@ -118,9 +125,13 @@ class QiUnipaSpeech(Node):
         if word  in self.reply:
             self.get_logger().info(f'risposta :{self.reply[word]}')
             ans=self.reply[word]
+            self.stop_recognition()
             self.animated_service.say(ans)
+            self.pub_posture("Stand", 0.5)
+            self.start_recognition()
             if word =="stop parlato" and self.is_recognizing :
                 self.stop_recognition()
+                self.pub_track("Stop", 3.0)
             
     def check_recognition(self):
         if not self.is_recognizing:
@@ -147,7 +158,7 @@ class QiUnipaSpeech(Node):
 
     def set_tts(self, msg):
         self.animated_service.say(msg.data)
-
+        self.pub_posture("Stand", 0.5)
 
 def main(args=None):
     rclpy.init(args=args)
