@@ -31,7 +31,7 @@ class Speech_Controller(Node):
              msg=Int32()
              msg.data=10
              self.record_pub.publish(msg) # salva in locale il file audio wav
-             time.sleep(15)
+             time.sleep(5)
 
              transcription=self.STT()#trascrizione 
              

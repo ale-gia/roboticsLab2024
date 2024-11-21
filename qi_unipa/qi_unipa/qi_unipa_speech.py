@@ -39,6 +39,8 @@ class QiUnipaSpeech(Node):
         self.memory = self.session.service("ALMemory")
         self.animated_service = self.session.service("ALAnimatedSpeech")
         self.audio_service = self.session.service("ALAudioRecorder")
+        self.sound_detect_service = self.session.service("ALSoundDetection")
+        self.sound_detect_service.setParameter("Sensitivity", 0.8)
         self.configuration = {"bodyLanguageMode":"contextual"}
         
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
@@ -168,21 +170,35 @@ class QiUnipaSpeech(Node):
         channels = [1, 1, 1, 1]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
         audio_format = "wav"
         sample_rate = 16000  # Frequenza di campionamento (16 kHz)
-        duration=msg.data  # Durata della registrazione in secondi
+        duration=1 # Durata della registrazione in secondi
         output_file_robot = "/home/nao/audio_record_unipa/test_pepper1.wav"
 
         # Avviare la registrazione
-        self.get_logger().info("Avvio registrazione...")
         
+        self.sound_detect_service.subscribe("Audio Detection")
         self.audio_service.startMicrophonesRecording(output_file_robot, audio_format, sample_rate, channels)
 
+        while not self.is_recognizing:
+            time.sleep(0.3)
+            
+            if  self.memory.getData("SoundDetected")[0][1]==1:
+                self.get_logger().info("Avvio registrazione...")
+                self.is_recognizing=True
+                
         # Attendere la fine della registrazione
-        time.sleep(duration)
+        while  self.is_recognizing:
+                time.sleep(2)
+                if  self.memory.getData("SoundDetected")[0][1]==0:
+                    self.is_recognizing=False
+                     # Terminare la registrazione
+                    self.audio_service.stopMicrophonesRecording()
+                    self.sound_detect_service.unsubscribe("Audio Detection")
+                    self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
 
-        # Terminare la registrazione
-        self.audio_service.stopMicrophonesRecording()
+       
 
-        self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
+       
+       
         
         path_ros_ws=os.path.join(os.path.abspath(__file__).split("/install")[0])
      
