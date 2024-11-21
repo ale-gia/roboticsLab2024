@@ -4,6 +4,9 @@ import rclpy
 import wave
 from rclpy.node import Node
 from std_msgs.msg import Bool,String,Int32,ByteMultiArray
+from llm_groq import Llm_Groq
+from whisper_hugging import WhisperHugging
+
 
 
 class Speech_Controller(Node):
@@ -16,6 +19,8 @@ class Speech_Controller(Node):
         self.speak_pub = self.create_publisher(String, "/speak",10)
         self.audio_sub = self.create_subscription(ByteMultiArray,'/audio',self.get_audio, 10)
 
+        self.assistant = Llm_Groq()
+        self.whisper = WhisperHugging()
 
     def get_audio(self,msg):
         """
@@ -34,18 +39,29 @@ class Speech_Controller(Node):
              self.get_logger().info("Avvio speech_controller")
              msg=Int32()
              msg.data=10
-             self.record_pub.publish(msg)
+             self.record_pub.publish(msg) # salva in locale il file audio wav
+             #acquisisci file audio locale -- da completare 
+             transcription=self.STT() #trascrizione 
+             resp=self.Speech_By_LLM("",transcription)#risposta llm
 
 
 
+    def STT(self):
+        #Speech to Text by whisper-large-v3-turbo"
+        try:
+            # Trascrivi un file audio
+            transcription = self.whisper.transcribe_audio("test.wav")
+            self.get_logger().info(f"risposta ricevuta da whisper :{transcription}")
+        except Exception as e:
+            self.get_logger().error(f"Errore durate richiesta trascrizione whisper {e}")
 
+    def Speech_By_LLM(self,context,question):
+        try:
+            response = self.assistant.get_response(context, question)
+            self.get_logger().info(f"risposta ricevuta da lllm :{response}")
 
-
-
-
-
-
-
+        except Exception as e:
+            self.get_logger().error(f"Errore durate richiesta risposta llm {e}")
 
 
 
