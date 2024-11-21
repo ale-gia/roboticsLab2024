@@ -164,10 +164,8 @@ class QiUnipaSpeech(Node):
             
     def record(self,msg):
        
-        
-
         # Configurazione della registrazione
-        channels = [1, 0, 0, 0]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
+        channels = [1, 1, 1, 1]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
         audio_format = "wav"
         sample_rate = 16000  # Frequenza di campionamento (16 kHz)
         duration=msg.data  # Durata della registrazione in secondi
@@ -186,9 +184,10 @@ class QiUnipaSpeech(Node):
 
         self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
         
-
+        path_ros_ws=os.path.join(os.path.abspath(__file__).split("/install")[0])
+     
         # Trasferire il file al PC
-        local_output_file = "src/audio/audio_recording.wav"
+        local_output_file = os.path.join(path_ros_ws,"src/audio/audio_recording.wav")
         
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())

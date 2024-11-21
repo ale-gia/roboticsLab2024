@@ -1,15 +1,17 @@
 import requests
 import os
 class WhisperHugging:
-    def __init__(self, api_url=None, api_token=None):
+    def __init__(self):
         """
         Inizializza il client per l'API Whisper di Hugging Face.
         
         :param api_url: URL dell'API (di default per il modello Whisper).
         :param api_token: Token di autenticazione per Hugging Face.
         """
-        self.API_URL = api_url or "https://api-inference.huggingface.co/models/openai/whisper-large-v3-turbo"
-        self.API_TOKEN = api_token or os.environ.get("WHISPER_API_KEY")  # Inserisci qui il token di default se necessario.
+        self.API_URL = "https://api-inference.huggingface.co/models/openai/whisper-large-v3-turbo"
+        self.API_TOKEN = os.environ.get("WHISPER_API_KEY")
+
+        # Inserisci qui il token di default se necessario.
         
         if not self.API_TOKEN:
             raise ValueError("API token non fornito. Specifica il token nella classe o tramite parametro.")
