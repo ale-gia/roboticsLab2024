@@ -42,6 +42,7 @@ class QiUnipaSpeech(Node):
         
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
         self.tts_sub = self.create_subscription(String, "/speak", self.set_tts, 10)
+
         self.record_sub = self.create_subscription(Int32, "/record", self.record_2, 10)
         self.tracking_pub = self.create_publisher(Track, "/track", 10)
         self.audio_publisher = self.create_publisher(ByteMultiArray,'/audio', 10)
@@ -169,6 +170,7 @@ class QiUnipaSpeech(Node):
         :param duration: Durata della registrazione in secondi
         :param output_file: Percorso del file audio in locale
         """
+        self.get_logger().info("test")
         output_file="received_audio.wav"
         duration=msg.data
         try:
@@ -180,15 +182,19 @@ class QiUnipaSpeech(Node):
             server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             server_socket.bind(('0.0.0.0', 9000))  # Porta locale per ricevere audio
             server_socket.listen(1)
-
+            self.get_logger().info("test")
             # Configura ALAudioDevice per inviare audio
-            channels = 3  # Canale 3 = microfoni frontali, posteriori, sinistro e destro
-            audio_device.setClientPreferences("python_client", 16000, channels, 0)
-            audio_device.subscribe("python_client")
+            channels = 4  # Canale 3 = microfoni frontali, posteriori, sinistro e destro
+            client_name="python_client"
+            audio_device.setClientPreferences(client_name, 48000, channels, 1)
+            self.get_logger().info("test")
+            audio_device.subscribe(client_name)
 
-            print("In attesa di connessione dal robot...")
+            self.get_logger().info("In attesa di connessione dal robot...")
             conn, addr = server_socket.accept()
-            print(f"Connessione stabilita con {addr}.")
+
+            
+            self.get_logger().info(f"Connessione stabilita con {addr}.")
 
             # Configurazione del file WAV
             wav_file = wave.open(output_file, 'wb')
@@ -196,7 +202,7 @@ class QiUnipaSpeech(Node):
             wav_file.setsampwidth(2)  # Profondità (16-bit = 2 byte)
             wav_file.setframerate(16000)  # Frequenza di campionamento
 
-            print(f"Inizio registrazione per {duration} secondi...")
+            self.get_logger().info(f"Inizio registrazione per {duration} secondi...")
             start_time = time.time()
 
             while time.time() - start_time < duration:
@@ -208,14 +214,45 @@ class QiUnipaSpeech(Node):
 
             # Ferma la registrazione
             wav_file.close()
-            audio_device.unsubscribe("python_client")
+            audio_device.unsubscribe(client_name)
             conn.close()
             server_socket.close()
-            print(f"Registrazione completata. File salvato in: {output_file}")
+            self.get_logger().info(f"Registrazione completata. File salvato in: {output_file}")
+            
 
         except Exception as e:
-            print(f"Errore nel salvataggio locale dell'audio: {e}")
+            self.get_logger().info(f"Errore nel salvataggio locale dell'audio: {e}")
+            
+    def record_3(self,msg):
+       
+        
 
+        # Configurazione della registrazione
+        channels = [1, 1, 1, 1]  # Solo il microfono centrale è abilitato
+        audio_format = "wav"
+        sample_rate = 16000  # Frequenza di campionamento (16 kHz)
+        duration=msg.data  # Durata della registrazione in secondi
+        output_file_robot = "/home/nao/audio_record_unipa/test_pepper.wav"
+
+        # Avviare la registrazione
+        self.get_logger().info("Avvio registrazione...")
+        
+        self.audio_service.startMicrophonesRecording(output_file_robot, audio_format, sample_rate, channels)
+
+        # Attendere la fine della registrazione
+        time.sleep(duration)
+
+        # Terminare la registrazione
+        self.audio_service.stopMicrophonesRecording()
+        self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
+        
+
+        # Trasferire il file al PC
+        local_output_file = "audio_recording.wav"
+        os.system(f"scp nao@192.168.0.161:{output_file_robot} {local_output_file}")
+        
+        self.get_logger().info(f"File audio trasferito al PC: {local_output_file}")
+        
 
 
     def record(self,msg):
