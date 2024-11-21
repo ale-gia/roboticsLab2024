@@ -7,6 +7,7 @@ import os
 import wave
 import socket
 import struct
+import paramiko
 from rclpy.node import Node
 from std_msgs.msg import Bool,String,Int32,ByteMultiArray
 from qi_unipa_msgs.msg import PostureWithSpeed,Track
@@ -43,7 +44,7 @@ class QiUnipaSpeech(Node):
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
         self.tts_sub = self.create_subscription(String, "/speak", self.set_tts, 10)
 
-        self.record_sub = self.create_subscription(Int32, "/record", self.record_2, 10)
+        self.record_sub = self.create_subscription(Int32, "/record", self.record, 10)
         self.tracking_pub = self.create_publisher(Track, "/track", 10)
         self.audio_publisher = self.create_publisher(ByteMultiArray,'/audio', 10)
         self.posture_pub = self.create_publisher(PostureWithSpeed, "/posture", 10)
@@ -160,79 +161,17 @@ class QiUnipaSpeech(Node):
         self.animated_service.say(msg.data)
         self.pub_posture("Stand", 0.5)
 
-
-    def record_2(self,msg):
-        """
-        Registra audio dai microfoni di Pepper e lo salva direttamente in locale sul computer.
-
-        :param ip: Indirizzo IP del robot Pepper
-        :param port: Porta di connessione (di default 9559)
-        :param duration: Durata della registrazione in secondi
-        :param output_file: Percorso del file audio in locale
-        """
-        self.get_logger().info("test")
-        output_file="received_audio.wav"
-        duration=msg.data
-        try:
-    
-            # Servizio ALAudioDevice
-            audio_device = self.session.service("ALAudioDevice")
-
-            # Configurazione socket per ricevere audio
-            server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            server_socket.bind(('0.0.0.0', 9000))  # Porta locale per ricevere audio
-            server_socket.listen(1)
-            self.get_logger().info("test")
-            # Configura ALAudioDevice per inviare audio
-            channels = 4  # Canale 3 = microfoni frontali, posteriori, sinistro e destro
-            client_name="python_client"
-            audio_device.setClientPreferences(client_name, 48000, channels, 1)
-            self.get_logger().info("test")
-            audio_device.subscribe(client_name)
-
-            self.get_logger().info("In attesa di connessione dal robot...")
-            conn, addr = server_socket.accept()
-
             
-            self.get_logger().info(f"Connessione stabilita con {addr}.")
-
-            # Configurazione del file WAV
-            wav_file = wave.open(output_file, 'wb')
-            wav_file.setnchannels(4)  # Numero di canali (4 microfoni)
-            wav_file.setsampwidth(2)  # Profondità (16-bit = 2 byte)
-            wav_file.setframerate(16000)  # Frequenza di campionamento
-
-            self.get_logger().info(f"Inizio registrazione per {duration} secondi...")
-            start_time = time.time()
-
-            while time.time() - start_time < duration:
-                # Ricevi dati audio dal robot
-                data = conn.recv(4096)
-                if not data:
-                    break
-                wav_file.writeframes(data)
-
-            # Ferma la registrazione
-            wav_file.close()
-            audio_device.unsubscribe(client_name)
-            conn.close()
-            server_socket.close()
-            self.get_logger().info(f"Registrazione completata. File salvato in: {output_file}")
-            
-
-        except Exception as e:
-            self.get_logger().info(f"Errore nel salvataggio locale dell'audio: {e}")
-            
-    def record_3(self,msg):
+    def record(self,msg):
        
         
 
         # Configurazione della registrazione
-        channels = [1, 1, 1, 1]  # Solo il microfono centrale è abilitato
+        channels = [1, 0, 0, 0]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
         audio_format = "wav"
         sample_rate = 16000  # Frequenza di campionamento (16 kHz)
         duration=msg.data  # Durata della registrazione in secondi
-        output_file_robot = "/home/nao/audio_record_unipa/test_pepper.wav"
+        output_file_robot = "/home/nao/audio_record_unipa/test_pepper1.wav"
 
         # Avviare la registrazione
         self.get_logger().info("Avvio registrazione...")
@@ -244,40 +183,27 @@ class QiUnipaSpeech(Node):
 
         # Terminare la registrazione
         self.audio_service.stopMicrophonesRecording()
+
         self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
         
 
         # Trasferire il file al PC
-        local_output_file = "audio_recording.wav"
-        os.system(f"scp nao@192.168.0.161:{output_file_robot} {local_output_file}")
+        local_output_file = "src/audio/audio_recording.wav"
         
-        self.get_logger().info(f"File audio trasferito al PC: {local_output_file}")
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect('192.168.0.161', username='nao', password='nao')
+
+        sftp = ssh.open_sftp()
+        sftp.get(output_file_robot, local_output_file)
+        sftp.close()
+        ssh.close()
+
+        
+        self.get_logger().info("File trasferito con successo!")
+
         
 
-
-    def record(self,msg):
-        channels = [1, 1, 1, 1]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
-        audio_format = "wav"
-        duration=msg.data
-        current_dir = os.getcwd()
-        relative_path="../../../test_pepper.wav"
-        file_path = os.path.join(current_dir, relative_path)
-        try:
-            self.get_logger().info(f"Inizio registrazione per {duration} secondi...")
-            # Avvia la registrazione
-            self.audio_service.startMicrophonesRecording("/home/nao/audio_record_unipa/test_pepper.wav", audio_format, 16000, channels)
-
-            # Aspetta per la durata specificata
-            time.sleep(duration)
-
-            # Ferma la registrazione
-            self.audio_service.stopMicrophonesRecording()
-      
-            # Pubblica l'audio registrato
-            self.publish_audio(file_path)
-
-        except Exception as e:
-            self.get_logger().info(f"Errore durante la registrazione: {e}")
 
     def publish_audio(self, file_path):
         try:
