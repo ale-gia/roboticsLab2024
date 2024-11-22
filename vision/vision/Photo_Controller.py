@@ -5,6 +5,7 @@ from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 from std_msgs.msg import Int32, String
 from qi_unipa_msgs.msg import StringArray
+from qi_unipa_msgs.srv import Look
 import os 
 import cv2
 import numpy as np
@@ -18,6 +19,7 @@ class PhotoController(Node):
         self.look_sub = self.create_subscription(Int32, "/look",self.look_image, 10)
         self.speak_pub = self.create_publisher(String, "/speak", 10)
         self.look_pub = self.create_publisher(StringArray, "/look_resp", 10)
+        self.look_srv = self.create_service(Look, 'look_srv', self.look_callback)
         self.img = queue.Queue()
         self.bridge = CvBridge()
 
@@ -38,6 +40,66 @@ class PhotoController(Node):
             self.output_layers = [self.layer_names[i - 1] for i in output_layers_indices.flatten()]
         else:
             self.output_layers = []
+
+    def add_two_ints_callback(self, request, response):
+        try:
+            imgs = list(self.img.queue)
+            self.get_logger().info(str(len(imgs)))
+            label=[]
+            self.get_logger().info("____________----")
+            for image in imgs:
+                cv_image = image
+                height, width, _ = cv_image.shape
+   
+                # Prepara l'immagine per YOLO
+                blob = cv2.dnn.blobFromImage(cv_image, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
+                self.net.setInput(blob)
+                outs = self.net.forward(self.output_layers)
+
+                # Inizializza le liste per le informazioni sugli oggetti rilevati
+                class_ids = []
+                confidences = []
+                boxes = []
+
+                # Elaborazione degli output di YOLO
+                for out in outs:
+                    for detection in out:
+                        scores = detection[5:]
+                        class_id = np.argmax(scores)
+                        confidence = scores[class_id]
+                        if confidence > 0.5:
+                            center_x = int(detection[0] * width)
+                            center_y = int(detection[1] * height)
+                            w = int(detection[2] * width)
+                            h = int(detection[3] * height)
+
+                            x = int(center_x - w / 2)
+                            y = int(center_y - h / 2)
+
+                            boxes.append([x, y, w, h])
+                            confidences.append(float(confidence))
+                            class_ids.append(class_id)
+                            
+
+                
+                for i in class_ids:
+                    if (self.classes[i] not in label):
+                        label.append(self.classes[i])
+            self.get_logger().info(str(label))
+            self.speak("ho visto ")
+            for l in label:
+                self.speak(l)
+                
+
+
+
+        except Exception as e:
+            self.get_logger().error(f"Error in image_callback: {str(e)}")
+
+        response.resp = label
+
+        return response
+    
 
     def speak(self,testo):
         msg=String()
