@@ -2,8 +2,14 @@ import qi
 import sys
 import rclpy
 import re
+import time
+import os
+import wave
+import socket
+import struct
+import paramiko
 from rclpy.node import Node
-from std_msgs.msg import Bool,String
+from std_msgs.msg import Bool,String,Int32,ByteMultiArray
 from qi_unipa_msgs.msg import PostureWithSpeed,Track
 
 class QiUnipaSpeech(Node):  
@@ -21,31 +27,28 @@ class QiUnipaSpeech(Node):
 
         self.is_recognizing = False
         self.last_word=""
-        self.vocabulary = ["ciao paul", "come stai", "stop parlato", 
-                           "gruppo di formiche","troppo rumoroso","nuova scoperta",
-                           "potremmo differenziare","le cose","di ragazze",
-                           "colorato assegnato"]
+        self.vocabulary = ["ciao pepper", "come stai", "stop parlato"]
         
-        self.reply={"ciao paul":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Paul, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
+        self.reply={"ciao pepper":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Paul, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
                     "come stai": " Io sto bene e tu come ti senti?",
                     "stop parlato":"Ciao Ciao",
-                    "gruppo di formiche": "Anche ^start(animations/Stand/Emotions/Positive/Peaceful_1) io, Simone. Le formiche sono affascinanti! Hanno una società così complessa...^wait(animations/Stand/Emotions/Positive/Peaceful_1)",
-                    "troppo rumoroso":"Forse ^start(animations/Stand/BodyTalk/BodyTalk_8) potremmo aiutarla a trovare un po' di ordine, no, Simone?^wait(animations/Stand/BodyTalk/BodyTalk_8)",
-                    "nuova scoperta":"Esatto ^start(animations/Stand/Emotions/Positive/Hysterical_1)! è come un'avventura. Si esplorano nuovi mondi, si fanno nuove scoperte, si imparano nuove cose...^wait(animations/Stand/Emotions/Positive/Hysterical_1)",
-                    "potremmo differenziare":"Ottima ^start(animations/Stand/Gestures/Enthusiastic_4) idea! Potrei analizzare i codici a barre delle confezioni e suggerire il contenitore più adatto.^wait(animations/Stand/Gestures/Enthusiastic_4)",
-                    "le cose":"Potrei ^start(animations/Stand/Gestures/Thinking_1) mostrarti le immagini di un cervello che prova il piacere della scoperta, ma temo che nessuno qui reggerebbe la tua espressione di perplessità. ^wait(animations/Stand/Gestures/Thinking_1)",
-                    "di ragazze":"In ^start(animations/Stand/Gestures/Desperate_1)effetti, non posso darti torto. Potresti darmi una mano tu! ^wait(animations/Stand/Gestures/Desperate_1)",
-                    "colorato assegnato":"Pensate ^start(animations/Stand/Emotions/Positive/Happy_4)che io sono stato programmato allo stesso modo, ma il mio algoritmo è molto più complesso!^wait(animations/Stand/Emotions/Positive/Happy_4)"}
+                   }
         
         
         self.asr_service = self.session.service("ALSpeechRecognition")
         self.memory = self.session.service("ALMemory")
         self.animated_service = self.session.service("ALAnimatedSpeech")
+        self.audio_service = self.session.service("ALAudioRecorder")
+        self.sound_detect_service = self.session.service("ALSoundDetection")
+        self.sound_detect_service.setParameter("Sensitivity", 0.8)
         self.configuration = {"bodyLanguageMode":"contextual"}
         
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
         self.tts_sub = self.create_subscription(String, "/speak", self.set_tts, 10)
+
+        self.record_sub = self.create_subscription(Int32, "/record", self.record, 10)
         self.tracking_pub = self.create_publisher(Track, "/track", 10)
+        self.audio_publisher = self.create_publisher(ByteMultiArray,'/audio', 10)
         self.posture_pub = self.create_publisher(PostureWithSpeed, "/posture", 10)
 
         # Setup iniziale del riconoscimento vocale
@@ -159,6 +162,74 @@ class QiUnipaSpeech(Node):
     def set_tts(self, msg):
         self.animated_service.say(msg.data)
         self.pub_posture("Stand", 0.5)
+
+            
+    def record(self,msg):
+       
+        # Configurazione della registrazione
+        channels = [1, 1, 1, 1]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
+        audio_format = "wav"
+        sample_rate = 16000  # Frequenza di campionamento (16 kHz)
+        duration=1 # Durata della registrazione in secondi
+        output_file_robot = "/home/nao/audio_record_unipa/test_pepper1.wav"
+
+        # Avviare la registrazione
+        
+        self.sound_detect_service.subscribe("Audio Detection")
+        self.audio_service.startMicrophonesRecording(output_file_robot, audio_format, sample_rate, channels)
+
+        while not self.is_recognizing:
+            time.sleep(0.3)
+            
+            if  self.memory.getData("SoundDetected")[0][1]==1:
+                self.get_logger().info("Avvio registrazione...")
+                self.is_recognizing=True
+                
+        # Attendere la fine della registrazione
+        while  self.is_recognizing:
+                time.sleep(2)
+                if  self.memory.getData("SoundDetected")[0][1]==0:
+                    self.is_recognizing=False
+                     # Terminare la registrazione
+                    self.audio_service.stopMicrophonesRecording()
+                    self.sound_detect_service.unsubscribe("Audio Detection")
+                    self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
+
+       
+
+       
+       
+        
+        path_ros_ws=os.path.join(os.path.abspath(__file__).split("/install")[0])
+     
+        # Trasferire il file al PC
+        local_output_file = os.path.join(path_ros_ws,"src/audio/audio_recording.wav")
+        
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+        ssh.connect('192.168.0.161', username='nao', password='nao')
+
+        sftp = ssh.open_sftp()
+        sftp.get(output_file_robot, local_output_file)
+        sftp.close()
+        ssh.close()
+
+        
+        self.get_logger().info("File trasferito con successo!")
+
+        
+
+
+    def publish_audio(self, file_path):
+        try:
+            # Leggi il file WAV
+            with wave.open(file_path, 'rb') as wav_file:
+                frames = wav_file.readframes(wav_file.getnframes())
+                audio_msg = ByteMultiArray(data=frames)
+                self.audio_publisher.publish(audio_msg)
+                self.get_logger().info(f"File audio pubblicato sul topic 'audio_topic'.")
+        except Exception as e:
+            self.get_logger().error(f"Errore durante la pubblicazione del file audio: {e}")
 
 def main(args=None):
     rclpy.init(args=args)
