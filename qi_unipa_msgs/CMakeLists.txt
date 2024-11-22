@@ -33,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Hand.msg"
   "msg/Bumper.msg"
   "msg/Track.msg"
+  "msg/StringArray.msg"
 )
 
 ament_package()

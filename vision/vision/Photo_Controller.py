@@ -4,6 +4,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge
 from std_msgs.msg import Int32, String
+from qi_unipa_msgs.msg import StringArray
 import os 
 import cv2
 import numpy as np
@@ -12,10 +13,11 @@ import queue
 
 class PhotoController(Node):
     def __init__(self):
-        super().__init__("vision_yolo")
+        super().__init__("PhotoController")
         self.subscription = self.create_subscription(Image, "/camera", self.image_callback, 10)
         self.look_sub = self.create_subscription(Int32, "/look",self.look_image, 10)
         self.speak_pub = self.create_publisher(String, "/speak", 10)
+        self.look_pub = self.create_publisher(StringArray, "/look_resp", 10)
         self.img = queue.Queue()
         self.bridge = CvBridge()
 
@@ -41,6 +43,11 @@ class PhotoController(Node):
         msg=String()
         msg.data=testo
         self.speak_pub.publish(msg)
+
+    def look_resp(self,data):
+        msg=StringArray()
+        msg.data=data
+        self.look_pub.publish(msg)
 
 
     def image_callback(self, msg):
@@ -95,6 +102,7 @@ class PhotoController(Node):
                         label.append(self.classes[i])
             self.get_logger().info(str(label))
             self.speak("ho visto ")
+            self.look_resp(label)
             for l in label:
                 self.speak(l)
                 
