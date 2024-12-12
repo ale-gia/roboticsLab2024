@@ -13,19 +13,15 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='rosario',
-    maintainer_email='rosario@todo.todo',
+    maintainer='Alessandro',
+    maintainer_email='Alessandro@todo.todo',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "nao_controller = my_robot_controller.nao_controller:main",
-            "patient_data_controller = my_robot_controller.patient_data_controller:main",
-            "sensor = my_robot_controller.sensor:main",
-            "new = my_robot_controller.new:main",
-            "speech = my_robot_controller.speech:main",
-            "patient_data_controller2 = my_robot_controller.patient_data_controller2:main"
+            "pepper_controller = my_robot_controller.pepper_controller:main",
+           
         ],
     },
 )

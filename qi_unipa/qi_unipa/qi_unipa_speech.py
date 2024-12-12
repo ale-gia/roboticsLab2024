@@ -5,8 +5,6 @@ import re
 import time
 import os
 import wave
-import socket
-import struct
 import paramiko
 from rclpy.node import Node
 from std_msgs.msg import Bool,String,Int32,ByteMultiArray
@@ -29,7 +27,7 @@ class QiUnipaSpeech(Node):
         self.last_word=""
         self.vocabulary = ["ciao pepper", "come stai", "stop parlato"]
         
-        self.reply={"ciao pepper":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Paul, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
+        self.reply={"ciao pepper":"Ciao ^start(animations/Stand/BodyTalk/BodyTalk_1) io sono Pepper, piacere di conoscerti ^wait(animations/Stand/BodyTalk/BodyTalk_1) ",
                     "come stai": " Io sto bene e tu come ti senti?",
                     "stop parlato":"Ciao Ciao",
                    }
@@ -177,7 +175,7 @@ class QiUnipaSpeech(Node):
         
         self.sound_detect_service.subscribe("Audio Detection")
         self.audio_service.startMicrophonesRecording(output_file_robot, audio_format, sample_rate, channels)
-
+        time.sleep(0.3)
         while not self.is_recognizing:
             time.sleep(0.3)
             
@@ -186,7 +184,7 @@ class QiUnipaSpeech(Node):
                 self.is_recognizing=True
                 
         # Attendere la fine della registrazione
-        while  self.is_recognizing:
+        while self.is_recognizing:
                 time.sleep(2)
                 if  self.memory.getData("SoundDetected")[0][1]==0:
                     self.is_recognizing=False
@@ -195,10 +193,6 @@ class QiUnipaSpeech(Node):
                     self.sound_detect_service.unsubscribe("Audio Detection")
                     self.get_logger().info(f"Registrazione terminata e salvata in: {output_file_robot}")
 
-       
-
-       
-       
         
         path_ros_ws=os.path.join(os.path.abspath(__file__).split("/install")[0])
      

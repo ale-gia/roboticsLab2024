@@ -21,6 +21,11 @@ def generate_launch_description():
       executable="interface_controller",
    ),
    Node(
+      package="my_robot_controller",
+      namespace="my_robot_controller",
+      executable="pepper_controller",
+   ),
+   Node(
       package="ros_gz_bridge",
       #namespace="gazebo_bridge",
       executable="parameter_bridge",

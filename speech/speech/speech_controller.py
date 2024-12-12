@@ -17,6 +17,7 @@ class Speech_Controller(Node):
         self.speech_controller = self.create_subscription(Bool, "/speech", self.set_speech, 10)
         self.record_pub = self.create_publisher(Int32, "/record",10)
         self.speak_pub = self.create_publisher(String, "/speak",10)
+        self.speak_sub = self.create_subscription(String, "/robot_speak",self.robot_speak,10)
         #self.audio_sub = self.create_subscription(ByteMultiArray,'/audio',self.get_audio, 10)
 
         self.assistant = Llm_Groq()
@@ -34,9 +35,11 @@ class Speech_Controller(Node):
              time.sleep(5)
 
              transcription=self.STT()#trascrizione 
-             
-             resp=self.Speech_By_LLM("Descrizione compito : Sei pepper, un robot umanoide,  e vivi al laboratorio di robotica nell'università di palermo. rispondi con poche parole. rispondi in italiano",
-                                     transcription)#risposta llm
+             context="Descrizione compito : Sei pepper, un robot umanoide e sei al servizio delle persone per fornire una dieta, \
+                      e vivi al laboratorio di robotica nell'università di palermo. La dieta per il tuo interlocutore prevede : \
+                      lunedì(carne e verdura),martedì(pesce e uova),mercoledì( riso e pollo) . \
+                      non puoi mangiare due giorni di fila carne.Oggi è martedì. rispondi in italiano"
+             resp=self.Speech_By_LLM(context,transcription)#risposta llm
              msg=String()
              msg.data=resp
              self.speak_pub.publish(msg)
@@ -61,7 +64,9 @@ class Speech_Controller(Node):
         except Exception as e:
             self.get_logger().error(f"Errore durate richiesta risposta llm {e}")
 
-
+    def robot_speak(self,msg):
+        
+        self.speak_pub.publish(data)
 
 
 

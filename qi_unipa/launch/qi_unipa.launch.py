@@ -60,6 +60,7 @@ def generate_launch_description():
             'port': LaunchConfiguration('port')
         }]
     )
+    """
     qi_unipa_vision_node = Node(
         package='qi_unipa',
         executable='qi_unipa_vision',  
@@ -70,7 +71,7 @@ def generate_launch_description():
             'port': LaunchConfiguration('port')
         }]
     )
-    
+    """
     
     
 
@@ -81,6 +82,6 @@ def generate_launch_description():
         qi_unipa_movement_node,
         qi_unipa_speech_node,
         qi_unipa_tracking_node,
-        qi_unipa_vision_node
+        #qi_unipa_vision_node
     ])
 
