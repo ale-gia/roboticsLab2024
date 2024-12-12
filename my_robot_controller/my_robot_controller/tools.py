@@ -4,7 +4,7 @@ from langchain_core.tools import BaseTool
 from langchain_community.graphs import Neo4jGraph
 import os
 from langchain.memory import ConversationBufferMemory
-from shared import memory
+from .shared import memory
 
 # Configurazione ambiente
 os.environ["NEO4J_URI"] = "bolt://localhost:7689"

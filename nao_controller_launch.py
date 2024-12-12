@@ -15,22 +15,29 @@ def generate_launch_description():
       #excecutable="movement.py",
       #name="movement"
    #),
-   Node(
-      package="naoqi_interface",
-      namespace="naoqi_interface",
-      executable="interface_controller",
-   ),
+   
    Node(
       package="my_robot_controller",
       namespace="my_robot_controller",
       executable="pepper_controller",
    ),
    Node(
+      package="speech",
+      namespace="speech",
+      executable="speech_controller",
+   ),
+   """
+   Node(
       package="ros_gz_bridge",
       #namespace="gazebo_bridge",
       executable="parameter_bridge",
       ros_arguments=["-p","config_file:=/home/ros/ros2_ws/src/my_robot_controller/config/full.yaml"]
-   )
-
+   ),
+   Node(
+      package="naoqi_interface",
+      namespace="naoqi_interface",
+      executable="interface_controller",
+   ),
+   """
    ])
 

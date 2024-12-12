@@ -18,6 +18,7 @@ class Speech_Controller(Node):
         self.record_pub = self.create_publisher(Int32, "/record",10)
         self.speak_pub = self.create_publisher(String, "/speak",10)
         self.speak_sub = self.create_subscription(String, "/robot_speak",self.robot_speak,10)
+        self.user_transcription_pub = self.create_publisher(String, "/transcription",10)
         #self.audio_sub = self.create_subscription(ByteMultiArray,'/audio',self.get_audio, 10)
 
         self.assistant = Llm_Groq()
@@ -44,6 +45,20 @@ class Speech_Controller(Node):
              msg.data=resp
              self.speak_pub.publish(msg)
 
+    def robot_speech(self,msg):
+             
+             self.get_logger().info("Avvio speech_controller")
+             msg=Int32()
+             msg.data=10
+             self.record_pub.publish(msg) # salva in locale il file audio wav
+             time.sleep(3)
+
+             transcription=self.STT()#trascrizione 
+             msg2=String()
+             msg2.data=transcription
+             self.user_transcription_pub.publish(msg2)
+  
+
 
     def STT(self):
         #Speech to Text by whisper-large-v3-turbo"
@@ -65,8 +80,9 @@ class Speech_Controller(Node):
             self.get_logger().error(f"Errore durate richiesta risposta llm {e}")
 
     def robot_speak(self,msg):
-        
-        self.speak_pub.publish(data)
+        msg=String()
+        msg.data=msg
+        self.speak_pub.publish(msg)
 
 
 

@@ -10,13 +10,15 @@ from langchain.agents.output_parsers import OpenAIFunctionsAgentOutputParser
 from langchain_core.utils.function_calling import convert_to_openai_function
 from langchain.agents.format_scratchpad import format_to_openai_function_messages
 
-from tools import InformationTool, ActivityTool, RecipeTool, MemoryTool,graph
-from shared import memory
+from .tools import InformationTool, ActivityTool, RecipeTool, MemoryTool,graph
+from .shared import memory
 
 class Pepper_Controller(Node):
-       def __init__(self):
+    def __init__(self):
         super().__init__("pepper_controller")
         self.speech_pub= self.create_publisher(Bool, "/speech", 10)
+        self.robot_speak_pub=self.create_publisher(String,"/robot_speak",10)
+        self.transcription_sub=self.create_subscription(String,"/transcription",self.user_transcription,10)
 
         # Configurazione modello e tools
         llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
@@ -62,31 +64,42 @@ class Pepper_Controller(Node):
             return_intermediate_steps=False,
             max_iterations=5
         )
+        self.user_input=""
+        self.last_user_input="..."
 
+    def user_transcription(self,msg):
+        self.user_input=msg.data
 
-
-
-# Loop conversazionale
-def conversational_loop(self):
-    print("Pepper: Ciao! Come posso aiutarti oggi? (Digita 'exit' per terminare)")
-    while True:
-        try:
-            user_input = input("Tu: ")
-            
-            if user_input.lower() == 'exit':
-                print("Pepper: È stato un piacere aiutarti. A presto!")
-                break
-            
-            response = self.agent_executor.invoke({"input": user_input})
-            print(f"Pepper: {response['output']}")
-           
-            memory.save_context(
-                {"input": user_input}, 
-                {"output": response['output']}
-            )
-           
-        except Exception as e:
-            print(f"Errore: {e}")
+    # Loop conversazionale
+    def conversational_loop(self):
+        self.get_logger().info(f"Conversational loop started")
+        msg=String()
+        msg.data="Ciao! Come posso aiutarti oggi ?"
+        self.robot_speak_pub.publish(msg)
+        while True:
+            self.get_logger().info(f"Listening ...")
+            try:
+                if self.user_input!=self.last_user_input:                   
+                    if self.user_input== 'termina':
+                    
+                        msg.data= "È stato un piacere aiutarti. A presto!"
+                        self.robot_speak_pub.publish(msg)
+                        self.last_user_input=self.user_input
+                        break
+                    
+                    response = self.agent_executor.invoke({"input": self.user_input})
+                    self.get_logger().info(f"Response{response['output']}")
+                    msg.data=response['output']
+                    self.robot_speak_pub.publish(msg)
+                
+                
+                    memory.save_context(
+                        {"input": self.user_input}, 
+                        {"output": response['output']}
+                    )
+                    self.last_user_input=self.user_input
+            except Exception as e:
+                print(f"Errore: {e}")
 
 
 
@@ -102,6 +115,7 @@ if __name__ == "__main__":
     
     try:
         main()
-        conversational_loop()
+        pepper=Pepper_Controller()
+        pepper.conversational_loop()
     finally:
         graph._driver.close()
