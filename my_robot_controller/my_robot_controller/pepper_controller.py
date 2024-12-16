@@ -1,4 +1,5 @@
 import rclpy
+import time
 from rclpy.node import Node
 from std_msgs.msg import Bool,String,Int32,ByteMultiArray
 
@@ -17,9 +18,12 @@ class Pepper_Controller(Node):
     def __init__(self):
         super().__init__("pepper_controller")
         self.speech_pub= self.create_publisher(Bool, "/speech", 10)
-        self.robot_speak_pub=self.create_publisher(String,"/robot_speak",10)
-        self.transcription_sub=self.create_subscription(String,"/transcription",self.user_transcription,10)
+        self.robot_speak_pub=self.create_publisher(String,"/robot_speak",10) #parlato
+        self.robot_speech_pub=self.create_publisher(String,"/robot_speech",10)#ascolto
+        self.transcription_sub=self.create_subscription(String,"/transcription",self.user_transcription,10) 
 
+        self.isSpeaking_sub = self.create_subscription(Bool, "/is_speaking",self.check_speaking,10)
+        self.is_speaking=False
         # Configurazione modello e tools
         llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
         tools = [InformationTool(), ActivityTool(), RecipeTool(), MemoryTool()]
@@ -65,49 +69,66 @@ class Pepper_Controller(Node):
             max_iterations=5
         )
         self.user_input=""
-        self.last_user_input="..."
+        self.last_user_input=""
+        self.start_conversation=False
+        
 
-    def user_transcription(self,msg):
+    def user_transcription(self,msg): #aggiornamento trascrizione whisper
+        self.get_logger().info(f"Pepper: trascrizione ottenuta {msg.data}")
         self.user_input=msg.data
 
     # Loop conversazionale
     def conversational_loop(self):
         self.get_logger().info(f"Conversational loop started")
         msg=String()
-        msg.data="Ciao! Come posso aiutarti oggi ?"
-        self.robot_speak_pub.publish(msg)
+        if not (self.start_conversation):
+
+            msg.data="Ciao sono Pepper ! Come posso aiutarti oggi ?"
+            self.robot_speak_pub.publish(msg)
+      
+            self.start_conversation=True
+        self.robot_speech_pub.publish(msg) #ascolta
         while True:
-            self.get_logger().info(f"Listening ...")
-            try:
-                if self.user_input!=self.last_user_input:                   
+        
+            try:    
+                if self.user_input!=self.last_user_input: 
+                    self.get_logger().info(f"Pepper sta rispondendo ..")
+                    self.get_logger().info(f"Listening ---> {self.user_input}")                  
                     if self.user_input== 'termina':
                     
                         msg.data= "È stato un piacere aiutarti. A presto!"
                         self.robot_speak_pub.publish(msg)
                         self.last_user_input=self.user_input
                         break
-                    
+
                     response = self.agent_executor.invoke({"input": self.user_input})
                     self.get_logger().info(f"Response{response['output']}")
                     msg.data=response['output']
                     self.robot_speak_pub.publish(msg)
-                
-                
+
+                    while(self.is_speaking):#
+                        time.sleep(0.3)
+
                     memory.save_context(
                         {"input": self.user_input}, 
                         {"output": response['output']}
                     )
                     self.last_user_input=self.user_input
+                    self.robot_speech_pub.publish(msg) #ascolta
+               
             except Exception as e:
                 print(f"Errore: {e}")
 
+    def check_speaking(self,msg):
+        self.is_speaking=msg.data
+         
 
 
 def main(args=None):
     rclpy.init(args=args)
  
     node = Pepper_Controller()
-    
+    node.conversational_loop()
     rclpy.spin(node)
     rclpy.shutdown()
 
@@ -115,7 +136,5 @@ if __name__ == "__main__":
     
     try:
         main()
-        pepper=Pepper_Controller()
-        pepper.conversational_loop()
     finally:
         graph._driver.close()

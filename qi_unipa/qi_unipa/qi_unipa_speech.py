@@ -9,6 +9,7 @@ import paramiko
 from rclpy.node import Node
 from std_msgs.msg import Bool,String,Int32,ByteMultiArray
 from qi_unipa_msgs.msg import PostureWithSpeed,Track
+from qi_unipa_msgs.srv import Speak
 
 class QiUnipaSpeech(Node):  
     def __init__(self):
@@ -44,16 +45,18 @@ class QiUnipaSpeech(Node):
         self.speech_sub = self.create_subscription(Bool, "/listen", self.set_speech, 10)
         self.tts_sub = self.create_subscription(String, "/speak", self.set_tts, 10)
 
-        self.record_sub = self.create_subscription(Int32, "/record", self.record, 10)
+        #self.record_sub = self.create_subscription(Int32, "/record", self.record, 10)
         self.tracking_pub = self.create_publisher(Track, "/track", 10)
         self.audio_publisher = self.create_publisher(ByteMultiArray,'/audio', 10)
         self.posture_pub = self.create_publisher(PostureWithSpeed, "/posture", 10)
-
+        self.record_srv=self.create_service(Speak,'record',self.record)
         # Setup iniziale del riconoscimento vocale
         self.setup_recognition()
         
         # Timer per il controllo periodico del riconoscimento vocale
         self.create_timer(1.0, self.check_recognition)
+        self.isSpeaking_pub=self.create_publisher(Bool,'/is_speaking',10)
+        self.create_timer(0.5, self.check_speaking)
 
     def set_connection(self, ip, port):
         session = qi.Session()
@@ -72,7 +75,7 @@ class QiUnipaSpeech(Node):
             self.get_logger().info("Lingua impostata a Italiano")
             
             # Imposta il vocabolario
-            self.asr_service.setVocabulary(self.vocabulary, True)
+            #self.asr_service.setVocabulary(self.vocabulary, True)
             self.get_logger().info(f"Vocabolario impostato: {self.vocabulary}")
             
             # Creazione del proxy per l'evento
@@ -162,7 +165,7 @@ class QiUnipaSpeech(Node):
         self.pub_posture("Stand", 0.5)
 
             
-    def record(self,msg):
+    def record(self,request,response):
        
         # Configurazione della registrazione
         channels = [1, 1, 1, 1]  # Abilitare tutti e 4 i microfoni (frontale, posteriore, sinistro, destro)
@@ -180,7 +183,7 @@ class QiUnipaSpeech(Node):
             time.sleep(0.3)
             
             if  self.memory.getData("SoundDetected")[0][1]==1:
-                self.get_logger().info("Avvio registrazione...")
+                self.get_logger().info("(Qi Unipa Speech:Avvio registrazione...")
                 self.is_recognizing=True
                 
         # Attendere la fine della registrazione
@@ -201,7 +204,7 @@ class QiUnipaSpeech(Node):
         
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-        ssh.connect('192.168.0.161', username='nao', password='nao')
+        ssh.connect('192.168.11.173', username='nao', password='nao')#'192.168.0.161'
 
         sftp = ssh.open_sftp()
         sftp.get(output_file_robot, local_output_file)
@@ -210,7 +213,9 @@ class QiUnipaSpeech(Node):
 
         
         self.get_logger().info("File trasferito con successo!")
-
+        
+        response.resp=True
+        return response
         
 
 
@@ -224,6 +229,17 @@ class QiUnipaSpeech(Node):
                 self.get_logger().info(f"File audio pubblicato sul topic 'audio_topic'.")
         except Exception as e:
             self.get_logger().error(f"Errore durante la pubblicazione del file audio: {e}")
+
+    def check_speaking(self):
+        msg=Bool()
+        status=self.memory.getData("ALTextToSpeech/Status")
+        self.get_logger().info(f"{status}")
+        if self.memory.getData("ALTextToSpeech/Status")[1]=="done":
+            msg.data=False
+            self.isSpeaking_pub.publish(msg)
+        else :
+            msg.data=True
+            self.isSpeaking_pub.publish(msg)
 
 def main(args=None):
     rclpy.init(args=args)

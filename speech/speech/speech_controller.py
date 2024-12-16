@@ -6,7 +6,7 @@ from std_msgs.msg import Bool,String,Int32,ByteMultiArray
 
 from .llm_groq import Llm_Groq
 from .whisper_hugging import WhisperHugging
-
+from qi_unipa_msgs.srv import Speak
 
 
 class Speech_Controller(Node):
@@ -18,13 +18,22 @@ class Speech_Controller(Node):
         self.record_pub = self.create_publisher(Int32, "/record",10)
         self.speak_pub = self.create_publisher(String, "/speak",10)
         self.speak_sub = self.create_subscription(String, "/robot_speak",self.robot_speak,10)
+        self.robot_speech_sub = self.create_subscription(String, "/robot_speech",self.robot_speech,10)
         self.user_transcription_pub = self.create_publisher(String, "/transcription",10)
+        self.isSpeaking_sub = self.create_subscription(Bool, "/is_speaking",self.check_speaking,10)
+        self.record_cli=self.create_client(Speak,'record')
+        while not self.record_cli.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.req=Speak.Request()
+   
+
         #self.audio_sub = self.create_subscription(ByteMultiArray,'/audio',self.get_audio, 10)
 
         self.assistant = Llm_Groq()
         self.whisper = WhisperHugging()
         self.file_path="/home/alessandro/Desktop/roboticsLab2024/src/audio/audio_recording.wav"
-
+        self.is_speaking=False
+  
   
 
     def set_speech(self,msg):
@@ -45,18 +54,40 @@ class Speech_Controller(Node):
              msg.data=resp
              self.speak_pub.publish(msg)
 
-    def robot_speech(self,msg):
-             
-             self.get_logger().info("Avvio speech_controller")
-             msg=Int32()
-             msg.data=10
-             self.record_pub.publish(msg) # salva in locale il file audio wav
-             time.sleep(3)
+    def send_request(self):
+        
+             self.req.data=10
+             self.future=self.record_cli.call_async(self.req)
+           
+             rclpy.spin_until_future_complete(self, self.future)
+             self.get_logger().info(f"future: {self.future.result()}")
+             if self.future.done():
+                try:
+                    response = self.future.result()
+                    self.get_logger().info(f"Risposta: {response}")
+                    return response  #completamento audio
+                except Exception as e:
+                    self.get_logger().error(f"Chiamata al servizio fallita: {e}")
+                    return None
+            
 
+
+    def robot_speech(self,msg):#
+             
+             self.get_logger().info("robot speech in ascolto..")
+             test=Int32()# cambiare in booleano
+             test.data=10
+             time.sleep(3)
+             #self.record_pub.publish(test) # salva in locale il file audio wav
+
+             response=self.send_request()
+            
              transcription=self.STT()#trascrizione 
              msg2=String()
              msg2.data=transcription
              self.user_transcription_pub.publish(msg2)
+               
+             self.get_logger().info(f"trascrizione inviata {transcription}")
   
 
 
@@ -80,10 +111,14 @@ class Speech_Controller(Node):
             self.get_logger().error(f"Errore durate richiesta risposta llm {e}")
 
     def robot_speak(self,msg):
-        msg=String()
-        msg.data=msg
-        self.speak_pub.publish(msg)
+        self.get_logger().info(f"robot_speak:{msg.data}")
+        sentence=String()
+        sentence.data=msg.data
+        self.speak_pub.publish(sentence)
 
+    def check_speaking(self,msg):
+        self.is_speaking=msg.data
+         
 
 
 def main(args=None):
