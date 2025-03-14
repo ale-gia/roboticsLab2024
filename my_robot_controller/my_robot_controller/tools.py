@@ -3,7 +3,6 @@ from pydantic import BaseModel, Field
 from langchain_core.tools import BaseTool
 from langchain_community.graphs import Neo4jGraph
 import os
-from langchain.memory import ConversationBufferMemory
 from .shared import memory
 
 # Configurazione ambiente
@@ -15,34 +14,39 @@ os.environ["NEO4J_PASSWORD"] = "12345678"
 
 # Query per estrarre i dati principali della persona
 description_query = """
-    MATCH (p:Persone {id: $id_persona})
+    MATCH (p:Persona {id: $id_persona})
     OPTIONAL MATCH (p)-[:AVERE]->(mob:Mobilità)
-    OPTIONAL MATCH (p)-[:AVERE]->(u:Umore)
-    OPTIONAL MATCH (p)-[:AVERE]->(pat:Patologie)
-    OPTIONAL MATCH (p)-[:AVERE]->(intol:Intolleranze)
+    OPTIONAL MATCH (p)-[:AVERE]->(pat:Patologia)
+    OPTIONAL MATCH (p)-[:AVERE]->(intol:Intolleranza)
     RETURN 
         p.id AS Nome, 
         collect(DISTINCT mob.id) AS Mobilità,
-        collect(DISTINCT u.id) AS Umore,
-        collect(DISTINCT pat.descrizione) AS Patologie,
-        collect(DISTINCT intol.intolleranza) AS Intolleranze;
+        collect(DISTINCT pat.descrizione) AS Patologia,
+        collect(DISTINCT intol.intolleranza) AS Intolleranza;
 """
+
 activity_query = """
-    MATCH (p:Persone {id: $id_persona})
-    OPTIONAL MATCH (p)-[:AVERE]->(pat:Patologie)-[:VIETARE]->(attivita_vietata:Attività)
-    OPTIONAL MATCH (p)-[:AVERE]->(mob:Mobilità)-[:PERMETTERE]->(att_mob:Attività)
-    WHERE NOT (att_mob = attivita_vietata) 
-    RETURN DISTINCT att_mob as attività
-"""
-recipe_query ="""
-    MATCH (p:Persone {id: $id_persona})
-    OPTIONAL MATCH (p)-[:AVERE]->(intol:Intolleranze)
-    MATCH (r:Ricette)
-    WHERE NOT EXISTS {
-        MATCH (intol:Intolleranze)-[:PROIBIRE]->(r)
+    MATCH (p:Persona {id: $id_persona})
+    OPTIONAL MATCH (p)-[:AVERE]->(:Patologia)-[:VIETARE]->(attivita_vietata:Attività)
+    OPTIONAL MATCH (p)-[:AVERE]->(:Mobilità)-[:PERMETTERE]->(att_mob:Attività)
+    WHERE att_mob IS NOT NULL AND NOT EXISTS {
+        MATCH (p)-[:AVERE]->(:Patologia)-[:VIETARE]->(att_mob)
     }
-    RETURN r.id AS Ricetta, r.ingredienti AS Ingredienti, r.intolleranze AS Intolleranze
-    LIMIT 5;
+    RETURN DISTINCT att_mob AS attività
+    ORDER BY rand();
+    """
+
+recipe_query ="""
+    MATCH (p:Persona {id: $id_persona})
+    OPTIONAL MATCH (p)-[:AVERE]->(intol:Intolleranza)
+    MATCH (r:Ricetta)
+    WHERE NOT EXISTS {
+        MATCH (intol:Intolleranza)-[:PROIBIRE]->(r)
+    }
+    ORDER BY rand()
+    RETURN r.id AS Ricetta, r.ingredienti AS Ingredienti, r.intolleranze AS Intolleranza
+   
+    
 """
 # Connessione al database Neo4j
 graph = Neo4jGraph()
@@ -53,7 +57,7 @@ def get_information(entity: str) -> str:
     try:
         data = graph.query(description_query, params={"id_persona": entity})
         if data:
-            return f"Nome: {data[0]['Nome']}, Umore: {data[0]['Umore']}, Mobilità: {data[0]['Mobilità']}, Patologie: {data[0]['Patologie']}, Intolleranze: {data[0]['Intolleranze']}"
+            return f"Nome: {data[0]['Nome']}, Mobilità: {data[0]['Mobilità']}, Patologia: {data[0]['Patologia']}, Intolleranza: {data[0]['Intolleranza']}"+ "\n"
         elif not data:
             return "Non ho trovato informazioni su questa persona."
         
@@ -73,7 +77,7 @@ def get_activities(entity: str) -> str:
         
         if activities:
             activity_list = [f"{act['attività']['id']}: {act['attività']['descrizione']}" for act in activities]
-            return "Attività consigliate:\n" + "\n".join(activity_list)
+            return "Attività consigliate:\n" + "\n".join(activity_list)+ "\n"
         else:
             return "Non ho trovato attività adatte alle tue condizioni."
     except Exception as e:
@@ -85,7 +89,7 @@ def get_recipes(entity: str) -> str:
         
         if recipes:
             recipe_list = [f"{r['Ricetta']}: Ingredienti - {r['Ingredienti']}" for r in recipes]
-            return "Ecco alcune ricette adatte a te:\n" + "\n".join(recipe_list)
+            return "Ecco alcune ricette adatte a te:\n" + "\n".join(recipe_list)+ "\n"
         else:
             return "Non ho trovato ricette adatte alle tue intolleranze o preferenze."
     except Exception as e:
@@ -95,6 +99,18 @@ def clear_memory():
     memory.clear()
     return "Memoria cancellata"
 
+def get_memory():
+    # Recupero della memoria attuale
+    chat_history = memory.chat_memory.messages
+    output_dict = {"memory": []}
+    
+    if len(chat_history) > 0:
+        for msg in chat_history[-5:]:
+            output_dict["memory"].append(f"{msg.type}: {msg.content}")
+    else:
+        output_dict["memory"].append("")
+
+    return output_dict
 
 # Definizione tool per LangChain
 
@@ -120,7 +136,7 @@ class ActivityInput(BaseModel):
     
 class ActivityTool(BaseTool):
     name: str = "Activity"
-    description: str = "trova attività adatte alle condizioni della persona"
+    description: str = "Strumento per trovare attività adatte alle condizioni della persona"
     args_schema: Type[BaseModel] = ActivityInput
 
     def _run(
@@ -143,7 +159,7 @@ class RecipeInput(BaseModel):
 
 class RecipeTool(BaseTool):
     name: str = "Recipe"
-    description: str = "trova ricette adatte alle intolleranze della persona"
+    description: str = "Strumento per trovare ricette "
     args_schema: Type[BaseModel] = RecipeInput
 
     def _run(
@@ -160,10 +176,10 @@ class RecipeTool(BaseTool):
     ) -> str:
         return get_recipes(entity)
     
-
-class MemoryTool(BaseTool):
-    name: str = "Memory"
-    description: str = "cancella la memoria"
+# tool per eliminare la memoria
+class DeleteMemoryTool(BaseTool):
+    name: str = "DeleteMemory"
+    description: str = "strumento per cancella la memoria qualora l'interlocutore sia differente"
 
     def _run(
         self,
@@ -171,10 +187,14 @@ class MemoryTool(BaseTool):
     ) -> str:
         return clear_memory()
 
-    """
-    async def _arun(
+ 
+# tool per ottenere informazioni dalla memoria   
+class GetMemoryTool(BaseTool):
+    name: str = "GetMemory"
+    description: str = "strumento per  ottenere la memoria rispetto l'interlocutore attuale"
+
+    def _run(
         self,
-    ) -> str:
-        return clear_memory()
-    """
-    
+
+    ) -> dict:
+        return get_memory()
